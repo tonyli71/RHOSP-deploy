@@ -3,10 +3,15 @@ PROMPT 0
 MENU TITLE PXE Menu
 TIMEOUT 200
 TOTALTIMEOUT 6000
-ONTIMEOUT discovery
+ONTIMEOUT local
 
 LABEL discovery
 MENU LABEL Foreman Discovery
 KERNEL boot/foreman-discovery-image-latest-vmlinuz
 APPEND rootflags=loop initrd=boot/foreman-discovery-image-latest-img root=live:/foreman.iso rootfstype=auto ro rd.live.image rd.live.check rd.lvm=0 rootflags=ro crashkernel=128M elevator=deadline max_loop=256 rd.luks=0 rd.md=0 rd.dm=0 foreman.url=https://foreman.hht5.pccwglobal.com nomodeset selinux=0 stateless biosdevname=0
 IPAPPEND 2
+
+LABEL local
+     MENU LABEL (local)
+     MENU DEFAULT
+     LOCALBOOT 0
