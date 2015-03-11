@@ -1,5 +1,7 @@
 #!/bin/bash
 
+service foreman-proxy stop
+
 #export FOREMAN_GATEWAY=172.16.250.200
 export FOREMAN_GATEWAY=`ifconfig eth0 | grep "inet addr" | awk  '{print $2}' | awk -F: '{print $2}'`
 
@@ -15,4 +17,6 @@ sudo -u foreman scl enable ruby193 "cd $FOREMAN_DIR; rake db:drop RAILS_ENV=prod
 sudo -u foreman scl enable ruby193 "cd $FOREMAN_DIR; rake db:create RAILS_ENV=production FOREMAN_PROVISIONING=$FOREMAN_PROVISIONING"
 sudo -u foreman scl enable ruby193 "cd $FOREMAN_DIR; rake db:migrate RAILS_ENV=production FOREMAN_PROVISIONING=$FOREMAN_PROVISIONING"
 cd /usr/share/openstack-foreman-installer/bin
-./foreman_server.sh
+
+/usr/sbin/rhel-osp-installer 
+

@@ -21,12 +21,14 @@ if app_value(:provisioning_wizard) != 'none' && [0,2].include?(kafo.exit_code)
 
 
   # first, create RedHat installation media and subscription info
-  sub_seeder = SubscriptionSeeder.new(kafo)
-  sub_seeder.seed
+  # we goning to use local installation media, so we comment this out
+  #sub_seeder = SubscriptionSeeder.new(kafo)
+  #sub_seeder.seed
 
   # add other provisioning data
-  pro_seeder = ProvisioningSeeder.new(kafo)
-  pro_seeder.seed
+  # we not going to use default Provision Seed , so we comment this out
+  #pro_seeder = ProvisioningSeeder.new(kafo)
+  #pro_seeder.seed
   `foreman-rake db:migrate`
   `foreman-rake db:seed`
 else

@@ -81,9 +81,10 @@ class foreman::plugin::staypuft(
     notify  => Class['foreman::service'],
     require => Exec['NTP sync'],
   }
-
+  # we maybe use this foreman host as time server
+  # this is for no internet access installation.
   exec { 'NTP sync':
-    command => "/sbin/service ntpd stop; /usr/sbin/ntpdate $ntp_host",
+    command => "/bin/bash -c \"echo OK!\"",
     notify  => Service['ntpd'],
     require => [Package['ntp'], Package['ntpdate']],
   }
