@@ -1,18 +1,17 @@
 # RHOSP-deploy
 Redhat Openstack deployment 
 
-## Order that the deployment 
 
-1. install RHEL-OSP5 installer
+## install RHEL-OSP5 installer
 
 
-Step 1.
+###Step 1.
 copy yum source to /var/www/html/repos
 rhel-server-rhscl-6-rpms
 rhel-6-server-openstack-foreman-rpms
 rhel-x86_64-server-6-rhscl-1
 
-Step 2.
+###Step 2.
 configure repositories and update system
 
 [root@foreman repos]# cat /etc/yum.repos.d/local.repo
@@ -111,12 +110,12 @@ gpgcheck=0
 
 [root@foreman yum.repos.d]# 
 
-跟新您的安装器
+更新您的安装器
 
-#yum update
-#reboot
+yum update
+reboot
 
-Step 3: 安装并配置时间服务器
+###Step 3: 安装并配置时间服务器
 
 yum install ntp ntpdate
 安装ntp ntpdate 包，先把自己改成NTP服务器。
@@ -131,11 +130,13 @@ fudge 127.127.1.0 stratum 10
 
 restrict 10.0.168.0 mask 255.255.255.0
 
-# service ntpd restart
+重启服务并打开防火墙
 
-# chkconfig ntpd on
+service ntpd restart
 
-# lokkit --port 123:up
+chkconfig ntpd on
+
+lokkit --port 123:up
 
  ntpdate -v -d -u 10.0.168.35
 
