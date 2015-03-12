@@ -141,9 +141,43 @@ lokkit --port 123:up
  ntpdate -v -d -u 10.0.168.35
 
 
-Step 4: 安装Staypuft
+###Step 4: 安装Staypuft
 
 yum install rhel-osp-installer
 rhel-osp-installer
 
 这时您将看到系统缺省安装界面
+
+###Step 5: 安装本补丁
+
+下载：
+
+https://github.com/tonyli71/RHOSP-deploy/archive/master.zip
+
+在您的根目录解压覆盖一些文件
+
+
+###Step 6: 重新初始数据库
+
+删掉数据库，运行 
+
+/reinstall_foreman.sh 
+
+重新初始，运行
+
+rhel-osp-installer
+
+第一次运行 rhel-osp-installer 一般回出以下错误，再次运行就好了
+
+/Stage[main]/Foreman::Database/Foreman::Rake[db:seed]/Exec[foreman-rake-db:seed]: Failed to call refresh: /usr/sbin/foreman-rake db:seed returned 1 instead of one of [0]
+ /Stage[main]/Foreman::Database/Foreman::Rake[db:seed]/Exec[foreman-rake-db:seed]: /usr/sbin/foreman-rake db:seed returned 1 instead of one of [0]
+
+得到成功的输出：
+
+Success!
+  * Foreman is running at https://foremana.cmri.com
+      Initial credentials are admin / JFkfwVZF6AtZs9n4
+  * Foreman Proxy is running at https://foremana.cmri.com:8443
+  * Puppetmaster is running at port 8140
+  The full log is at /var/log/rhel-osp-installer/rhel-osp-installer.log
+
