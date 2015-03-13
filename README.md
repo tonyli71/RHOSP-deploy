@@ -1,12 +1,39 @@
 # RHOSP-deploy
+
 Redhat Openstack deployment 
 
+设计的中旨：系统中的每一部分都可在不影响在线运行的情况下进行更新。
+            甚至安装器本身也是任何时候都可以重装而且不影响正在运行的业务（OSP云）
 
 ## install RHEL-OSP5 installer
+
+我们的系统中存在四种节点：
+
+    控制节点
+    网络节点
+    运算节点
+    存储节点
+
+    重要说明：说有这些节点都可以横行扩展，以达到支持成千上万的主机要求
+    
 
 ###组网说明
 
 系统会有以下网络组成和系统用到的网络硬件：
+
+#####OSP的存储节点：
+     千兆网卡1:
+        网卡名：eno1
+        功能：部署管理网 10.168.0.0/16
+     万兆网卡1:
+        网卡名称：enp32s0f0
+        功能：存储公网                        (VLANID 3000) 172.16.0.0/16
+     万兆网卡2:
+        网卡名称：enp32s0f1
+        功能：存储私网，用于SDN数据的同步     (VLANID 3000) 10.192.0.0/16
+     存储节点必须传入的参数：
+        ceph_pub_ip           连接存储公网的IP    例如 172.16.X.X   172.16.10.3
+        ceph_cluster_ip       连接存储私网的IP    例如 10.192.X.X   10.192.0.3
 
 #####OSP的控制节点：
      千兆网卡1:
@@ -49,13 +76,33 @@ Redhat Openstack deployment
      网络节点必须传入的参数：
         br_ex_ip 连接内部管理网的IP  例如 192.168.52.X 192.168.52.11
 
-###Step 1.
+#####OSP的运算节点：
+
+     千兆网卡1:
+        网卡名：eno2
+        功能：部署管理网 10.168.0.0/16
+     万兆网卡1:
+        网卡名称：enp32s0f0
+        功能：内部管理外网（VLANID 596） 192.168.52.0/24
+        功能：生产外网1   （VLANID 597） 192.168.53.0/24
+        功能：生产外网2   （VLANID 598） 192.168.54.0/24
+        功能：生产外网3   （VLANID 599） 192.168.55.0/24
+        功能：存储公网     (VLANID 3000) 172.16.0.0/16
+     万兆网卡2:
+        网卡名称：enp32s0f1
+        功能：云内网 各租户的网络隔离（VLANID 3100～3999）
+
+     网络节点必须传入的参数：
+        ceph_pub_ip 连接存储公网的IP    例如 172.16.X.X   172.16.10.2
+
+###Step 1. 获取所需的安装介质
+
 copy yum source to /var/www/html/repos
 rhel-server-rhscl-6-rpms
 rhel-6-server-openstack-foreman-rpms
 rhel-x86_64-server-6-rhscl-1
 
-###Step 2.
+###Step 2. 配置本地安装源
 configure repositories and update system
 
 [root@foreman repos]# cat /etc/yum.repos.d/local.repo
@@ -201,7 +248,11 @@ https://github.com/tonyli71/RHOSP-deploy/archive/master.zip
 在您的根目录解压覆盖一些文件
 
 
-###Step 6: 重新初始数据库
+###Step 6: 编辑/usr/share/foreman/seeds.d/99-tstack.rb调整系统的缺省参数
+
+    如果组网和IP不变（克隆此设计），尽量不要修改此文件
+
+###Step 7: 重新初始数据库
 
 删掉数据库，运行 
 
@@ -224,4 +275,10 @@ Success!
   * Foreman Proxy is running at https://foremana.cmri.com:8443
   * Puppetmaster is running at port 8140
   The full log is at /var/log/rhel-osp-installer/rhel-osp-installer.log
+
+###Step 8: 在Foreman的界面中加入节点
+
+  注意要用传入的特定节点的参数，完成系统建设和维护。
+
+###Step 9: 测试各项功能
 
