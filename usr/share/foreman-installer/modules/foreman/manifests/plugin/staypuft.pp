@@ -83,7 +83,7 @@ class foreman::plugin::staypuft(
   }
 
   exec { 'NTP sync':
-    command => "/bin/bash -c \"echo OK!\"",
+    command => "/bin/bash -c \"echo shit!\"",
     notify  => Service['ntpd'],
     require => [Package['ntp'], Package['ntpdate']],
   }

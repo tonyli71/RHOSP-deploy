@@ -2,7 +2,7 @@
 
 while :
 do
-   python /usr/lib/python2.7/site-packages/neutron/neutron-ha-tool.py --l3-agent-migrate --l3-agent-rebalance --replicate-dhcp --now > /var/log/neutron/agent_ha.log 2>&1
+   python /usr/lib/python2.7/site-packages/neutron/agent_ha.py --l3-agent-migrate --l3-agent-rebalance --replicate-dhcp --now > /var/log/neutron/agent_ha.log 2>&1
    sleep 20
    > /var/log/neutron/agent_ha.log
 done

@@ -33,14 +33,18 @@ LOG_DATE = '%m-%d %H:%M'
 DESCRIPTION = "neutron High Availability Tool"
 TAKEOVER_DELAY = int(random.random()*3+10)
 
+conf_admin_user = "admin"
+conf_admin_password = "<%= @admin_password %>"
+conf_admin_tenant_name = "admin"
+conf_auth_url = "http://<%= @controller_pub_host %>:35357/v2.0/"
 
 def parse_args():
 
     # ensure environment has necessary items to authenticate
-    for key in ['OS_TENANT_NAME', 'OS_USERNAME', 'OS_PASSWORD',
-                'OS_AUTH_URL']:
-        if key not in os.environ.keys():
-            LOG.exception("Your environment is missing '%s'")
+    #for key in ['OS_TENANT_NAME', 'OS_USERNAME', 'OS_PASSWORD',
+    #            'OS_AUTH_URL']:
+    #    if key not in os.environ.keys():
+    #        LOG.exception("Your environment is missing '%s'")
 
     ap = argparse.ArgumentParser(description=DESCRIPTION)
     ap.add_argument('-d', '--debug', action='store_true',
@@ -79,11 +83,6 @@ def setup_logging(args):
     syslog_formatter = logging.Formatter('%(name)s: %(levelname)s %(message)s')
     handler.setFormatter(syslog_formatter)
     LOG.addHandler(handler)
-
-conf_admin_user = "admin"
-conf_admin_password = "redhat"
-conf_admin_tenant_name = "admin"
-conf_auth_url = "http://192.168.52.10:35357/v2.0/"
 
 def run(args):
     try:

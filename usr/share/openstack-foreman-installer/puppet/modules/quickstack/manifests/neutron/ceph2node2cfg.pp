@@ -1,3 +1,29 @@
+
+class quickstack::neutron::ceph2node2cfg::setupNetworkComm(
+    $name,
+    $ipaddr,
+    $prefix = 16,
+    $vlanid = 0,
+) {
+    if $vlanid != 0 {
+       file { "/etc/sysconfig/network-scripts/ifcfg-${name}.${vlanid}" :
+           ensure  => present,
+           mode    => '0644',
+           owner   => 'root',
+           group   => 'root',
+           content => template('quickstack/ifcfg-comm-vlan.erb'),
+       }
+    } else {
+       file { "/etc/sysconfig/network-scripts/ifcfg-${name}" :
+           ensure  => present,
+           mode    => '0644',
+           owner   => 'root',
+           group   => 'root',
+           content => template('quickstack/ifcfg-comm.erb'),
+       }
+    }
+}
+
 # Quickstack compute node configuration for neutron (OpenStack Networking)
 class quickstack::neutron::ceph2node2cfg (
 
@@ -16,6 +42,7 @@ class quickstack::neutron::ceph2node2cfg (
   $ntp_server2  = $quickstack::tparams::ntp_server2,
   $osd_pool_default_size = $quickstack::tparams::osd_pool_default_size,
 
+  $admin_iface = 'eno1',
   $ceph_pub_ip,
   $ceph_cluster_ip,
 
@@ -53,14 +80,10 @@ class quickstack::neutron::ceph2node2cfg (
   }
 
   if $ceph_admin_ip != undef { 
-    file { '/etc/sysconfig/network-scripts/ifcfg-eno1':
-    ensure  => present,
-    mode    => '0644',
-    owner   => 'root',
-    group   => 'root',
-    content => template('quickstack/ifcfg-admin-ceph.erb'),
-    before  => Package ['ceph'],
-    }
+  	class { 'quickstack::neutron::ceph2node2cfg::setupNetworkComm' :
+     		name => $admin_iface,
+     		ipaddr => $ceph_admin_ip
+  	}
   }
 
   $ifcfg_files = ['/etc/sysconfig/network-scripts/ifcfg-enp15s0f0.3002',

@@ -578,7 +578,7 @@ params = {
   "ceph_mon_hosts"                => ['172.16.10.2','172.16.10.3','172.16.10.4'],
   "ceph_public_network"           => "172.16.10.0/24",
   "ceph_mon_initial_members"      => ['ceph-1', 'ceph-2', 'ceph-3'],
-  "osd_pool_default_size"	  => 3,
+  "osd_pool_default_size"	  => 2,
   "ceph_client_admin_key"         => "AQCljsZTmF88MBAAj+mcBkQePOIRvBdZB4PmCA==",
   "ceph_mon_id"                   => "0",
   "ceph_mon_key"                  => "AQAykcNUYAhaGhAAqZBtVRGbJ2mBep4Ots5exg==",

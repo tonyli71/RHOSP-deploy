@@ -28,6 +28,9 @@ class quickstack::neutron::ha_networker (
   $verbose                       = $quickstack::params::verbose,
   $ssl                           = $quickstack::params::ssl,
   $mysql_ca                      = $quickstack::params::mysql_ca,
+
+  $br_ex_ip,
+
 ) inherits quickstack::params {
 
   file { '/etc/sysconfig/network-scripts/ifup-ovs':

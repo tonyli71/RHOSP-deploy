@@ -58,6 +58,11 @@ class quickstack::neutron::ha_compute (
   $private_iface                = '',
   $private_ip                   = '',
   $private_network              = '',
+
+  $br_ex_ip			= '',
+
+  $ceph_pub_ip,
+
 ) inherits quickstack::params {
 
   $ceph_mon_hosts = ['172.16.10.2', '172.16.10.3', '172.16.10.4']
@@ -101,14 +106,16 @@ class quickstack::neutron::ha_compute (
     require => File['/etc/sysconfig/network-scripts/ifup-ovs']
   }
 
-  file { '/etc/sysconfig/network-scripts/ifcfg-br-ex':
-    ensure  => present,
-    mode    => '0644',
-    owner   => 'root',
-    group   => 'root',
-    content => template('quickstack/ifcfg-br-ex.erb'),
-    require => File['/etc/sysconfig/network-scripts/ifup-ovs']
-  }
+  #if $br_ex_ip != undef {
+  #}
+     file { '/etc/sysconfig/network-scripts/ifcfg-br-ex':
+        ensure  => present,
+        mode    => '0644',
+        owner   => 'root',
+        group   => 'root',
+        content => template('quickstack/ifcfg-br-ex.erb'),
+        require => File['/etc/sysconfig/network-scripts/ifup-ovs']
+     }
 
   file { '/etc/sysconfig/network-scripts/ifcfg-ex-eth1':
     ensure  => present,

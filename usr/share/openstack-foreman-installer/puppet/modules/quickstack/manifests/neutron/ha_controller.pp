@@ -148,6 +148,9 @@ class quickstack::neutron::ha_controller (
   $wsrep_cluster_members = ['10.168.0.3','10.168.0.4','10.168.0.5'],
   $ceph_mon_hosts = ['172.16.10.4'],
 
+  $ceph_pub_ip,
+  $rhosp_pub_ip,
+
 ) inherits quickstack::params {
 
   $wsrep_node_address = $::ipaddress
