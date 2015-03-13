@@ -1,0 +1,24 @@
+zone "0.168.10.in-addr.arpa" {
+    type master;
+    file "/var/named/dynamic/db.0.168.10.in-addr.arpa";
+    update-policy {
+            grant rndc-key zonesub ANY;
+    };
+};
+
+zone "10.168.10.in-addr.arpa" {
+    type master;
+    file "/var/named/dynamic/db.10.168.10.in-addr.arpa";
+    update-policy {
+            grant rndc-key zonesub ANY;
+    };
+};
+
+zone "cmri.com" {
+    type master;
+    file "/var/named/dynamic/db.cmri.com";
+    update-policy {
+            grant rndc-key zonesub ANY;
+    };
+};
+

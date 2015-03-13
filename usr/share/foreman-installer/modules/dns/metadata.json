@@ -1,0 +1,46 @@
+{
+  "name": "theforeman-dns",
+  "version": "1.4.0",
+  "source": "git://github.com/theforeman/puppet-dns",
+  "author": "ZLeslie, theforeman",
+  "license": "Apache License Version 2.0",
+  "summary": "Manage the ISC BIND daemon",
+  "description": "Module for configuring the ISC BIND server for Foreman",
+  "project_page": "http://github.com/theforeman/foreman-installer",
+  "dependencies": [
+    {
+      "name": "theforeman/concat_native",
+      "version_requirement": ">= 1.3.0"
+    }
+  ],
+  "types": [
+
+  ],
+  "checksums": {
+    "CHANGELOG.md": "54fb085ed1bca48f328bf81f830c8b2d",
+    "Gemfile": "d7cfdabd088b72ba34a00572a35e0395",
+    "LICENSE": "332573ff0b2ee08f026fbbc4b266ff54",
+    "Modulefile": "64c0af0ddbf4d924d9a9c11c9542a478",
+    "README.md": "9699e80ef61dd08f3e9d61735ac70d45",
+    "Rakefile": "8a602dae0322ee4e370c8ec94db13b9b",
+    "files/localhost.zone": "5a22fba6990ce8c4aac56dd76407bade",
+    "files/named.ca": "9d625703bac6d28c3bf08cb1b483498b",
+    "files/named.conf.default-zones": "3acb996772b7994bd184edd75fc01642",
+    "files/named.local": "3780bb3e7a413674fdb1b726ce599753",
+    "lib/puppet/parser/functions/date.rb": "8c1b8ad6e4a0f77ee816000e4d096372",
+    "lib/puppet/parser/functions/get_in_addr_arpa.rb": "b5d2416fc26683bb83ef652576467e96",
+    "manifests/config.pp": "c54aebaccd5b2a02ec043ba2329c3876",
+    "manifests/init.pp": "0a94a1f4e6386ae9573dc3343a787ec3",
+    "manifests/install.pp": "a49bb7a230b9c91ec65f719392bdcf17",
+    "manifests/params.pp": "26d5d5c5f1f651fc060bce12e7411d2d",
+    "manifests/service.pp": "a63ffe6eca2212d2713b0c1d697a8bda",
+    "manifests/zone.pp": "c0dbc674d5f4c0492c4bf70b3afad3a7",
+    "spec/classes/dns_init_spec.rb": "66576b55795484027c20d134e331ef56",
+    "spec/spec.opts": "19e24badad2823f90a3697dd99105209",
+    "spec/spec_helper.rb": "66dc7436f1fc5b68aeffc499bff4d996",
+    "templates/named.conf.erb": "ebbd7868ec2d46b4ee5af60b9ecad461",
+    "templates/named.zone.erb": "ef54d02d4bdf6c29b8be9fffc5367bfe",
+    "templates/options.conf.erb": "284566cd8272261ddeecbd2e4eb6f43f",
+    "templates/zone.header.erb": "73142688ac9650b6d8b1090d72265d2a"
+  }
+}

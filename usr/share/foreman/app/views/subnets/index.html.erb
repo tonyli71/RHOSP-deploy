@@ -1,0 +1,31 @@
+<% title _("Subnets") %>
+
+<%= javascript 'subnets' %>
+<% title_actions display_link_if_authorized(_("New Subnet"), hash_for_new_subnet_path) %>
+
+<table class="table table-bordered table-striped table-two-pane">
+  <thead>
+    <tr>
+      <th><%= sort :name, :as => s_("Subnet|Name") %></th>
+      <th><%= sort :network, :as => s_("Subnet|Network") %></th>
+      <th><%= _("Domains") %></th>
+      <th><%= sort :vlanid, :as => s_('Subnet|Vlanid') %></th>
+      <th><%= _("DHCP Capsule") %></th>
+      <th></th>
+    </tr>
+  </thead>
+  <% for subnet in @subnets %>
+    <tr>
+      <td><%=link_to_if_authorized h(subnet.name), hash_for_edit_subnet_path(:id => subnet).merge(:auth_object => subnet, :authorizer => authorizer) %></td>
+      <td><%=subnet.network_address %></td>
+      <td><%=subnet.domains.to_sentence %></td>
+      <td><%=subnet.vlanid %></td>
+      <td><%=subnet.dhcp %></td>
+      <td align="right">
+        <%= display_delete_if_authorized hash_for_subnet_path(:id => subnet).merge(:auth_object => subnet, :authorizer => authorizer), :confirm => _("Delete %s?") % subnet.name %>
+      </td>
+    </tr>
+  <% end %>
+</table>
+<%= page_entries_info @subnets %>
+<%= will_paginate     @subnets %>

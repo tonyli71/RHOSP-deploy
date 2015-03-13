@@ -1,0 +1,135 @@
+<% title _("About") %>
+
+<div class="row" id="about">
+  <div class="col-md-7">
+
+    <div class="stats-well">
+      <h4><%=_("System Status")%></h4>
+      <ul class="nav nav-tabs" data-tabs="tabs">
+        <li class="active"><a href="#smart_proxies" data-toggle="tab"><%= _('Capsules') %></a></li>
+        <% if SETTINGS[:unattended] %>
+          <li><a href="#available_providers" data-toggle="tab"><%= _('Available Providers') %></a></li>
+          <li><a href="#compute_resources" data-toggle="tab"><%= _('Compute Resources') %></a></li>
+        <% end %>
+        <li><a href="#plugins" data-toggle="tab"><%= _('Plugins') %></a></li>
+      </ul>
+      <div class="tab-content">
+        <div class="tab-pane active" id="smart_proxies">
+          <% if @smart_proxies.empty? %>
+            <p class="ca"><%= _("No Capsules to show") %></p>
+          <% else %>
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th><%= _("Name") %></th>
+                  <th><%= _("Features") %></th>
+                  <th><%= _("Status") %></th>
+                </tr>
+              </thead>
+              <% @smart_proxies.each do |proxy| %>
+                <tr>
+                  <td><%= link_to_if_authorized proxy.name, hash_for_edit_smart_proxy_path(:id => proxy.id) %></td>
+                  <td><%=h proxy.features.to_sentence %></td>
+                  <td><div class="proxy-status" data-url=<%= ping_smart_proxy_path(proxy) %>><%= _("Connecting..") %></div></td>
+                </tr>
+              <% end %>
+            </table>
+          <% end %>
+        </div>
+        <% if SETTINGS[:unattended] %>
+          <div class="tab-pane" id="available_providers">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th><%= _("Provider") %></th>
+                  <th><%= _("Status") %></th>
+                </tr>
+              </thead>
+              <% ComputeResource.supported_providers.each do |provider,klass| %>
+                <tr>
+                  <td><%= klass.constantize.provider_friendly_name %></td>
+                  <% if ComputeResource.providers.include?(provider) %>
+                    <td><div class="label label-success"><%= _('Installed') %></div></td>
+                  <% else %>
+                    <td><div class="label label-default"><%= _('Not Installed') %></div></td>
+                  <% end %>
+                </tr>
+              <% end %>
+            </table>
+            <%= _('To enable a provider, either install the OS package (e.g. foreman-libvirt) or enable the bundler group for development setup (e.g. ovirt).') %>
+          </div>
+          <div class="tab-pane" id="compute_resources">
+            <% if @compute_resources.empty? %>
+              <p class="ca"><%= _("No compute resource to show") %></p>
+            <% else %>
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th><%= _("Name") %></th>
+                    <th><%= _("Type") %></th>
+                    <th><%= _("Status") %></th>
+                  </tr>
+                </thead>
+                <% @compute_resources.each do |compute| %>
+                  <tr>
+                    <td><%= link_to compute.name, compute %></td>
+                    <td><%= compute.provider_friendly_name %></td>
+                    <td><div class="compute-status" data-url=<%= ping_compute_resource_path(compute) %>><%= _("Connecting..") %></div></td>
+                  </tr>
+                <% end %>
+              </table>
+            <% end %>
+          </div>
+        <% end %>
+        <div class="tab-pane" id="plugins">
+          <% if @plugins.empty? %>
+            <p class="ca"><%= _("No plugins found") %></p>
+          <% else %>
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th><%= _("Name") %></th>
+                  <th><%= _("Description") %></th>
+                  <th><%= _("Author") %></th>
+                  <th><%= _("Version") %></th>
+                </tr>
+              </thead>
+              <% @plugins.each do |plugin| %>
+                <tr>
+                  <td><%= plugin.url.blank? ? plugin.name : link_to(plugin.name, plugin.url, :rel=>'external')%></td>
+                  <td><%= _(plugin.description) %></td>
+                  <td><%= plugin.author_url.blank? ? plugin.author : link_to(plugin.author, plugin.author_url)%></td>
+                  <td><%= plugin.version %></td>
+                </tr>
+              <% end %>
+            </table>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-5">
+    <div class="stats-well">
+      <h4><%= _("Support") %></h4>
+      <p>Visit the <%= link_to _('Customer Portal'), "https://access.redhat.com/", :rel => "external" %> to get support, find solutions to common questions, and more.</p>
+      <h6><%= _("Documentation") %></h6>
+      <ul>
+        <li><%= link_to _('User Guide'),"https://access.redhat.com/documentation/en-US/Red_Hat_Satellite/6.0/html/User_Guide/index.html", :rel => "external" %></li>
+        <li><%= link_to _('Transition Guide'),"https://access.redhat.com/site/documentation/en-US/Red_Hat_Satellite/6.0/html/Transition_Guide/index.html", :rel => "external" %></li>
+        <li><%= link_to _("API Guide"), "https://access.redhat.com/site/documentation/en-US/Red_Hat_Satellite/6.0/html/API_Guide/index.html", :rel => "external" %></li>
+      </ul>
+      <h6><%= _("Blog") %></h6>
+      <ul>
+        <li><%= link_to _('Red Hat Satellite Blog'), "https://access.redhat.com/blogs/1169563", :rel => "external" %></li>
+      </ul>
+      <h6><%= _("IRC") %></h6>
+      <p><%= (_("You can find us on %{freenode} (irc.freenode.net) on #satellite6.") % {:freenode => link_to("freenode", "http://www.freenode.net", :rel => "external")}).html_safe  %></p>
+    </div>
+    <div class="stats-well" id="copyright-div">
+      <h4><%= _("System Information") %> </h4>
+      <p>Red Hat Satellite<br/><%= _("Version %{version} © 2014 Red Hat Inc.") % {:version => Satellite::VERSION} %></p>
+      <p><%= (_("Includes Foreman © 2009-%{year} Paul Kelly and %{author}") % {:year=>DateTime.now.year, :author=>link_to("Ohad Levy", "mailto:ohadlevy@gmail.com" )}).html_safe %></p>
+    </div>
+  </div>
+</div>
+</div>

@@ -1,0 +1,27 @@
+# adapted from ::rsync's templates
+
+pid file = /var/run/rsyncd.pid
+uid = nobody
+gid = nobody
+use chroot = <%= @use_chroot %>
+log format = %t %a %m %f %b
+syslog facility = local3
+timeout = 300
+address = <%= @bind_addr %>
+
+[ <%= @section_name %> ]
+path = <%= @path %>
+read only = <%= @read_only %>
+write only = <%= @write_only %>
+list = <%= @list %>
+uid = <%= @uid %>
+gid = <%= @gid %>
+incoming chmod = <%= @incoming_chmod %>
+outgoing chmod = <%= @outgoing_chmod %>
+max connections = <%= @max_connections %>
+<% if Integer(@max_connections) > 0 %>lock file = <%= @lock_file %><% end %>
+<% if @comment.length > 0 %>comment = <%= @comment %><% end %>
+<% if @secrets_file.length > 0 %>secrets file = <%= @secrets_file %><% end %>
+<% if @auth_users.length > 0 %>auth users = <%= @auth_users.to_a.join(', ')%><% end %>
+<% if @hosts_allow.length > 0 %>hosts allow = <%= @hosts_allow.to_a.join(' ')%><% end %>
+<% if @hosts_deny.length > 0 %>hosts deny = <%= @hosts_deny.to_a.join(' ')%><% end %>

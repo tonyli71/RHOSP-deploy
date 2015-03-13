@@ -1,0 +1,21 @@
+#! /bin/bash
+
+ceph_osd_dev=$1
+ceph_osd_id=`ceph osd create`
+
+mkdir -p /var/lib/ceph/osd/ceph-osd;
+touch /var/lib/ceph/osd/ceph-osd/osd;
+touch /var/lib/ceph/osd/ceph-osd/${ceph_osd_id};
+mkdir -p /var/lib/ceph/osd/ceph-${ceph_osd_id};
+mkfs.xfs -f ${ceph_osd_dev};
+mount ${ceph_osd_dev} /var/lib/ceph/osd/ceph-${ceph_osd_id};
+mount -o remount,user_xattr /var/lib/ceph/osd/ceph-${ceph_osd_id};
+ceph-osd -i ${ceph_osd_id} --mkfs --mkkey;
+ceph auth del osd.${ceph_osd_id};
+ceph auth add osd.${ceph_osd_id} osd 'allow *' mon 'allow profile osd' -i /var/lib/ceph/osd/ceph-${ceph_osd_id}/keyring;
+ceph osd crush add-bucket ${ceph_node_name} host;
+ceph osd crush move ${ceph_node_name} root=default; 
+ceph osd crush add osd.${ceph_osd_id} 1.0 host=${ceph_node_name};
+touch /var/lib/ceph/osd/ceph-${ceph_osd_id}/sysvinit;
+/etc/init.d/ceph start osd.${ceph_osd_id};
+

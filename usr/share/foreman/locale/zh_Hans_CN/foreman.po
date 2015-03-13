@@ -1,0 +1,6132 @@
+# Template file for strings which can be localized in the Foreman Application.
+# 
+# This file is distributed under the same license as the Foreman.
+# 
+# Translators:
+# 
+# 
+# Translators:
+# dingtim, 2013
+# dingtim, 2013
+# leahliu <lliu@redhat.com>, 2013. #zanata
+# xhuang <xhuang@redhat.com>, 2013. #zanata
+# leahliu <lliu@redhat.com>, 2014. #zanata
+# xhuang <xhuang@redhat.com>, 2014. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: version 0.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-08-04 13:37-0400\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2014-09-04 01:33-0400\n"
+"Last-Translator: leahliu <lliu@redhat.com>\n"
+"Language-Team: Chinese (China) (http://www.transifex.com/projects/p/foreman/"
+"language/zh_CN/)\n"
+"Language: zh-Hans-CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Zanata 3.4.2\n"
+
+msgid " Remove"
+msgstr "删除"
+
+msgid "%s - Press Shift-F12 to release the cursor."
+msgstr "%s - 点击 Shift-F12 释放光标。"
+
+msgid "%s - The following hosts are about to be changed"
+msgstr "%s - 将更改以下主机"
+
+msgid "%s Distribution"
+msgstr "%s 分布"
+
+msgid "%s Host"
+msgstr "%s 主机"
+
+msgid "%s Parameters updated, see below for more information"
+msgstr "已更改 %s 参数，详情如下"
+
+msgid "%s Template"
+msgstr "%s 模板"
+
+msgid "%s VM associated to a host"
+msgid_plural "%s VMs associated to hosts"
+msgstr[0] "与主机关联的 %s VM"
+
+# translation auto-copied from project CFSE, version sam-1.2, document app, author leahliu
+msgid "%s ago"
+msgstr "%s 前"
+
+msgid "%s console is not supported at this time"
+msgstr "现在不支持 %s 的控制台"
+
+msgid "%s core"
+msgid_plural "%s cores"
+msgstr[0] "%s core"
+
+msgid "%s day ago"
+msgid_plural "%s days ago"
+msgstr[0] "%s 天前"
+
+msgid "%s has been disassociated from VM"
+msgstr "已断开 %s 与 VM 的关联"
+
+msgid "%s is an unknown attribute"
+msgstr "%s 为未知属性"
+
+msgid "%s is not in environment"
+msgstr "%s 未在环境中"
+
+msgid "%s minute ago"
+msgid_plural "%s minutes ago"
+msgstr[0] "%s 分前"
+
+msgid "%s month ago"
+msgid_plural "%s months ago"
+msgstr[0] "%s 月前"
+
+msgid "%s selected hosts"
+msgstr "%s 所选主机"
+
+msgid "%s week ago"
+msgid_plural "%s weeks ago"
+msgstr[0] "%s 周前"
+
+msgid "%{cores} Cores and %{memory} memory"
+msgstr "%{cores} Core 和 %{memory} 内存"
+
+msgid "%{count} host with no %{taxonomy_single} assigned"
+msgid_plural "%{count} hosts with no %{taxonomy_single} assigned"
+msgstr[0] "%{count} 主机未分配 %{taxonomy_single}"
+
+msgid "%{cpus} CPUs and %{memory} MB memory"
+msgstr "%{cpus} CPU 和 %{memory} MB 内存"
+
+msgid "%{cpus} CPUs and %{memory} memory"
+msgstr "%{cpus} CPU 和 %{memory} 内存"
+
+msgid "%{default_value} is not one of %{validator_rule}"
+msgstr "%{default_value} 不属于 %{validator_rule}"
+
+msgid "%{e} does not belong to the %{environment} environment"
+msgstr "%{e} 不属于 %{environment} 环境"
+
+msgid "%{host} is about to %{action}"
+msgstr "%{host} 要执行 %{action}。"
+
+msgid "%{host} now boots from %{device}"
+msgstr "%{host} 现在使用 %{device} 引导。"
+
+msgid "%{id} plugin requires Foreman %{matcher} but current is %{current}"
+msgstr "%{id} 插件需要 Foreman %{matcher}，但目前为 %{current}。"
+
+msgid ""
+"%{id} plugin requires the %{plugin_name} plugin %{matcher} but current is "
+"%{plugin_version}"
+msgstr "%{id} 插件需要 %{plugin_name} 插件 %{matcher}，但目前为 %{plugin_version}。"
+
+msgid "%{id} plugin requires the %{plugin_name} plugin, not found"
+msgstr "%{id} 插件需要 %{plugin_name} 插件，但未找到。"
+
+msgid "%{match} does not match an existing host"
+msgstr "%{match} "
+
+msgid "%{match} does not match an existing host group"
+msgstr "%{match} 与现有主机组不映射。"
+
+msgid "%{name} changed from %{label1} to %{label2}"
+msgstr "%{name} 从 %{label1} 改为%{label2}"
+
+msgid "%{record} is used by %{what}"
+msgstr "%{record} 已被 %{what} 使用"
+
+msgid "%{record} is used by host in build mode %{what}"
+msgstr "%{record} 是主机在构建模块 %{what} 时使用"
+
+msgid "%{task} task failed with the following error: %{e}"
+msgstr "%{task} 任务错误信息如下：%{e}"
+
+msgid "%{value} does not belong to %{os} operating system"
+msgstr "%{value} 不属于 %{os} 操作系统"
+
+msgid "%{value} is not a valid controller"
+msgstr "%{value} 不是一个有效的控制器"
+
+msgid "%{value} is not one of %{rules}"
+msgstr "%{value} 不属于 %{rules}"
+
+msgid "%{vm} is now %{vm_state}"
+msgstr "%{vm} 状态为 %{vm_state}"
+
+msgid "&laquo;"
+msgstr "&laquo;"
+
+msgid "&raquo;"
+msgstr "&raquo;"
+
+msgid "'%{host}' could be deleted or '%{resource}' is not responding."
+msgstr "不能删除 '%{host}' 或者 '%{resource}' 未响应。"
+
+msgid "'%{host}' not found on '%{resource}'"
+msgstr "未在'%{resource}'中未找到 '%{host}' "
+
+msgid "(Miscellaneous)"
+msgstr "（其他）"
+
+msgid "(optional) IAM Role for Fog to use when creating this image."
+msgstr "（自选）Fog 在创建这个映像时使用的 IAM 角色。"
+
+msgid "*Clear environment*"
+msgstr "*清理环境*"
+
+msgid "*Clear host group*"
+msgstr "*清理主机组*"
+
+msgid "*Inherit from host group*"
+msgstr "*从主机组继承*"
+
+msgid "<b class='select_count'>0</b> selected"
+msgstr "已选择 <b class='select_count'>0</b>"
+
+msgid ""
+"<b>Description:</b> %{desc}<br><b>Type:</b> %{type}<br> <b>Matcher:</b> "
+"%{matcher}"
+msgstr "<b>描述:</b> %{desc}<br><b>类型:</b> %{type}<br> <b>映射器:</b> %{matcher}"
+
+msgid "<b>Source:</b> %s"
+msgstr "<b>源:</b> %s"
+
+msgid ""
+"<dl><dt>List</dt> <dd>A list of the allowed values, specified in the "
+"Validator rule field.</dd><dt>Regexp</dt> <dd>Validates the input with the "
+"regular expression in the Validator rule field.</dd></dl>"
+msgstr ""
+"<dl><dt>清单</dt> <dd>允许值的列表，指定验证规则。</dd><dt>正则表达式</dt> <dd>正则表达式验证输入验证规则。</"
+"dd></dl>"
+
+msgid ""
+"<dl><dt>String</dt> <dd>Everything is taken as a string.</dd><dt>Boolean</"
+"dt> <dd>Common representation of boolean values are accepted.</"
+"dd><dt>Integer</dt> <dd>Integer numbers only, can be negative.</dd><dt>Real</"
+"dt> <dd>Accept any numerical input.</dd><dt>Array</dt> <dd>A valid JSON or "
+"YAML input, that must evaluate to an array.</dd><dt>Hash</dt> <dd>A valid "
+"JSON or YAML input, that must evaluate to an object/map/dict/hash.</"
+"dd><dt>YAML</dt> <dd>Any valid YAML input.</dd><dt>JSON</dt> <dd>Any valid "
+"JSON input.</dd></dl>"
+msgstr ""
+"<dl><dt>字符串</dt> <dd>所有都视为字符串。</dd><dt>Boolean</dt> <dd>可接受布尔值的公共表示。</"
+"dd><dt>Integer</dt> <dd>只接受整数，可以是负数。</dd><dt>Real</dt> <dd>接受任意数字输入。</"
+"dd><dt>Array</dt> <dd>有效的 JSON 或者 YAML 输入，但必须是一个阵列。</dd><dt>Hash</dt> <dd>有效 "
+"JSON 或者 YAML 输入，必须是 object/map/dict/hash。</dd><dt>YAML</dt> <dd>任意有效 YAML "
+"输入。</dd><dt>JSON</dt> <dd>任意有效 JSON 输入。</dd></dl>"
+
+msgid ""
+"A host group is in some ways similar to an inherited node declaration, in "
+"that it is a high level grouping of classes that can be named and treated as "
+"a unit. This is then treated as a template and  is selectable during the "
+"creation of a new host and ensures that the host is configured in one of "
+"your pre-defined states."
+msgstr ""
+"主机组在某些方面与继承的节点技术详细，即它是可命名或视为单元的类别的高级分组。然后可将其视为模板，并在创建新主机时进行选择，保证使用预先定义的状态配置该主机。"
+
+msgid ""
+"A medium represents the source of one or more operating system's "
+"installation files, accessible via the network.\\n  It will probably be a "
+"mirror from the internet or a copy of one or more CD or DVDs."
+msgstr "代表一个或者多个操作系统安装文件的介质，可通过网络访问。\\n 它可能是互联网的镜像或者一个或多个 CD 或者 DVD 的副本。"
+
+msgid "A partition table entry represents either"
+msgstr "一个分区表项"
+
+msgid "A script to dynamically calculate the desired sizes. E.G."
+msgstr "动态计算所需的尺寸的脚本。 E.G."
+
+msgid "A user group already exists with this name"
+msgstr "此用户组名已存在"
+
+msgid "ACK"
+msgstr "ACK"
+
+msgid "API Key"
+msgstr "API密钥"
+
+# translation auto-copied from project CFSE, version sam-1.2, document app, author leahliu
+msgid "About"
+msgstr "关于"
+
+# translation auto-copied from project aeolus-conductor, version 1.1.1, document defaults, author leahliu
+msgid "Access Key"
+msgstr "访问密钥"
+
+# translation auto-copied from project subscription-manager, version 1.10.X, document keys
+msgid "Account"
+msgstr "帐户"
+
+msgid "Acquire IP address for %s"
+msgstr "获取IP地址为 %s"
+
+# translation auto-copied from project CFSE-cli, version sam-1.2, document keys, author leahliu
+msgid "Action"
+msgstr "动作"
+
+msgid "Actions"
+msgstr "操作"
+
+msgid "Active"
+msgstr "激活"
+
+msgid "Active Hosts"
+msgstr "主机激活"
+
+#. host's status: first character of "active"
+msgid "Active|A"
+msgstr "激活"
+
+msgid "Add Bookmark"
+msgstr "增加书签"
+
+msgid "Add Interface"
+msgstr "增加接口"
+
+msgid "Add Matcher-Value"
+msgstr "添加匹配值"
+
+msgid "Add Parameter"
+msgstr "添加参数"
+
+msgid "Add Trend Counter"
+msgstr "添加趋势统计"
+
+msgid "Add Variable"
+msgstr "添加变量"
+
+msgid "Add Volume"
+msgstr "添加值"
+
+msgid "Add combination"
+msgstr "添加组合"
+
+msgid "Add external user group"
+msgstr "添加外部用户组"
+
+msgid "Add permission"
+msgstr "添加权限"
+
+msgid "Add:"
+msgstr "添加："
+
+msgid "Adding would cause a cycle!"
+msgstr "添加可能会造成循环！"
+
+msgid "Additional Information"
+msgstr "附加信息"
+
+msgid "Additional info"
+msgstr "附加信息"
+
+msgid "Additional information about this host"
+msgstr "本机附加信息"
+
+msgid "Additional steps"
+msgstr "额外的步骤"
+
+msgid ""
+"Additionally, you may restrict user permissions based on many criteria, make "
+"sure you check the roles settings tab."
+msgstr "此外，您可能会限制用户基于多个标准的权限，请检查的“角色设置“选项卡。"
+
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author leahliu
+msgid "Administer"
+msgstr "管理"
+
+msgid ""
+"After you have decided on the two primary modes of operation and performed "
+"any appropriate imports then it would be good idea if you visited some of "
+"the other configuration pages to see if additional setup is required under "
+"the Additional settings select box on the top right."
+msgstr "在决定两种主要操作模式并执行任意正确导入后，最好能够进入其他配置页面查看是否中右上角的附加设置选择库中要求选择附加设置。"
+
+msgid "Alerts disabled"
+msgstr "已禁用警告"
+
+msgid "All Puppet Classes for %s"
+msgstr "%s 所有 puppet  类别"
+
+msgid "All Reports"
+msgstr "所有的报告"
+
+msgid "All capsules"
+msgstr "所有 capsule"
+
+msgid "All compute resources"
+msgstr "所有计算资源"
+
+msgid "All domains"
+msgstr "所有域"
+
+msgid "All environments"
+msgstr "所有环境"
+
+msgid "All host groups"
+msgstr "所有主机组"
+
+msgid "All hosts"
+msgstr "所有主机"
+
+msgid "All hosts data matches configurations for locations and organizations."
+msgstr "与位置和机构项下配置匹配的所有的主机数据"
+
+msgid "All hosts previously with no %{single} are now assigned to %{name}"
+msgstr "所有之前为 %{single} 而现在被命名为 %{name} 的主机"
+
+msgid "All items"
+msgstr "所有项目"
+
+msgid "All media"
+msgstr "所有介质"
+
+msgid "All messages"
+msgstr "所有信息"
+
+msgid "All mismatches between hosts and %s have been fixed"
+msgstr "已修复所有与主机和％S之间的不匹配"
+
+msgid ""
+"All mismatches between hosts and locations/organizations have been fixed"
+msgstr "所有主机与位置/机构间的不匹配已被修复"
+
+msgid "All realms"
+msgstr "所有范围"
+
+msgid "All subnets"
+msgstr "所有子网"
+
+msgid "All templates"
+msgstr "所有模板"
+
+msgid "All users"
+msgstr "所有用户"
+
+msgid "Allocated"
+msgstr "已分配"
+
+msgid "Allocation (GB)"
+msgstr "分配（GB）"
+
+msgid ""
+"An IP address will be auto-suggested if you have a DHCP-enabled Capsule on "
+"the subnet selected above.<br/><br/>The IP address can be left blank when:"
+"<br/><ul><li>provisioning tokens are enabled</li><li>the domain does not "
+"manage DNS</li><li>the subnet does not manage reverse DNS</li><li>and the "
+"subnet does not manage DHCP reservations</li></ul>"
+msgstr ""
+"如果在上述所选子网中启用了 DHCP，则会自动提供 IP 地址。<br/><br/>中下述情况下该 IP 地址为空白：<br/><ul><li>启用 "
+"provisioning token </li><li>该域不管理 DNS </li><li>该子网不管理逆向 DNS </"
+"li><li>以及该子网不管理 DHCP 预留</li></ul>"
+
+msgid "An explicit layout for the partitions of your hard drive(s). E.G."
+msgstr "明确硬盘分区。 E.G."
+
+msgid "Anonymous admin user %s is missing, run foreman-rake db:seed"
+msgstr "缺少匿名 admin 用户，请运行 foreman-rake db:seed。"
+
+msgid "Any Context"
+msgstr "所有环境"
+
+msgid "Any Location"
+msgstr "任意位置"
+
+msgid "Any Organization"
+msgstr "任意机构"
+
+msgid "Applicable<br>Operating Systems"
+msgstr "适用的<br>操作系统"
+
+msgid "Applied"
+msgstr "已批准"
+
+#. initial character of Applied
+msgid "Applied|A"
+msgstr "已应用"
+
+# translation auto-copied from project Fedora Installation Guide, version f17-alt, document Grub
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Architecture"
+msgstr "架构"
+
+msgid "Architecture Distribution"
+msgstr "分布架构"
+
+msgid "Architecture configuration"
+msgstr "架构配置"
+
+# translation auto-copied from project Subscription Manager, version 1.8.X, document keys, author leahliu
+msgid "Architectures"
+msgstr "架构"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Architecture|Hostgroups count"
+msgstr "主机组计数"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Architecture|Hosts count"
+msgstr "主机计数"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Architecture|Name"
+msgstr "名称"
+
+msgid "Are you sure you want to %{act} %{vm}?"
+msgstr "您确定要执行 %{act} %{vm} 吗？"
+
+msgid "Are you sure you want to power %{act} %{vm}?"
+msgstr "您确定要打开 %{act} %{vm} 吗？"
+
+msgid "Are you sure?"
+msgstr "确认？"
+
+msgid "Assign All"
+msgstr "全部分配"
+
+msgid "Assign Hosts to %s"
+msgstr "将主机分配到 %s"
+
+msgid "Assign Location"
+msgstr "指定位置"
+
+msgid "Assign Organization"
+msgstr "分配机构"
+
+msgid "Assign Selected Hosts"
+msgstr "指定选定的主机"
+
+msgid ""
+"Assign the %{count} host with no %{taxonomy_single} to %{taxonomy_name}"
+msgid_plural ""
+"Assign all %{count} hosts with no %{taxonomy_single} to %{taxonomy_name}"
+msgstr[0] "将没有 %{taxonomy_single} 的 %{count} 个主机分配给 %{taxonomy_name}"
+
+msgid "Assign to %s"
+msgstr "分配给 %s"
+
+msgid ""
+"Assigning hosts to %{taxonomy_name} will also update %{taxonomy_name} to "
+"include all the resources that the selected hosts are currently using."
+msgstr "分配主机到 %{taxonomy_name}同时更新为 %{taxonomy_name}，包括选定主机目前正在使用的所有资源。"
+
+msgid "Associate VM"
+msgstr "关联 VM"
+
+msgid "Associate VM to a Foreman host"
+msgstr "将 VM 关联到 Foreman 主机"
+
+msgid "Associate VMs"
+msgstr "关联 VM"
+
+msgid "Associate VMs to Foreman hosts"
+msgstr "将 VM 关联到 Foreman 主机"
+
+msgid "Association"
+msgstr "组合"
+
+msgid "At least one volume must be specified for image-based provisioning."
+msgstr "必须为基于映像的 provisioning 指定至少一个卷。"
+
+msgid ""
+"At present, authentication is performed against the internal Database or a "
+"LDAP service provided by one or more LDAP servers."
+msgstr "目前可根据一个或者多个 LDAP 服务器提供的内部数据库或 LDAP 服务进行认证。"
+
+msgid ""
+"Attempting to construct an operating system image filename but %s cannot be "
+"built from an image"
+msgstr "尝试构建操作系统映像文件名，但无法使用映像中构建 %s。"
+
+msgid "Attribute mappings"
+msgstr "属性映射"
+
+msgid "Audit Comment"
+msgstr "审计备注"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Audited::Adapters::ActiveRecord::Audit|Action"
+msgstr "Audited::Adapters::ActiveRecord::Audit|Action"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Audited::Adapters::ActiveRecord::Audit|Associated name"
+msgstr "关联名称"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Audited::Adapters::ActiveRecord::Audit|Associated type"
+msgstr "关联类型"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Audited::Adapters::ActiveRecord::Audit|Auditable name"
+msgstr "可审计的名称"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Audited::Adapters::ActiveRecord::Audit|Auditable type"
+msgstr "可审计类型"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Audited::Adapters::ActiveRecord::Audit|Audited changes"
+msgstr "经审核的变化"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Audited::Adapters::ActiveRecord::Audit|Comment"
+msgstr "备注"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Audited::Adapters::ActiveRecord::Audit|Remote address"
+msgstr "远程地址"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Audited::Adapters::ActiveRecord::Audit|User type"
+msgstr "用户类型"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Audited::Adapters::ActiveRecord::Audit|Username"
+msgstr "用户名"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Audited::Adapters::ActiveRecord::Audit|Version"
+msgstr "版本"
+
+msgid "Audits"
+msgstr "审计"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Auth source"
+msgstr "认证源"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "AuthSource|Account"
+msgstr "账户"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "AuthSource|Account password"
+msgstr "密码"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "AuthSource|Attr firstname"
+msgstr "姓"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "AuthSource|Attr lastname"
+msgstr "姓氏属性"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "AuthSource|Attr login"
+msgstr "登录名属性"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "AuthSource|Attr mail"
+msgstr "邮箱属性"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "AuthSource|Attr photo"
+msgstr "照片属性"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "AuthSource|Base dn"
+msgstr "基本 dn"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "AuthSource|Host"
+msgstr "主机"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "AuthSource|Ldap filter"
+msgstr "Ldap 过滤器"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "AuthSource|Name"
+msgstr "名称"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "AuthSource|Onthefly register"
+msgstr "即时注册"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "AuthSource|Port"
+msgstr "端口"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "AuthSource|Tls"
+msgstr "TLS"
+
+msgid "Authentication Source Configuration"
+msgstr "配置验证"
+
+# translation auto-copied from project DocBook locales, version 1, document locale
+msgid "Author"
+msgstr "作者"
+
+msgid "Authorize login delegation with REMOTE_USER environment variable"
+msgstr "允许使用远程用户环境登录"
+
+msgid ""
+"Authorize login delegation with REMOTE_USER environment variable for API "
+"calls too"
+msgstr "允许使用远程用户环境变量调用API"
+
+msgid "Authorized by"
+msgstr "授权"
+
+msgid "Autosign"
+msgstr "自动签名"
+
+msgid "Autosign Entries"
+msgstr "自动签名条目"
+
+msgid "Autosign entries for %s"
+msgstr "为 %s 自动签名的条目"
+
+msgid "Availability zone"
+msgstr "可用性区域"
+
+msgid "Available Classes"
+msgstr "可用类别"
+
+msgid "Available Config Groups"
+msgstr "可用配置组"
+
+msgid "Available Providers"
+msgstr "可用供应商"
+
+msgid "Average memory usage"
+msgstr "内存平均使用情况"
+
+msgid "Average swap usage"
+msgstr "交换分区平均使用情况"
+
+msgid "BIOS"
+msgstr "BIOS"
+
+msgid "BMC"
+msgstr "BMC"
+
+msgid "Back"
+msgstr "返回"
+
+msgid "Back to host"
+msgstr "转到主机"
+
+msgid "Back to host list"
+msgstr "转到主机列表"
+
+msgid "Bare Metal"
+msgstr "裸机"
+
+msgid "Base DN"
+msgstr "基础 DN"
+
+msgid ""
+"Before you can use Foreman for the first time there are a few tasks that "
+"must be performed."
+msgstr "第一次使用前必须完成几个额外步骤"
+
+msgid ""
+"Before you proceed to using Foreman you should provide information about one "
+"or more architectures."
+msgstr "继续，请提供一个或多个体系结构的信息。"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Bookmark"
+msgstr "收藏"
+
+msgid "Bookmark this search"
+msgstr "收藏本搜索"
+
+msgid "Bookmark was successfully created."
+msgstr "成功创建收藏"
+
+msgid "Bookmark was successfully updated."
+msgstr "成功修改收藏"
+
+msgid "Bookmarks"
+msgstr "收藏"
+
+msgid "Bookmarks configuration"
+msgstr "收藏设置"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Bookmark|Controller"
+msgstr "控制器"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Bookmark|Name"
+msgstr "名称"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Bookmark|Owner type"
+msgstr "所有者类型"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Bookmark|Public"
+msgstr "公开"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Bookmark|Query"
+msgstr "查询"
+
+msgid "Boot device"
+msgstr "引导设备"
+
+msgid "Bootable"
+msgstr "可引导"
+
+msgid "Browse host facts"
+msgstr "浏览主机详情"
+
+msgid "Browse host reports"
+msgstr "浏览主机报告"
+
+msgid "Browser locale"
+msgstr "浏览本地化"
+
+msgid "Build"
+msgstr "构建"
+
+msgid "Build Hosts"
+msgstr "构建主机"
+
+msgid "Build PXE Default"
+msgstr "构建默认PXE"
+
+msgid "Build from OS image"
+msgstr "使用操作系统映像构建"
+
+#. host's status: first character of "build"
+msgid "Build|B"
+msgstr "B"
+
+msgid ""
+"By unchecking this you can specify filter using Foreman search syntax in "
+"search field. If filter remains unlimited (this field is checked) it applies "
+"on all resources of the selected type"
+msgstr "取消选择这一项就可以指定在搜索栏执行 Foreman 搜索的过滤器。如果过滤器仍为无限（即选择这个字段），它会将其应用到所有所选类型资源。"
+
+msgid "CA Certificate"
+msgstr "CA 证书"
+
+msgid "CDROM"
+msgstr "光驱"
+
+msgid "CPUs"
+msgstr "处理器"
+
+msgid "Can't delete built-in role"
+msgstr "无法删除内置角色"
+
+msgid "Can't delete internal admin account"
+msgstr "无法删除内部管理员帐户"
+
+msgid "Can't delete the last admin account"
+msgstr "不能删除最后一个 admin 账户"
+
+msgid "Can't delete the last admin user group"
+msgstr "不能删除最后一个 admin 用户账户"
+
+msgid "Can't find a valid Foreman Proxy with a Puppet feature"
+msgstr "无法找到有 Puppet 功能的有效 Froeman 代理服务器"
+
+msgid "Can't use the same value as the primary interface"
+msgstr "无法使用与主接口相同的参数。"
+
+# translation auto-copied from project Subscription Manager, version 1.8.X, document keys
+msgid "Cancel"
+msgstr "取消"
+
+msgid "Cancel build"
+msgstr "取消构建"
+
+msgid "Cancel build request for this host"
+msgstr "取消创建主机的操作"
+
+msgid "Canceled pending build for %s"
+msgstr "取消 %s 创建"
+
+msgid "Cannot delete %{current} because it has nested %{sti_name}."
+msgstr "无法删除 %{current} 因为它有嵌套的 %{sti_name}。 "
+
+msgid "Cannot delete group %{current} because it has nested groups."
+msgstr "无法删除 %{current} 因为它有嵌套的组。 "
+
+msgid "Cannot find user %s when switching context"
+msgstr "切换上下文时无法找到用户 %s"
+
+msgid "Canvas not supported."
+msgstr "不支持 Canva。"
+
+msgid "Capsule"
+msgstr "Capsule"
+
+msgid "Capsule Installation"
+msgstr "Capsule 安装"
+
+msgid "Capsules"
+msgstr "Capsule"
+
+msgid "Capsule|Name"
+msgstr "名称"
+
+msgid "Capsule|Url"
+msgstr "Url"
+
+msgid "Certificate Name"
+msgstr "证书名称"
+
+msgid "Certificate path"
+msgstr "证书路径"
+
+msgid "Certificate that Foreman will use to encrypt websockets "
+msgstr "Foreman 将用来加密 websocket 的证书"
+
+# translation auto-copied from project Subscription Manager, version 1.8.X, document keys, author leahliu
+msgid "Certificates"
+msgstr "证书"
+
+msgid "Change Environment"
+msgstr "改变环境"
+
+msgid "Change Group"
+msgstr "改变组"
+
+msgid "Change your avatar at gravatar.com"
+msgstr "头像更改"
+
+msgid "Changed environments"
+msgstr "改变环境"
+
+# translation auto-copied from project oVirt Engine jrs Branding, version JRS-5.5-branded, document jasperserver_messages
+msgid "Chart"
+msgstr "图表"
+
+msgid "Chassis"
+msgstr "机架"
+
+msgid "Check/Uncheck all"
+msgstr "选择/取消所有选择"
+
+msgid "Check/Uncheck all %s changes"
+msgstr "选择/不选择 %s 的所有修改"
+
+msgid "Check/Uncheck new"
+msgstr "选择/不选择"
+
+msgid "Check/Uncheck obsolete"
+msgstr "选择/取消 过时"
+
+msgid "Check/Uncheck updated"
+msgstr "选择/取消 更新"
+
+msgid "Choose a family"
+msgstr "选择一个家庭"
+
+msgid "Choose a provider"
+msgstr "选择一个供应商"
+
+msgid "Class"
+msgstr "类别"
+
+msgid "Class Distribution"
+msgstr "类别分布"
+
+msgid "Classes"
+msgstr "类型"
+
+msgid ""
+"Click on the link of a compute resource to edit its default VM attributes."
+msgstr "点击计算资源链接编辑器默认 VM 属性。"
+
+msgid "Click to add %s"
+msgstr "点击添加%s"
+
+# translation auto-copied from project CFSE, version sam-1.2, document app, author leahliu
+msgid "Click to edit"
+msgstr "点击编辑"
+
+msgid "Click to edit.."
+msgstr "点击编辑。"
+
+msgid "Click to log in again."
+msgstr "点击再次登录。"
+
+msgid "Click to remove %s"
+msgstr "点击删除 %s"
+
+msgid "Click to remove config group"
+msgstr "点击删除配置组"
+
+msgid "Click to undo adding this class"
+msgstr "点击撤销添加的类"
+
+msgid "Client Email"
+msgstr "客户端电子邮件"
+
+msgid ""
+"Client SSL certificates are used to identify Smart Proxies accessing fact/"
+"report importers and ENC output over HTTPS (:require_ssl should also be "
+"enabled)"
+msgstr ""
+"客户端 SSL 证书是用于识别访问详情/报告导入程序及使用 HTTPS 的 ENC 输出的智能代理服务器（还应启用 :require_ssl）"
+
+# translation auto-copied from project oVirt, version rhevm-3.2, document frontend/webadmin/modules/webadmin/src/main/resources/org/ovirt/engine/ui/frontend/org.ovirt.engine.ui.webadmin.ApplicationConstants, author xhuang
+msgid "Clone"
+msgstr "克隆"
+
+msgid "Clone %s"
+msgstr "克隆 %s"
+
+msgid "Clone Host %s"
+msgstr "克隆主机 %s"
+
+# translation auto-copied from project Subscription Manager, version 1.8.X, document keys
+msgid "Close"
+msgstr "关闭"
+
+# translation auto-copied from project Ovirt Engine Reports, version 3.4, document Statistics_Domain
+msgid "Cluster"
+msgstr "群集"
+
+msgid "Cluster ID is required to list available networks"
+msgstr "列出可用网络需要集群 ID"
+
+msgid "Code"
+msgstr "代码"
+
+msgid "Compute Resource"
+msgstr "计算资源"
+
+msgid "Compute Resources"
+msgstr "计算资源"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Compute attribute"
+msgstr "计算属性"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Compute profile"
+msgstr "计算配置文件"
+
+msgid "Compute profiles"
+msgstr "计算配置文件"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Compute resource"
+msgstr "计算资源"
+
+msgid "Compute resource update for %s"
+msgstr "更新 %s 计算资源"
+
+msgid "Compute resources"
+msgstr "计算资源"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "ComputeAttribute|Name"
+msgstr "名称"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "ComputeAttribute|Vm attrs"
+msgstr "Vm 属性"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "ComputeProfile|Name"
+msgstr "名称"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "ComputeResource|Attrs"
+msgstr "属性"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "ComputeResource|Description"
+msgstr "描述"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "ComputeResource|Name"
+msgstr "名称"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "ComputeResource|Password"
+msgstr "密码"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "ComputeResource|Url"
+msgstr "Url"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "ComputeResource|User"
+msgstr "用户"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "ComputeResource|Uuid"
+msgstr "Uuid"
+
+msgid "Config Retrieval"
+msgstr "配置检索"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Config group"
+msgstr "配置组"
+
+msgid "Config groups"
+msgstr "配置组"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Config template"
+msgstr "配置模板"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "ConfigGroup|Config group classes count"
+msgstr "配置组类别计数"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "ConfigGroup|Hostgroups count"
+msgstr "主机组计数"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "ConfigGroup|Hosts count"
+msgstr "主机计数"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "ConfigGroup|Name"
+msgstr "名称"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "ConfigTemplate|Name"
+msgstr "名称"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "ConfigTemplate|Snippet"
+msgstr "片段"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "ConfigTemplate|Template"
+msgstr "模板"
+
+# translation auto-copied from project oVirt, version ovirt-3.4, document frontend/webadmin/modules/webadmin/src/main/resources/org/ovirt/engine/ui/frontend/org.ovirt.engine.ui.webadmin.ApplicationConstants
+msgid "Configure"
+msgstr "配置"
+
+msgid "Configure instance %s via SSH"
+msgstr "使用 SSH 配置%s"
+
+msgid "Conflict - %s"
+msgstr "冲突 - %s"
+
+msgid "Conflicts have been detected"
+msgstr "探测到冲突"
+
+msgid "Connected (unencrypted) to: %s"
+msgstr "（未加密）连接为：%s"
+
+msgid "Connecting (unencrypted) to: %s"
+msgstr "（未加密）连接到：%s"
+
+msgid "Connecting.."
+msgstr "连接中"
+
+# translation auto-copied from project oVirt, version rhevm-3.2, document frontend/webadmin/modules/webadmin/src/main/resources/org/ovirt/engine/ui/frontend/org.ovirt.engine.ui.webadmin.ApplicationConstants, author xhuang
+msgid "Console"
+msgstr "控制台"
+
+msgid "Console output may be out of date"
+msgstr "控制台输出可能已过期"
+
+msgid "Console passwords"
+msgstr "控制台密码"
+
+msgid "Cores"
+msgstr "Cores"
+
+msgid "Cores per socket"
+msgstr "每个插槽的 core"
+
+msgid ""
+"Could not find a Configuration Template with the name \"PXELinux global "
+"default\", please create one."
+msgstr "无法找到名为 \"PXELinux global default\" 的配置模板，请创建模板。"
+
+msgid "Create %s"
+msgstr "新建 %s"
+
+msgid "Create DHCP Settings for %s"
+msgstr "为 %s 新建DHCP设置"
+
+msgid "Create DNS record for %s"
+msgstr "为 %s 新建DNS记录"
+
+msgid "Create Reverse DNS record for %s"
+msgstr "为 %s 新建反向解析DNS记录"
+
+msgid "Create a Capsule"
+msgstr "创建 Capsule"
+
+msgid "Create realm entry for %s"
+msgstr "为 %s 创建 realm 条目"
+
+msgid "Ctrl-Alt-Del"
+msgstr "Ctrl-Alt-Del"
+
+msgid "Custom LDAP search filter, <i>optional</i>"
+msgstr "定制 LDAP 搜索过滤器，<i>自选</i>"
+
+msgid "DHCP Capsule"
+msgstr "修改 capule"
+
+msgid "DHCP Capsule to use within this subnet"
+msgstr "在这个子网中使用的 DHCP Capsule"
+
+msgid "DHCP conflicts removal for %s"
+msgstr "去除 %s DHCP冲突"
+
+msgid "DHCP lease conflicts have been detected"
+msgstr "探测到 DCHP 租赁冲突"
+
+msgid "DHCP not supported for this NIC"
+msgstr "此网卡不支持DHCP"
+
+msgid "DHCP records %s already exists"
+msgstr "DHCP 记录 %s 已存在"
+
+msgid "DNS"
+msgstr "域名"
+
+msgid "DNS A Records %s already exists"
+msgstr "DNSA 记录 %s 已存在"
+
+msgid "DNS Capsule"
+msgstr "DNS Capsule"
+
+msgid "DNS Capsule to use within this domain"
+msgstr "在这个域中使用的 DNS Capsule"
+
+msgid "DNS Capsule to use within this subnet"
+msgstr "本子网使用的 DNS Capsule"
+
+msgid "DNS PTR Records %s already exists"
+msgstr "%s 的域名PTR记录已经存在"
+
+msgid "DNS name"
+msgstr "DNS名称"
+
+msgid "Dashboard"
+msgstr "仪表板"
+
+msgid "Data store"
+msgstr "数据保存"
+
+# translation auto-copied from project Ovirt Engine Reports, version master, document Statistics_Domain, author xhuang
+msgid "Datacenter"
+msgstr "数据中心"
+
+# translation auto-copied from project Subscription Manager, version 1.8.X, document keys, author leahliu
+msgid "Default"
+msgstr "默认"
+
+msgid "Default Puppet server hostname"
+msgstr "默认 puppet 服务器主机名"
+
+msgid "Default encrypted root password on provisioned hosts"
+msgstr "供应的主机中的默认加密 root 秘密"
+
+msgid "Default location"
+msgstr "默认位置"
+
+msgid "Default locations need to be user locations first"
+msgstr "默认位置首先应该是用户位置"
+
+msgid "Default organization"
+msgstr "默认机构"
+
+msgid "Default organizations need to be user organizations first"
+msgstr "默认机构首先应该是用户机构"
+
+msgid "Default value"
+msgstr "默认值"
+
+# translation auto-copied from project CFSE, version sam-1.2, document app, author leahliu
+msgid "Delete"
+msgstr "删除"
+
+msgid "Delete %s?"
+msgstr "删除 %s"
+
+msgid "Delete Hosts"
+msgstr "删除主机"
+
+msgid "Delete PuppetCA certificates for %s"
+msgstr "删除 %s的证书"
+
+msgid "Delete all the trend history for %s?"
+msgstr "删除 %s 的所有趋势记录"
+
+msgid "Delete autosign entry for %s"
+msgstr "删除 %s 的自动签名"
+
+msgid "Delete filter?"
+msgstr "删除过滤器？"
+
+msgid "Delete realm entry for %s"
+msgstr "删除 %s 的 realm 条目"
+
+msgid "Delete report for %s?"
+msgstr "删除 %s 的报告"
+
+msgid "Deleted environment"
+msgstr "删除环境"
+
+msgid "Deleted environment %{env} and %{pcs}"
+msgstr "删除 %{env} 和 %{pcs} 的环境"
+
+msgid "Deploy on"
+msgstr "部署到"
+
+# translation auto-copied from project CFSE, version sam-1.2, document app, author leahliu
+msgid "Description"
+msgstr "描述"
+
+msgid "Deselect All"
+msgstr "删除所有"
+
+# translation auto-copied from project oVirt, version rhevm-3.2, document frontend/webadmin/modules/webadmin/src/main/resources/org/ovirt/engine/ui/frontend/org.ovirt.engine.ui.webadmin.ApplicationConstants, author xhuang
+msgid "Destroy"
+msgstr "销毁"
+
+msgid "Destroyed selected hosts"
+msgstr "销毁选择主机"
+
+# translation auto-copied from project CFSE, version sam-1.2, document app, author leahliu
+msgid "Details"
+msgstr "详情"
+
+msgid "Diff View"
+msgstr "比对检视"
+
+msgid "Disable Notifications"
+msgstr "停用通知"
+
+msgid "Disable alerts for selected hosts"
+msgstr "停止选择主机的警告"
+
+msgid "Disabled"
+msgstr "已禁用"
+
+#. host's status: first character of "disabled"
+msgid "Disabled|D"
+msgstr "D"
+
+msgid "Disassociate Hosts"
+msgstr "取消与主机的关联"
+
+msgid "Disassociate host"
+msgstr "取消与主机的关联"
+
+msgid "Disassociate the selected hosts from their VMs"
+msgstr "取消所选主机与其 VM 的关联"
+
+# translation auto-copied from project oVirt, version rhevm-3.2, document frontend/webadmin/modules/webadmin/src/main/resources/org/ovirt/engine/ui/frontend/org.ovirt.engine.ui.webadmin.ApplicationConstants, author xhuang
+msgid "Disk"
+msgstr "磁盘"
+
+# translation auto-copied from project CFSE, version sam-1.2, document app, author leahliu
+msgid "Display"
+msgstr "显示"
+
+# translation auto-copied from project oVirt Engine jrs Branding, version JRS-5.1, document querybuilder_messages
+msgid "Display Name"
+msgstr "显示名称"
+
+msgid "Display the templates that will be used to provision this host"
+msgstr "显示的模板将被用来提供主机"
+
+msgid "Display type"
+msgstr "显示类型"
+
+msgid "Displaying <b>%{count}</b> entry"
+msgid_plural "Displaying <b>all %{count}</b> entries"
+msgstr[0] "显示全部 <b>%{count}</b> 条目"
+
+msgid "Displaying entries <b>%{from} - %{to}</b> of <b>%{count}</b> in total"
+msgstr "显示  <b>%{count}</b> 中的 <b>%{from} - %{to}</b> 总条目"
+
+msgid "Document root where puppetdoc files should be created"
+msgstr "应创建 puppetdoc 文件的文档 root"
+
+# translation auto-copied from project Publican - Fedora brand, version 3, document Logos, author leahliu
+msgid "Documentation"
+msgstr "文档"
+
+msgid "Does not match selected Subnet"
+msgstr "与选择的子网不匹配"
+
+msgid "Does this image support user data input (e.g. via cloud-init)?"
+msgstr "这个映像是否支持用户数据输入（例如：通过 cloud-init）？"
+
+# translation auto-copied from project CFSE-cli, version sam-1.2, document keys, author leahliu
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Domain"
+msgstr "域"
+
+msgid "Domain Configuration"
+msgstr "域配置"
+
+msgid "Domains"
+msgstr "域名"
+
+msgid "Domains in which this subnet is part"
+msgstr "该部分子网的域名"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Domain|Fullname"
+msgstr "全名"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Domain|Hostgroups count"
+msgstr "主机组计数"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Domain|Hosts count"
+msgstr "主机计数"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Domain|Name"
+msgstr "名称"
+
+msgid "EC2"
+msgstr "EC2"
+
+msgid ""
+"Each architecture can also be associated with more than one operating system "
+"and a selector block is provided to allow you to select valid combinations."
+msgstr "每个架构可以与一个以上的操作系统有效组合。"
+
+msgid ""
+"Each entries represent a particular hardware architecture, most commonly "
+"<b>x86_64</b> or <b>i386</b>. Foreman also supports the Solaris operating "
+"system family, which includes <b>sparc</b> based systems."
+msgstr ""
+"每个条目代表一个具体硬件证书，通常为 <b>x86_64</b> 或者 <b>i386</b>。Foreman 还支持 Solaris "
+"操作系统产品线，其中包括基于 <b>sparc</b> 的系统。"
+
+# translation auto-copied from project oVirt Engine jrs Branding, version JRS-5.1, document jasperserver_messages
+msgid "Edit"
+msgstr "编辑"
+
+msgid "Edit %s"
+msgstr "编辑 %s"
+
+msgid "Edit Architecture"
+msgstr "编辑架构"
+
+msgid "Edit Bookmark"
+msgstr "编辑收藏"
+
+msgid "Edit Capsule"
+msgstr "编辑 Capule"
+
+msgid "Edit Compute profile"
+msgstr "编辑计算侧写"
+
+msgid "Edit Compute profile: %s"
+msgstr "编辑计算侧写：%s"
+
+msgid "Edit Config group"
+msgstr "编辑 Config 组"
+
+# translation auto-copied from project oVirt, version rhevm-3.2, document frontend/webadmin/modules/webadmin/src/main/resources/org/ovirt/engine/ui/frontend/org.ovirt.engine.ui.uicompat.Constants, author xhuang
+msgid "Edit Domain"
+msgstr "编辑域"
+
+# translation auto-copied from project CFSE, version sam-1.2, document app, author leahliu
+msgid "Edit Environment"
+msgstr "编辑环境"
+
+msgid "Edit Filter"
+msgstr "编辑过滤器"
+
+msgid "Edit Global Parameter"
+msgstr "编辑全局参数"
+
+msgid "Edit LDAP Auth Source"
+msgstr "编辑 LDAP 认证源"
+
+msgid "Edit Medium"
+msgstr "编辑介质"
+
+msgid "Edit Model"
+msgstr "编辑型号"
+
+msgid "Edit Operating System"
+msgstr "编辑操作系统"
+
+msgid "Edit Parameters"
+msgstr "编辑参数"
+
+msgid "Edit Partition Table"
+msgstr "编辑分区表"
+
+# translation auto-copied from project oVirt, version rhevm-3.2, document frontend/webadmin/modules/uicompat/src/main/resources/org/ovirt/engine/ui/uicompat/LocalizedEnums, author xhuang
+msgid "Edit Properties"
+msgstr "编辑属性"
+
+msgid "Edit Puppet Class %s"
+msgstr "编辑 Puppet 类别 %s"
+
+msgid "Edit Realm"
+msgstr "编辑范围"
+
+msgid "Edit Roles"
+msgstr "编辑角色"
+
+msgid "Edit Smart Variable"
+msgstr "编辑智能变量"
+
+msgid "Edit Subnet"
+msgstr "编辑子网"
+
+# translation auto-copied from project oVirt, version rhevm-3.2, document frontend/webadmin/modules/webadmin/src/main/resources/org/ovirt/engine/ui/frontend/org.ovirt.engine.ui.uicompat.Constants, author xhuang
+msgid "Edit Template"
+msgstr "编辑模板"
+
+msgid "Edit Trend %s"
+msgstr "编辑 %s 的走势"
+
+# translation auto-copied from project aeolus-conductor, version 1.1.1, document defaults, author leahliu
+msgid "Edit User"
+msgstr "编辑用户"
+
+msgid "Edit User group"
+msgstr "编辑用户组"
+
+msgid "Edit compute profile on %s"
+msgstr "编辑 %s 中的计算侧写"
+
+msgid "Edit your host"
+msgstr "编辑主机"
+
+msgid ""
+"Either you didnt generate the puppetdocs (see <a rel=\"external\" href="
+"\"%{url}\">here</a>) or the class <strong>%{name}</strong> could not be "
+"found in environment <strong>%{environment}</strong><br/> Please ensure that "
+"the class <strong>%{name}</strong>s declaration is accessible via the "
+"modulepath associated with <strong>%{environment}</strong>."
+msgstr ""
+"可能您没有创建 puppetdocs（请查看 <a rel=\"external\" href=\"%{url}\">这里</a>），或者无法在 "
+"<strong>%{environment}</strong><br/> 中找到类别 <strong>%{name}</strong>。请确定可通过与 "
+"<strong>%{environment}</strong> 关联的模块路径访问类别 <strong>%{name}</strong> 声明。"
+
+msgid "Email reply address for emails that Foreman is sending"
+msgstr "回复 Foreman 发出电子邮件的地址"
+
+msgid "Empty environment"
+msgstr "空环境"
+
+msgid "Enable Notifications"
+msgstr "启用提醒"
+
+msgid "Enable alerts for selected hosts"
+msgstr "为选择主机启用警告"
+
+msgid "Enable certificate generation for %s"
+msgstr "为 %s 生成证书"
+
+msgid "Enable email alerts per each failed Puppet report"
+msgstr "启用每次在失败 Puppet 报告发出邮件警告的功能"
+
+msgid "Enable puppetrun support"
+msgstr "启用 puppetrun 支持"
+
+msgid "Enable rebuild on next host boot"
+msgstr "启用开机重建"
+
+msgid "Enable safe mode config templates rendering (recommended)"
+msgstr "启用安全模式配置（推荐）"
+
+msgid "Enable this host for provisioning"
+msgstr "启用此主机配置"
+
+msgid "Enabled"
+msgstr "已启用"
+
+msgid "Enabled %s for rebuild on next boot"
+msgstr "启用 %s 重启后重建"
+
+# translation auto-copied from project Subscription Manager, version 1.8.X, document keys
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Environment"
+msgstr "环境"
+
+msgid "Environment only"
+msgstr "环境"
+
+msgid ""
+"Environment variable containing the subject DN from a client SSL certificate"
+msgstr "包含来自客户端 SSL 证书主题 DN 的环境变量"
+
+msgid ""
+"Environment variable containing the verification status of a client SSL "
+"certificate"
+msgstr "包含来自客户端 SSL 证书确认状态的环境变量"
+
+# translation auto-copied from project Subscription Manager, version 1.8.X, document keys, author xhuang
+msgid "Environments"
+msgstr "环境"
+
+msgid "Environments Distribution"
+msgstr "分布式环境"
+
+msgid "Environments and documentation"
+msgstr "环境和文档"
+
+msgid ""
+"Environments may be manually created and only require the name of the "
+"environment to be declared."
+msgstr "可手动创建环境，只需要提供要说明的环境名称。"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Environment|Hostgroups count"
+msgstr "主机组计数"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Environment|Hosts count"
+msgstr "主机计数"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Environment|Name"
+msgstr "名称"
+
+# translation auto-copied from project CFSE-cli, version sam-1.2, document keys, author leahliu
+msgid "Error"
+msgstr "错误"
+
+msgid "Error has occurred while communicating with %{cr}: %{e}"
+msgstr "在与 %{cr}: %{e} 通讯时发生错误"
+
+msgid "Error loading virtual machine information: %s"
+msgstr "加载虚拟机 %s 的信息时错误"
+
+msgid "Errors only"
+msgstr "错误"
+
+msgid "Errors: %s"
+msgstr "错误： %s"
+
+#. host's status: first character of "error"
+msgid "Error|E"
+msgstr "E"
+
+msgid "Exit Full Screen"
+msgstr "退出全屏"
+
+msgid "Expand nested items"
+msgstr "展开嵌套的项目"
+
+msgid "Expand the chart"
+msgstr "展开图表"
+
+# translation auto-copied from project Subscription Manager, version 1.8.X, document keys
+msgid "Expires"
+msgstr "过期"
+
+msgid "External IP"
+msgstr "外部 IP"
+
+msgid "External groups"
+msgstr "外部组"
+
+msgid "External user group"
+msgstr "外部用户组"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "External usergroup"
+msgstr "外部用户组"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "ExternalUsergroup|Name"
+msgstr "名称"
+
+msgid "Fact Chart"
+msgstr "详情图"
+
+msgid "Fact Name"
+msgstr "图表名称"
+
+msgid "Fact Values"
+msgstr "详情值"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Fact name"
+msgstr "详情名称"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Fact value"
+msgstr "详情值"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "FactName|Ancestry"
+msgstr "上级"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "FactName|Compose"
+msgstr "编写"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "FactName|Name"
+msgstr "名称"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "FactName|Short name"
+msgstr "简称"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "FactValue|Value"
+msgstr "值"
+
+# translation auto-copied from project CFSE, version sam-1.2, document app, author leahliu
+msgid "Facts"
+msgstr "详情"
+
+msgid "Fail on Mismatch"
+msgstr "匹配失败"
+
+msgid "Failed"
+msgstr "失败"
+
+msgid "Failed Restarts"
+msgstr "重启失败"
+
+#. initial characters of Failed Restarts
+msgid "Failed Restarts|FR"
+msgstr "重启失败"
+
+msgid "Failed connecting to %s"
+msgstr "连接 %s 失败"
+
+msgid "Failed restarts"
+msgstr "重启失败"
+
+msgid "Failed to %{action} %{host}: %{e}"
+msgstr "%{action} %{host} 失败: %{e}"
+
+msgid "Failed to cancel pending build for %s"
+msgstr "为 %s 中断挂起创建失败"
+
+msgid ""
+"Failed to clean any old certificates or add the autosign entry. Terminating "
+"the build!"
+msgstr "无法清除任何旧的证书或添加自动签名条目。终止构建！"
+
+msgid "Failed to configure %{host} to boot from %{device}: %{e}"
+msgstr "配置 %{host} 从 %{device} 启动失败: %{e}"
+
+msgid "Failed to create %{name}'s realm entry: %{e}"
+msgstr "创建 %{name} 的 realm 条目失败： %{e}"
+
+msgid "Failed to create X509 certificate, error: %s"
+msgstr "创建 X509 证书失败，错误：%s"
+
+msgid ""
+"Failed to create a compute %{compute_resource} instance %{name}: "
+"%{message}\\n "
+msgstr "创建主机 %{compute_resource} instance %{name}: %{message}\\n"
+
+msgid "Failed to destroy a compute %{compute_resource} instance %{name}: %{e}"
+msgstr "销毁计算 %{compute_resource} 实例 %{name}: %{e} 失败"
+
+msgid "Failed to enable %{host} for installation: %{errors}"
+msgstr "启用 %{host} 进行安装失败：%{errors}"
+
+msgid "Failed to fetch boot files"
+msgstr "无法提取引导文件"
+
+msgid "Failed to fetch: "
+msgstr "无法获取："
+
+msgid "Failed to generate %{template_kind} template: %{e}"
+msgstr "创建 %{template_kind} template: %{e} 失败"
+
+msgid "Failed to get IP for %{name}: %{e}"
+msgstr "获取 %{name} IP 失败：%{e}"
+
+msgid "Failed to get a new realm OTP. Terminating the build!"
+msgstr "获取新 realm OTP 失败。终止构建！"
+
+msgid ""
+"Failed to import %{klass} for %{name}: doesn't exists in our database - "
+"ignoring"
+msgstr "为  %{name} 导入 %{klass} 失败：不存在于我们的数据库中 -- 忽略"
+
+msgid "Failed to initialize the PuppetCA proxy: %s"
+msgstr "启动 PuppetCA 代理服务器失败：%s"
+
+msgid "Failed to initialize the realm proxy: %s"
+msgstr "启动 realm 代理服务器失败：%s"
+
+msgid "Failed to launch script on %{name}: %{e}"
+msgstr "在 %{name} 中启动脚本失败：%{e}"
+
+msgid "Failed to login via SSH to %{name}: %{e}"
+msgstr "通过 SSH 登录 %{name} 失败：%{e}"
+
+msgid "Failed to modify the build cycle for %s"
+msgstr "修改 %s 构建循环失败"
+
+msgid "Failed to perform rollback on %{task} - %{e}"
+msgstr "在 %{task} 中执行回溯失败- %{e}"
+
+msgid ""
+"Failed to power up a compute %{compute_resource} instance %{name}: %{e}"
+msgstr "加速计算 %{compute_resource} 实例 %{name} 失败：%{e}"
+
+msgid "Failed to remove certificates for %{name}: %{e}"
+msgstr "删除 %{name} 的证书失败：%{e}"
+
+msgid "Failed to set console: %s"
+msgstr "设置控制台失败：%s"
+
+msgid "Failed to stop compute %{compute_resource} instance %{name}: %{e}"
+msgstr "停止计算 %{compute_resource} 实例 %{name}: %{e} 失败"
+
+msgid ""
+"Failed to undo update compute %{compute_resource} instance %{name}: %{e}"
+msgstr "更新计算 %{compute_resource} 实例 %{name} 失败：%{e}"
+
+msgid "Failed to update a compute %{compute_resource} instance %{name}: %{e}"
+msgstr "更新计算 %{compute_resource} 实例 %{name}: %{e} 失败"
+
+msgid ""
+"Failed to update environments and Puppet classes from the on-disk Puppet "
+"installation: %s"
+msgstr "使用磁盘 Puppet 安装更新环境及 Puppet 类别失败：%s"
+
+#. initial character of Failed
+msgid "Failed|F"
+msgstr "失败"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Feature"
+msgstr "特性"
+
+msgid "Features"
+msgstr "特性"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Feature|Name"
+msgstr "名称"
+
+msgid "Fetch TFTP boot files for %s"
+msgstr "提取TFTP引导文件：%s"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Filter"
+msgstr "过滤器"
+
+msgid "Filter %s"
+msgstr "过滤器 %s"
+
+msgid "Filter classes"
+msgstr "过滤器类别"
+
+msgid "Filters"
+msgstr "过滤器"
+
+msgid "Filters and permissions"
+msgstr "过滤器及权限"
+
+msgid "Filter|Permissions"
+msgstr "权限"
+
+msgid "Filter|Resource"
+msgstr "资源"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Filter|Search"
+msgstr "搜索"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Filter|Taxonomy search"
+msgstr "分类搜索"
+
+msgid "Filter|Unlimited"
+msgstr "无限"
+
+msgid "Fingerprint"
+msgstr "指纹"
+
+msgid "First use instructions"
+msgstr "首次使用说明"
+
+msgid "Fix %s on Mismatch"
+msgstr "修复与 %s 的不匹配"
+
+msgid "Fix All Mismatches"
+msgstr "修复所有不匹配"
+
+msgid "Fix DB cache on next Foreman restart"
+msgstr "下次 Foreman 重启时修复 DB 缓存"
+
+msgid "Fix Mismatches"
+msgstr "修复不匹配"
+
+msgid "Flavor"
+msgstr "尝试"
+
+msgid "Floating IP network"
+msgstr "浮动IP"
+
+# translation auto-copied from project oVirt Engine jrs Branding, version JRS-5.5-branded, document jasperserver_messages
+msgid "Folder"
+msgstr "文件夹"
+
+msgid "For Roles and permissions, see the %s page"
+msgstr "对于角色和权限，请查看 %s 页"
+
+msgid ""
+"For example, if you have copied several Red Hat release disks into a "
+"directory structure where the disk images are named 5.8 or 6.2, and each "
+"contained both x86_64 and i386 binaries, then you\\n  could create a single "
+"medium entry describing them all.\\n  The entry, which could be just named "
+"'Red Hat' could contain a path like this <em>'http://server/redhat/$version/"
+"$arch'</em>"
+msgstr ""
+"例如：如果将一些 Red Hat 发行磁盘复制到目录结构中，并将这些磁盘映像命名为 5.8 或者 6.2，且每个映像都包含 x86_64 及 i386 "
+"二进制格式，那么您\\n就可以创建一个描述它们的介质条目。\\n可将该条目命名为 'Red Hat'，也可以包含路径，比如 <em>'http://"
+"server/redhat/$version/$arch'</em>。"
+
+msgid ""
+"For example, there might be a data center in London and one in Virginia; "
+"these are locations. Locations also work nicely when used in tandem with "
+msgstr "例如：如果在伦敦和弗吉尼亚各有一个数据中心，这些都是位置，与一些参数合用时位置参数可正常工作。"
+
+msgid "For internal Users, simply create a new user at the %s page"
+msgstr "内部用户只需要中 %s 页中创建一个新用户接口即可"
+
+msgid "Foreman Developers"
+msgstr "Foreman 开发人员"
+
+msgid "Foreman Users"
+msgstr "Foreman 用户"
+
+msgid ""
+"Foreman can use LDAP based service for user information and authentication."
+msgstr "Foreman 可使用基于 LDAP 的服务提供用户信息及认证。"
+
+msgid ""
+"Foreman comes with some importers to ease the burden of entering loads of "
+"data about your current installation."
+msgstr "Foreman 自带一些导入程序以减轻当前安装的输入载入负担。"
+
+msgid ""
+"Foreman considers a domain and a DNS zone as the same thing. That is, if you "
+"are planning to manage a site where all the machines are or the form "
+"<i>hostname</i>.<b>somewhere.com</b>\\n  then the domain is <b>somewhere."
+"com</b>. This allows Foreman to associate a puppet variable with a domain/"
+"site and automatically append this variable to all external node requests "
+"made\\n  by machines at that site."
+msgstr ""
+"Foreman 将域和 DNS 区域视为同样的内容。即如果您计划管理所有格式为 <i>hostname</i>.<b>somewhere.com</b> "
+"的机器所在的网页，\\n那么该域即为 <b>somewhere.com</b>。这可让 Foreman 与使用域/网页的 puppet "
+"变量关联，并自动将这个变量添加到\\n那个网页中的机器发出请求的所有外部节点。"
+
+msgid ""
+"Foreman host group matchers will be inherited by children when evaluating "
+"smart class parameters"
+msgstr "评估智能类别参数时，其下层机器会自动承担 Foreman 主机组映射程序。"
+
+msgid "Foreman now manages the build cycle for %s"
+msgstr "Foreman 现在管理 %s 的构建循环"
+
+msgid "Foreman now no longer manages the build cycle for %s"
+msgstr "Foreman 现在不再管理 %s 的构建循环"
+
+msgid "Foreman report creation time is <em>%s</em>"
+msgstr "Foreman 报告创建时间为 <em>%s</em>"
+
+msgid "Foreman smart variables will be exposed via the ENC yaml output"
+msgstr "将通过 ENC yaml 输出显示 Foreman 智能变量"
+
+msgid ""
+"Foreman supports automatically creating realm entries for new hosts.  When a "
+"realm is selected for a host, Foreman contacts the relevant realm Capsule to "
+"create an entry for the host and retrieve it's one-time registration "
+"password."
+msgstr ""
+"Foreman 支持为新主机自动创建 realm 条目。为主机选择 realm 后，Foreman 会联络相关 realm "
+"Capsule，为主机创建一个条目，并检索中注册时创建的一次性密码。"
+
+msgid "Foreman ticketing system"
+msgstr "Foreman ticketing 系统"
+
+msgid "Foreman will automate certificate signing upon provision of new host"
+msgstr "Foreman 会在供应新主机时自动进行证书签署"
+
+msgid "Foreman will create the host when a report is received"
+msgstr "Foreman 会在收到报告后创建主机"
+
+msgid "Foreman will create the host when new facts are received"
+msgstr "Foreman 会在收到新详情后创建主机"
+
+msgid ""
+"Foreman will default to this puppet environment if it cannot auto detect one"
+msgstr "如果无法自动探测到环境，Foreman 将默认使用这个 puppet 环境。"
+
+msgid "Foreman will evaluate host smart variables in this order by default"
+msgstr "Foreman 将默认以这个顺序评估主机智能变量"
+
+msgid ""
+"Foreman will explicitly set the puppet environment in the ENC yaml output. "
+"This will avoid conflicts between the environment in puppet.conf and the "
+"environment set in Foreman"
+msgstr ""
+"Foreman 将在 ENC yaml 输出中明确设置这个 puppet 环境。这样可以避免 puppet.conf 以及 Foremna "
+"中设置的环境冲突"
+
+msgid ""
+"Foreman will map users by username in request-header. If this is set to "
+"false, OAuth requests will have admin rights."
+msgstr "Foreman将中 request-header 中根据用户名匹配用户。如果这个设置失败，OAuth 请求将拥有管理员权限。"
+
+msgid "Foreman will parse ERB in parameters value in the ENC output"
+msgstr "Foreman 将解析 ENC 输出中参数值的 ERB"
+
+msgid ""
+"Foreman will query the locally configured resolver instead of the SOA/NS "
+"authorities"
+msgstr "Foreman 将中本地查询配置的解析程序，而不是 SOA/NS 授权机构。"
+
+msgid ""
+"Foreman will set this as the default Puppet module path if it cannot auto "
+"detect one"
+msgstr "如果没有自动探测到路径，Foreman 会将这个设置为默认 Puppet 模块路径。"
+
+msgid "Foreman will truncate hostname to 'puppet' if it starts with puppet"
+msgstr "如果使用 puppet 开头，Foreman 会将主机名截取为 'puppet'。"
+
+msgid "Foreman will update a host's environment from its facts"
+msgstr "Foreman 将根据其详情更新主机环境"
+
+msgid ""
+"Foreman will update the host IP with the IP that made the built request"
+msgstr "Foreman 将根据发出构建请求的 IP 更新主机 IP"
+
+msgid "Foreman will use OAuth for API authorization"
+msgstr "Foreman 将使用 OAuth 进行 API 认证"
+
+msgid "Foreman will use gravatar to display user icons"
+msgstr "Foreman 将使用 gravatar 显示用户图标"
+
+msgid ""
+"Foreman will use random UUIDs for certificate signing instead of hostnames"
+msgstr "Foreman 将使用随机 UUIDs 而不是主机名进行证书签署 "
+
+msgid ""
+"Foreman will use the new (2.6.5+) format for classes in the ENC yaml output"
+msgstr "Foreman 将在 ENC yaml 输出的类别中使用新的 (2.6.5+) 格式"
+
+msgid ""
+"Foreman will use the short hostname instead of the FQDN for creating new "
+"virtual machines"
+msgstr "Foreman 将在创建新虚拟机时使用简称而不是"
+
+msgid ""
+"Foreman, by default, operates in anonymous mode where all operations are "
+"performed without reference to the user who is performing the task."
+msgstr "Foreman 默认情况下以匿名模式操作，即所有操作都不会显示执行该任务的用户信息。 "
+
+# translation auto-copied from project ibus-chewing, version master, document ibus-chewing
+msgid "Full"
+msgstr "全"
+
+# translation auto-copied from project CFSE-cli, version sam-1.2, document keys, author leahliu
+msgid "Full name describing the domain"
+msgstr "描述该域的全名"
+
+msgid "Full path to backing image used to create new volumes."
+msgstr "用来创建新卷的支持映像的完整路径。"
+
+msgid "Full screen"
+msgstr "全屏"
+
+msgid "Full trace"
+msgstr "完整跟踪"
+
+# translation auto-copied from project oVirt, version rhevm-3.2, document frontend/webadmin/modules/webadmin/src/main/resources/org/ovirt/engine/ui/frontend/org.ovirt.engine.ui.webadmin.ApplicationConstants, author xhuang
+msgid "Gateway"
+msgstr "网关"
+
+# translation auto-copied from project aeolus-conductor, version 1.1.1, document defaults
+msgid "General Settings"
+msgstr "常规设置"
+
+msgid ""
+"General useful description, for example this kind of hardware needs a "
+"special BIOS setup"
+msgstr "一般的有用信息，例如硬件这种需要一个特殊的BIOS设置"
+
+msgid "Generated %s ago"
+msgstr "%s 前产生"
+
+msgid "Generated at %s"
+msgstr "于 %s 生成"
+
+# translation auto-copied from project aeolus-conductor, version 1.1.1, document defaults, author leahliu
+msgid "Global"
+msgstr "全局"
+
+msgid "Global Parameters"
+msgstr "全局参数"
+
+msgid "Global parameters"
+msgstr "全局参数"
+
+msgid "Global variable or class Parameter, not both"
+msgstr "全局变量或类的参数，而不是两个"
+
+msgid "Good host reports in the last %s"
+msgstr "在过去 %s 内的良好主机报告"
+
+msgid "Google Project ID"
+msgstr "Google Project ID"
+
+msgid "Guest OS"
+msgstr "虚拟机操作系统"
+
+# translation auto-copied from project aeolus-conductor, version 1.1.1, document defaults
+msgid "Hardware"
+msgstr "硬件"
+
+msgid "Hardware Model"
+msgstr "硬件型号"
+
+msgid "Hardware Models"
+msgstr "硬件型号"
+
+msgid "Hardware models"
+msgstr "硬件型号"
+
+# translation auto-copied from project Indic On-screen Keyboard, version f18-1, document iok
+msgid "Help"
+msgstr "帮助"
+
+msgid "Help!"
+msgstr "帮助！"
+
+msgid "Here you can manage bookmarks. Bookmarks are saved search queries."
+msgstr "您可以在这里管理书签。书签就是保存的搜索查询。"
+
+msgid "History"
+msgstr "历史记录"
+
+# translation auto-copied from project CFSE, version sam-1.2, document app, author leahliu
+msgid "Host"
+msgstr "主机"
+
+msgid "Host %s is not associated with a VM"
+msgstr "主机 %s 没有关联的 VM"
+
+msgid "Host Architecture"
+msgstr "主机架构"
+
+msgid "Host Configuration Status"
+msgstr "主机配置状态"
+
+msgid "Host Groups"
+msgstr "主机组"
+
+msgid "Host Parameters"
+msgstr "主机参数"
+
+msgid "Host audit entries"
+msgstr "主机审计项"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Host config group"
+msgstr "主机配置组"
+
+msgid "Host details"
+msgstr "主机详情"
+
+msgid "Host group"
+msgstr "主机组"
+
+msgid "Host group / Environment"
+msgstr "主机组 / 环境"
+
+msgid "Host group and Environment"
+msgstr "主机组和环境"
+
+msgid "Host group configuration"
+msgstr "配置主机组"
+
+msgid "Host group only"
+msgstr "仅主机组"
+
+msgid "Host group parameters"
+msgstr "主机组参数"
+
+msgid "Host groups"
+msgstr "主机组"
+
+msgid "Host reported time is <em>%s</em>"
+msgstr "主机报告时间是 <em>%s</em>"
+
+msgid "Host times seems to be adrift!"
+msgstr "主机时间似乎有偏差！"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Host::Base|Build"
+msgstr "创建"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Host::Base|Certname"
+msgstr "证书"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Host::Base|Comment"
+msgstr "备注"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Host::Base|Disk"
+msgstr "硬盘"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Host::Base|Enabled"
+msgstr "可用"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Host::Base|Image file"
+msgstr "镜像文件"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Host::Base|Installed at"
+msgstr "安装在"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Host::Base|Ip"
+msgstr "IP地址"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Host::Base|Last compile"
+msgstr "最后编译"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Host::Base|Last freshcheck"
+msgstr "最后检查"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Host::Base|Last report"
+msgstr "最新报告"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Host::Base|Mac"
+msgstr "Mac"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Host::Base|Managed"
+msgstr "管理"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Host::Base|Name"
+msgstr "名称"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Host::Base|Otp"
+msgstr "Otp"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Host::Base|Owner type"
+msgstr "拥有者类型"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Host::Base|Provision method"
+msgstr "提供方法"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Host::Base|Puppet status"
+msgstr "Puppet 状态"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Host::Base|Root pass"
+msgstr "Root 密码"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Host::Base|Serial"
+msgstr "序列号"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Host::Base|Use image"
+msgstr "使用镜像"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Host::Base|Uuid"
+msgstr "Uuid"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "HostConfigGroup|Host type"
+msgstr "主机类型"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Hostgroup"
+msgstr "主机组"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Hostgroup|Ancestry"
+msgstr "上一层"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Hostgroup|Image file"
+msgstr "镜像文件"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Hostgroup|Name"
+msgstr "名称"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Hostgroup|Root pass"
+msgstr "Root密码"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Hostgroup|Title"
+msgstr "标题"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Hostgroup|Use image"
+msgstr "使用映像"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Hostgroup|Vm defaults"
+msgstr "Vm默认值"
+
+# translation auto-copied from project oVirt, version rhevm-3.2, document frontend/webadmin/modules/uicompat/src/main/resources/org/ovirt/engine/ui/uicompat/LocalizedEnums, author xhuang
+msgid "Hosts"
+msgstr "主机"
+
+msgid "Hosts Inventory"
+msgstr "发现主机"
+
+msgid ""
+"Hosts created after a puppet run that did not send a location fact will be "
+"placed in this location"
+msgstr "会将在运行 puppet 之后创建且未发送位置信息的主机放在这个位置"
+
+msgid ""
+"Hosts created after a puppet run that did not send a organization fact will "
+"be placed in this organization"
+msgstr "会将在运行 puppet 之后创建且未发送机构信息的主机放在这个位置"
+
+msgid ""
+"Hosts created after a puppet run will be placed in the location this fact "
+"dictates. The content of this fact should be the full label of the location."
+msgstr "会将在运行 puppet 后创建的主机放在这个详情描述的位置。这个详情的内容应为该位置的完整标签。"
+
+msgid ""
+"Hosts created after a puppet run will be placed in the organization this "
+"fact dictates. The content of this fact should be the full label of the "
+"organization."
+msgstr "会将在运行 puppet 后创建的主机放在这个详情描述的机构。这个详情的内容应为该机构的完整标签。"
+
+msgid "Hosts in error state"
+msgstr "主机处于错误状态"
+
+msgid "Hosts that had pending changes"
+msgstr "主机修改挂起"
+
+msgid "Hosts that had performed modifications without error"
+msgstr "主机已进行了修改，未发生错误"
+
+msgid ""
+"Hosts that will be trusted in addition to Smart Proxies for access to fact/"
+"report importers and ENC output"
+msgstr "除智能代理服务器外也信任的主机，用来访问详情/报告导入程序及 ENC 输出。"
+
+msgid "Hosts which didn't run puppet in the last %s"
+msgstr "没有在上一个 %s 中运行 puppet 的主机"
+
+msgid "Hosts with alerts disabled"
+msgstr "禁用警告的主机"
+
+msgid "Hosts with errors"
+msgstr "主机有错误"
+
+msgid "Hosts with no reports"
+msgstr "主机没有报告"
+
+msgid "Hosts with notifications disabled"
+msgstr "主机通知禁用"
+
+msgid "How templates are determined"
+msgstr "如何确定模板"
+
+msgid "How values are validated"
+msgstr "如何验证值"
+
+msgid "Howtos"
+msgstr "如何"
+
+# translation auto-copied from project oVirt, version rhevm-3.2, document frontend/webadmin/modules/webadmin/src/main/resources/org/ovirt/engine/ui/frontend/org.ovirt.engine.ui.webadmin.ApplicationConstants, author xhuang
+msgid "IP"
+msgstr "IP"
+
+msgid "IP Address"
+msgstr "IP地址"
+
+msgid "IP address auto-suggest"
+msgstr "IP 地址自动提示"
+
+msgid "IP address for this host"
+msgstr "这个主机的 IP 地址"
+
+msgid "IRC"
+msgstr "IRC"
+
+msgid ""
+"If Foreman is running behind Passenger or a remote load balancer, the IP "
+"should be set here. This is a regular expression, so it can support several "
+"load balancers, i.e: (10.0.0.1|127.0.0.1)"
+msgstr ""
+"如果 Foreman 中 Passenger 或者远程负载平衡程序之后运行，则应在这里设置 "
+"IP。只是一个正则表达式，因此可支持多个负载平衡程序，例如（10.0.0.1|127.0.0.1）"
+
+msgid ""
+"If checked, will raise an error if there is no default value and no matcher "
+"provide a value."
+msgstr "检查后，如果没有默认值，且没有映射程序提供数值，则会创建出错信息。"
+
+msgid ""
+"If you are already using puppet you should consider using some of the rake "
+"tasks that have been provided."
+msgstr "如果已经使用 puppet，则应考虑使用已提供的 rake 任务。"
+
+msgid ""
+"If you are planning to use Foreman as an external node classifier you should "
+"provide information about one or more environments."
+msgstr "如果计划使用 Foreman 作为外部节点分离器，则应提供一个或者多个环境信息。"
+
+msgid ""
+"If you chose to use LDAP authentication then you must provide connection "
+"details for your authentication provider on %s page"
+msgstr "如果选择使用 LDAP 认证，则必须在 %s 页中提供认证供应商的连接详情。"
+
+msgid ""
+"If you feel this is an error with Foreman itself, please open a new issue "
+"with"
+msgstr "如果您认为这是 Foreman 自身的错误，请提交新问题。"
+
+msgid ""
+"If you wish to track the actions of a particular user then it is possible to "
+"use an additional authentication stage and provide a user account."
+msgstr "如果您要追踪某个具体用户的操作，则可以使用附加认证阶段并提供用户帐户。"
+
+msgid ""
+"If you're planning to do anything more than just handle reports, you'll be "
+"in need of a capsule - either on this machine or elsewhere on your network."
+msgstr "如果您计划要进行处理报告之外的任何操作，则需要 capsule，可以将其安装在您的机器中，也可以通过网络使用。"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Image"
+msgstr "映像"
+
+msgid "Image Based"
+msgstr "基于映像"
+
+msgid "Image ID"
+msgstr "映像 ID"
+
+msgid "Image ID as provided by the compute resource, e.g. ami-.."
+msgstr "由计算资源提供的映像 ID，例如：ami-.."
+
+msgid "Image path"
+msgstr "映像路径"
+
+msgid "Image to use"
+msgstr "要使用的映像"
+
+msgid "Images"
+msgstr "介质"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Image|Iam role"
+msgstr "我的角色"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Image|Name"
+msgstr "名称"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Image|Password"
+msgstr "密码"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Image|User data"
+msgstr "用户数据"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Image|Username"
+msgstr "用户名"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Image|Uuid"
+msgstr "Uuid"
+
+# translation auto-copied from project Subscription Manager, version 1.8.X, document keys, author leahliu
+msgid "Import"
+msgstr "导入"
+
+msgid "Import from %s"
+msgstr "从 %s 导入"
+
+msgid "Import subnets"
+msgstr "导入子网"
+
+msgid "Import your data"
+msgstr "导入数据"
+
+# translation auto-copied from project DocBook locales, version 1, document locale
+msgid "Important"
+msgstr "重要"
+
+msgid "Imported Subnets"
+msgstr "导入子网"
+
+msgid "Importing Puppet Facts"
+msgstr "导入Puppet 详情"
+
+msgid "Importing Puppet classes and environments"
+msgstr "导入 Puppet 类别和环境"
+
+msgid ""
+"In addition to defining which puppet classes get included when building this "
+"host type you are also able to assign variables and provisioning information "
+"to a host group to further refine the behavior of the puppet runtime."
+msgstr "除规定构建这个主机类型需要包含的 puppet 类别外，您还可以为主机组分配变量及供应信息，以便细化 puppet 运行时行为。"
+
+msgid "Include this host within Foreman reporting"
+msgstr "将这个主机包含在 Foreman 报告中"
+
+msgid "Included Classes"
+msgstr "包含的类别"
+
+msgid "Included Config Groups"
+msgstr "包含的配置组"
+
+msgid "Included Parameters via inheritance"
+msgstr "通过继承包含的参数"
+
+msgid "Includes Foreman © 2009-%{year} Paul Kelly and %{author}"
+msgstr "包含 Foreman © 2009-%{year} Paul Kelly 及 %{author}"
+
+msgid "Incorrect username or password"
+msgstr "错误用户名或者密码"
+
+msgid "Infrastructure"
+msgstr "架构"
+
+msgid "Inherit parent (%s)"
+msgstr "继承上级（%s）"
+
+msgid "Installation Media"
+msgstr "安装介质"
+
+msgid "Installation media"
+msgstr "安装介质"
+
+msgid "Installation medium configuration"
+msgstr "配置安装介质"
+
+# translation auto-copied from project subscription-manager, version 1.10.X, document keys
+msgid "Installed"
+msgstr "安装的"
+
+# translation auto-copied from project oVirt, version rhevm-3.2, document frontend/webadmin/modules/webadmin/src/main/resources/org/ovirt/engine/ui/frontend/org.ovirt.engine.ui.webadmin.ApplicationConstants, author xhuang
+msgid "Interface"
+msgstr "接口"
+
+msgid "Invalid Host"
+msgstr "无效主机"
+
+msgid "Invalid log level: %s"
+msgstr "无效日志等级：%s"
+
+msgid ""
+"Invalid power state request: %{action}, supported actions are %{supported}"
+msgstr "无效电源状态请求：%{action}，支持的操作为 %{supported}。"
+
+msgid "Invalid query"
+msgstr "无效查询"
+
+msgid "Invalid report"
+msgstr "无效报告"
+
+msgid "Invalid search query: %s"
+msgstr "无效查询：%s"
+
+msgid "Inventory browser"
+msgstr "库存检索"
+
+msgid "Issue tracker"
+msgstr "问题跟踪"
+
+msgid "It is not possible to assign provisioning templates at this stage"
+msgstr "在这个阶段，不能的分配部署模板"
+
+msgid "Item"
+msgstr "项"
+
+msgid "Key Binding"
+msgstr "绑定密钥"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Key pair"
+msgstr "密钥配对"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "KeyPair|Name"
+msgstr "名称"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "KeyPair|Public"
+msgstr "公有"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "KeyPair|Secret"
+msgstr "Secret"
+
+# translation auto-copied from project aeolus-conductor, version 1.1.1, document activerecord, author leahliu
+msgid "Kind"
+msgstr "种类"
+
+# translation auto-copied from project aeolus-conductor, version 1.1.1, document defaults, author leahliu
+msgid "LDAP"
+msgstr "LDAP"
+
+msgid "LDAP Authentication"
+msgstr "LDAP 认证"
+
+msgid "LDAP authentication"
+msgstr "LDAP 认证"
+
+msgid "LDAP filter"
+msgstr "LDAP 过滤器"
+
+msgid "LDAP server"
+msgstr "LDAP 服务器"
+
+msgid ""
+"LDAP users will have their Foreman account automatically created the first "
+"time they log into Foreman"
+msgstr "LDAP 用户会在其首次使用 Foreman 时自动创建其 Foreman 帐户。"
+
+# translation auto-copied from project System-config-language, version f19, document system-config-language
+msgid "Language"
+msgstr "语言"
+
+msgid "Last report"
+msgstr "最后的报告"
+
+msgid "Last updated %s ago"
+msgstr "Last updated %s ago"
+
+msgid "Latest Events"
+msgstr "最新运行情况"
+
+msgid "Level"
+msgstr "阶段"
+
+msgid "List of hosts which answer to the provided query"
+msgstr "查询返回的主机列表"
+
+msgid "Load Datacenters"
+msgstr "加载数据中心"
+
+msgid "Load Regions"
+msgstr "加载区"
+
+msgid "Load Tenants"
+msgstr "加载租客"
+
+msgid "Load zones"
+msgstr "加载区"
+
+msgid "Loading"
+msgstr "加载中"
+
+msgid "Loading ..."
+msgstr "加载中......"
+
+msgid "Loading BMC information ..."
+msgstr "正在加载 BMC 信息......"
+
+msgid "Loading Images information"
+msgstr "正在加载映像信息"
+
+msgid "Loading VM information ..."
+msgstr "正在加载 VM 信息......"
+
+msgid "Loading parameters..."
+msgstr "正在加载参数......"
+
+msgid "Loading power state ..."
+msgstr "正在加载电源状态......"
+
+msgid "Loading virtual machine information ..."
+msgstr "正在加载虚拟机信息......"
+
+msgid "Loading virtual machines information ..."
+msgstr "正在加载虚拟机信息......"
+
+# translation auto-copied from project CFSE, version sam-1.2, document app, author leahliu
+msgid "Location"
+msgstr "位置"
+
+msgid "Location configuration"
+msgstr "位置配置"
+
+msgid "Location you had selected as your context has been deleted."
+msgstr "已删除选为上下文的位置。"
+
+msgid "Location/Organization"
+msgstr "位置/机构"
+
+msgid "Locations"
+msgstr "位置"
+
+msgid ""
+"Locations are used to manage and differentiate the physical place where a "
+"system managed via Foreman is housed."
+msgstr "使用位置管理和区分通过 Foreman 进行系统管理的实际地点。"
+
+msgid "Log out idle users after a certain number of minutes"
+msgstr "在一定时间后退出闲置用户"
+
+msgid "Logged out - See you soon"
+msgstr "已退出 - 再见"
+
+msgid "Logged-in"
+msgstr "登录"
+
+# translation auto-copied from project CFSE, version sam-1.2, document app
+msgid "Login"
+msgstr "登录"
+
+msgid "Logout"
+msgstr "退出"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Lookup key"
+msgstr "查找键"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Lookup value"
+msgstr "查找值"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "LookupKey|Default value"
+msgstr "默认值"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "LookupKey|Description"
+msgstr "描述"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "LookupKey|Is param"
+msgstr "是参数"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "LookupKey|Key"
+msgstr "密钥"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "LookupKey|Key type"
+msgstr "密钥类型"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "LookupKey|Lookup values count"
+msgstr "何洁查找值"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "LookupKey|Override"
+msgstr "覆盖"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "LookupKey|Path"
+msgstr "路径"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "LookupKey|Required"
+msgstr "必须得"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "LookupKey|Validator rule"
+msgstr "验证规则"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "LookupKey|Validator type"
+msgstr "验证类型"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "LookupValue|Match"
+msgstr "匹配"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "LookupValue|Value"
+msgstr "值"
+
+# translation auto-copied from project oVirt, version rhevm-3.2, document frontend/webadmin/modules/webadmin/src/main/resources/org/ovirt/engine/ui/frontend/org.ovirt.engine.ui.webadmin.ApplicationConstants, author xhuang
+msgid "MAC"
+msgstr "MAC"
+
+msgid "MAC Address"
+msgstr "MAC地址"
+
+msgid "MAC address for this host"
+msgstr "本机MAC地址"
+
+msgid "Machine Type"
+msgstr "机器型号"
+
+msgid "Machine type"
+msgstr "机器类型"
+
+msgid "Mail is Required"
+msgstr "mail为必填项"
+
+msgid "Mailing lists"
+msgstr "邮件列表"
+
+msgid ""
+"Mailing lists are available via Google Groups. Much like IRC, we have a "
+"general users (support, Q/A, etc) lists and a development list:"
+msgstr "可通过 Google Groups 使用邮件列表。与 IRC 类似，我们有常规用于（支持、常见问题等等）列表以及开发列表："
+
+msgid "Manage Bookmarks"
+msgstr "管理手册"
+
+msgid "Manage Locations"
+msgstr "管理位置"
+
+msgid "Manage Organizations"
+msgstr "管理机构"
+
+msgid "Manage host"
+msgstr "管理主机"
+
+msgid "Managed IP"
+msgstr "管理的 IP"
+
+# translation auto-copied from project oVirt, version master, document frontend/webadmin/modules/webadmin/src/main/resources/org/ovirt/engine/ui/frontend/org.ovirt.engine.ui.uicompat.UIConstants, author xhuang
+msgid "Manual"
+msgstr "手动"
+
+msgid "Manually Assign"
+msgstr "手动分配"
+
+msgid "Manually select and assign hosts with no %s"
+msgstr "手动选择并分配没有 %s 的主机"
+
+msgid "Matcher"
+msgstr "映射器"
+
+msgid ""
+"Matcher is a combination of an attribute and its value, if they match, the "
+"value below would be provided.<br> You may use any attribute foreman knows "
+"about, such as facts etc for example: <code> domain = example.com </code> or "
+"<code> is_virtual = true</code>"
+msgstr ""
+"映射器是属性及属性值的组合。如果它们匹配，则提供以下值。<br>您可以使用任意 foreman 了解的属性，比如详情等等。例如：<code> "
+"domain = example.com </code> or <code> is_virtual = true</code>"
+
+msgid "Max days for Trends graphs"
+msgstr "趋势图表的最大天"
+
+msgid "Media"
+msgstr "介质"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Medium"
+msgstr "介质"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Medium|Config path"
+msgstr "配置路径"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Medium|Image path"
+msgstr "镜像路径"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Medium|Media path"
+msgstr "介质路径"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Medium|Name"
+msgstr "名称"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Medium|Os family"
+msgstr "操作系统集"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Medium|Path"
+msgstr "路径"
+
+# translation auto-copied from project oVirt, version rhevm-3.2, document frontend/webadmin/modules/webadmin/src/main/resources/org/ovirt/engine/ui/frontend/org.ovirt.engine.ui.webadmin.ApplicationConstants, author xhuang
+msgid "Memory"
+msgstr "内存"
+
+msgid "Memory (MB)"
+msgstr "内存 (MB)"
+
+# translation auto-copied from project CFSE, version sam-1.2, document app, author leahliu
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Message"
+msgstr "信息"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Message|Digest"
+msgstr "精华"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Message|Value"
+msgstr "值"
+
+msgid "Metrics"
+msgstr "指标"
+
+msgid "Minutes Ago"
+msgstr "分钟前"
+
+msgid "Mismatch Details"
+msgstr "详情不匹配"
+
+msgid "Mismatches"
+msgstr "不匹配"
+
+msgid "Mismatches Report"
+msgstr "报告不匹配"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Model"
+msgstr "型号"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Model|Hardware model"
+msgstr "硬件型号"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Model|Hosts count"
+msgstr "主机计数"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Model|Info"
+msgstr "信息"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Model|Name"
+msgstr "名称"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Model|Vendor class"
+msgstr "供应商类别"
+
+msgid "Modified"
+msgstr "修改"
+
+# translation auto-copied from project oVirt, version ovirt-3.3, document frontend/webadmin/modules/webadmin/src/main/resources/org/ovirt/engine/ui/frontend/org.ovirt.engine.ui.userportal.ApplicationConstants
+msgid "Monitor"
+msgstr "监控"
+
+msgid "Must provide an operating systems"
+msgstr "必须提供一种操作系统"
+
+msgid "Must provide template kind"
+msgstr "必须提供一种模板"
+
+msgid "Must specify a Capsule to use"
+msgstr " 必须指定要使用的 Capsule"
+
+msgid "My account"
+msgstr "我的账号"
+
+# translation auto-copied from project Subscription Manager, version 1.0.X, document keys
+msgid "N/A"
+msgstr "无"
+
+msgid "NA"
+msgstr "NA"
+
+msgid "NIC"
+msgstr "NIC"
+
+msgid "NIC type"
+msgstr "NIC 类型"
+
+# translation auto-copied from project Subscription Manager, version 1.8.X, document keys
+msgid "Name"
+msgstr "名称"
+
+msgid ""
+"Name of the external auth source where unknown externally authentication "
+"users (see authorize_login_delegation) should be created (keep unset to "
+"prevent the autocreation)"
+msgstr ""
+"外部认证源名称，可用来创建未知外部认证的用户（请查看 authorize_login_delegation），保持为未设置以便防止自动创建。"
+
+msgid "Nest"
+msgstr "嵌套"
+
+msgid "Netmask"
+msgstr "掩码"
+
+msgid "Netmask for this subnet"
+msgstr "子网掩码"
+
+# translation auto-copied from project oVirt, version rhevm-3.2, document frontend/webadmin/modules/webadmin/src/main/resources/org/ovirt/engine/ui/frontend/org.ovirt.engine.ui.webadmin.ApplicationConstants, author xhuang
+msgid "Network"
+msgstr "网络"
+
+msgid "Network Based"
+msgstr "基本网络"
+
+msgid "Network interfaces"
+msgstr "网络接口"
+
+msgid "Network type"
+msgstr "网络类型"
+
+# translation auto-copied from project oVirt, version rhevm-3.2, document frontend/webadmin/modules/webadmin/src/main/resources/org/ovirt/engine/ui/frontend/org.ovirt.engine.ui.webadmin.ApplicationConstants, author xhuang
+msgid "Networks"
+msgstr "网络"
+
+# translation auto-copied from project oVirt, version rhevm-3.2, document frontend/webadmin/modules/webadmin/src/main/resources/org/ovirt/engine/ui/frontend/org.ovirt.engine.ui.webadmin.ApplicationConstants, author xhuang
+msgid "New"
+msgstr "新建"
+
+msgid "New %s"
+msgstr "新建 %s"
+
+msgid "New Architecture"
+msgstr "新建架构"
+
+msgid "New Autosign Entry"
+msgstr "新建自动签名"
+
+msgid "New Bookmark"
+msgstr "新建收藏"
+
+msgid "New Capsule"
+msgstr "新建 Capsule"
+
+msgid "New Compute Profile"
+msgstr "新建计算资源"
+
+msgid "New Compute Resource"
+msgstr "新建计算机资源"
+
+msgid "New Compute profile"
+msgstr "新建计算侧写"
+
+msgid "New Config Group"
+msgstr "新建配置组"
+
+msgid "New Config group"
+msgstr "新建配置组"
+
+# translation auto-copied from project oVirt, version rhevm-3.2, document frontend/webadmin/modules/webadmin/src/main/resources/org/ovirt/engine/ui/frontend/org.ovirt.engine.ui.webadmin.ApplicationConstants, author xhuang
+msgid "New Domain"
+msgstr "新建域"
+
+msgid "New Environment"
+msgstr "新建环境"
+
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author leahliu
+msgid "New Filter"
+msgstr "新过滤器"
+
+msgid "New Global Parameter"
+msgstr "新建全局参数"
+
+# translation auto-copied from project oVirt, version rhevm-3.2, document frontend/webadmin/modules/uicompat/src/main/resources/org/ovirt/engine/ui/uicompat/LocalizedEnums, author xhuang
+msgid "New Host"
+msgstr "新建主机"
+
+msgid "New Host Group"
+msgstr "新建主机组"
+
+msgid "New Image"
+msgstr "新建映像"
+
+msgid "New LDAP Auth Source"
+msgstr "新建 LDAP 认证源"
+
+msgid "New LDAP Source"
+msgstr "新建 LDAP 源"
+
+msgid "New Location"
+msgstr "新建位置"
+
+msgid "New Medium"
+msgstr "新建介质"
+
+msgid "New Model"
+msgstr "新建型号"
+
+msgid "New Operating System"
+msgstr "新建操作系统"
+
+msgid "New Operating system"
+msgstr "新建操作系统"
+
+msgid "New Organization"
+msgstr "新建机构"
+
+msgid "New Parameter"
+msgstr "新建参数"
+
+msgid "New Partition Table"
+msgstr "新建分区表"
+
+msgid "New Puppet Environment"
+msgstr "新建 Puppet 环境"
+
+msgid "New Puppet class"
+msgstr "新建 Puppet 类别"
+
+# translation auto-copied from project aeolus-conductor, version 1.1.0, document defaults
+msgid "New Realm"
+msgstr "新范围"
+
+msgid "New Role"
+msgstr "新建角色"
+
+msgid "New Subnet"
+msgstr "新建子网"
+
+# translation auto-copied from project oVirt, version rhevm-3.2, document frontend/webadmin/modules/webadmin/src/main/resources/org/ovirt/engine/ui/frontend/org.ovirt.engine.ui.uicompat.Constants, author xhuang
+msgid "New Template"
+msgstr "新建模板"
+
+msgid "New Trend"
+msgstr "新建趋势"
+
+msgid "New User"
+msgstr "新建用户"
+
+msgid "New User group"
+msgstr "新建用户组"
+
+msgid "New Virtual Machine"
+msgstr "新建虚拟主机"
+
+msgid "New architecture"
+msgstr "新增架构"
+
+msgid "New authentication source"
+msgstr "新建认证源"
+
+msgid "New compute profile on %s"
+msgstr "在 %s 中新建计算侧写"
+
+msgid "New compute resource"
+msgstr "新建计算机资源"
+
+msgid "New filter"
+msgstr "新建过滤器"
+
+msgid "New host"
+msgstr "新建主机"
+
+msgid "New installation medium"
+msgstr "新建安装介质"
+
+msgid "New role"
+msgstr "新建角色"
+
+msgid "New window"
+msgstr "新建窗口"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Nic::Base|Attrs"
+msgstr "属性"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Nic::Base|Ip"
+msgstr "Ip"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Nic::Base|Mac"
+msgstr "Mac"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Nic::Base|Name"
+msgstr "名称"
+
+msgid ""
+"No %{template_kind} templates were found for this host, make sure you define "
+"at least one in your %{os} settings"
+msgstr "没有找到这个主机的 %{template_kind} 模板，请确定在 %{os} 设置中至少设定一个模板。"
+
+msgid "No Capsules to show"
+msgstr "没有 Capsule 可显示"
+
+msgid "No TFTP proxies defined, can't continue"
+msgstr "未定义TFTP代理，不能继续"
+
+msgid "No bridges"
+msgstr "没有桥"
+
+msgid "No changes"
+msgstr "未变更"
+
+msgid "No changes found when refreshing features from %s."
+msgstr "刷新 %s 功能时未发现有任何变化。"
+
+msgid "No changes to your environments detected"
+msgstr "未探测到您的环境有任何变化"
+
+msgid "No compute resource to show"
+msgstr "没有可显示的计算机资源"
+
+msgid "No domains"
+msgstr "没有域"
+
+msgid "No entries found"
+msgstr "没有找到条目"
+
+msgid "No environment selected!"
+msgstr "没有选择的环境！"
+
+msgid ""
+"No features found on this proxy, please make sure you enable at least one "
+"feature"
+msgstr "在这个代理服务器中没有找到任何功能，请确定至少启用了一个功能。"
+
+msgid ""
+"No finish templates were found for this host, make sure you define at least "
+"one in your %s settings"
+msgstr "没有找到这个主机的完成模板，请确定在 %os 设置中至少设定一个模板。"
+
+msgid "No history found"
+msgstr "没有发现历史记录"
+
+msgid "No host found to associate this VM with"
+msgstr "没有找到与这个 VM 关联的主机"
+
+msgid "No host group selected!"
+msgstr "没有选择主机组"
+
+msgid "No hosts are mismatched!"
+msgstr "没有主机不匹配！"
+
+msgid "No hosts selected"
+msgstr "没有选择主机"
+
+msgid "No hosts were found with that id or name"
+msgstr "没有发现该ID或者名称的主机"
+
+msgid "No interesting reports received in the last week"
+msgstr "上周没有收到任何需要查看的报告"
+
+msgid "No networks"
+msgstr "没有网络"
+
+msgid "No new subnets found"
+msgstr "没有发现新子网"
+
+msgid "No parameters were allocated to the selected hosts, can't mass assign."
+msgstr "没有为所选主机分配任何参数，不能批量分配。"
+
+msgid "No plugins found"
+msgstr "未找到插件"
+
+msgid "No preference"
+msgstr "没有要求"
+
+msgid "No puppet activity for this host in the last %s days"
+msgstr "在过去 %s 天中没有针对这个主机的任何活动。"
+
+msgid "No report"
+msgstr "没有报告"
+
+msgid "No reports"
+msgstr "没有报告"
+
+#. host's status: first character of "no reports"
+msgid "No reports|N"
+msgstr "N"
+
+msgid ""
+"No smart proxy was found to import environments from, ensure that at least "
+"one smart proxy is registered with the 'puppet' feature."
+msgstr "没有找到可用来导入环境的智能代理服务器，请确定至少有一个智能代理服务器注册了 'puppet' 功能。"
+
+msgid "No subnets"
+msgstr "没有子网"
+
+msgid "No subnets selected"
+msgstr "没有选择子网"
+
+msgid "No template found"
+msgstr "没有发现模板"
+
+msgid "No templates found!"
+msgstr "没有发现模板"
+
+msgid "No trend counter defined."
+msgstr "没有趋势计数器定义。"
+
+msgid "No trend counter found."
+msgstr "没有趋势计数器定义。"
+
+msgid "No value error"
+msgstr "无值错误"
+
+msgid "No value warning"
+msgstr "没有警告"
+
+# translation auto-copied from project Subscription Manager, version 1.8.X, document keys
+msgid "None"
+msgstr "无"
+
+msgid "None Found"
+msgstr "没有发现"
+
+msgid "Not Found"
+msgstr "没有发现"
+
+# translation auto-copied from project subscription-manager, version 0.96.X, document keys
+msgid "Not Installed"
+msgstr "未安装的"
+
+msgid "Not authorized to edit classes"
+msgstr "未授权编辑类"
+
+# translation auto-copied from project oVirt, version rhevm-3.2, document frontend/webadmin/modules/webadmin/src/main/resources/org/ovirt/engine/ui/frontend/VdsmErrors, author xhuang
+msgid "Not implemented"
+msgstr "未实施"
+
+msgid "Not implemented for %s"
+msgstr "没有在 %s 中实施"
+
+msgid "Not relevant for snippet"
+msgstr "不相关的片段"
+
+msgid "Nothing to show"
+msgstr "没有内容可显示"
+
+# translation auto-copied from project oVirt, version master, document frontend/webadmin/modules/webadmin/src/main/resources/org/ovirt/engine/ui/frontend/org.ovirt.engine.ui.uicompat.Constants, author xhuang
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Notice"
+msgstr "注意"
+
+msgid "Notice:"
+msgstr "注意："
+
+msgid "Notices, warnings and errors"
+msgstr "通知、警告及错误"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Notice|Content"
+msgstr "内容"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Notice|Global"
+msgstr "全局"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Notice|Level"
+msgstr "级别"
+
+msgid "Notification disabled"
+msgstr "禁用通知"
+
+msgid "Notifications"
+msgstr "通知"
+
+msgid "Number Of Clients"
+msgstr "客户数"
+
+msgid "Number of CPUs"
+msgstr "CPU数"
+
+msgid "Number of Events"
+msgstr "事件数"
+
+msgid "Number of Hosts"
+msgstr "主机数"
+
+msgid "Number of records shown per page in Foreman"
+msgstr "Foreman 中每页显示的记录数"
+
+msgid "Number of values"
+msgstr "数值"
+
+msgid "OAuth consumer key"
+msgstr "OAuth 用户密钥"
+
+msgid "OAuth consumer secret"
+msgstr "OAuth 用户 secret"
+
+msgid "OK"
+msgstr "OK"
+
+#. host's status: first character of "OK"
+msgid "OK|O"
+msgstr "O"
+
+msgid "OS Distribution"
+msgstr "OS 分布"
+
+msgid "OS Family"
+msgstr "操作系统集"
+
+msgid "OS Image"
+msgstr "操作系统镜像"
+
+msgid "OS major version from facter; e.g. 6"
+msgstr "来自因素的 OS 主要版本：例如：6"
+
+msgid "OS minor version from facter; e.g. 5"
+msgstr "来自因素的 OS 次要版本：例如：5"
+
+msgid "OS name from facter; e.g. RedHat"
+msgstr "来自因素的 OS 名称：例如：RedHat"
+
+msgid "Obsolete"
+msgstr "过时的"
+
+# translation auto-copied from project CFSE, version sam-1.2, document app
+msgid "Off"
+msgstr "关闭"
+
+msgid "Old"
+msgstr "旧的"
+
+msgid "On"
+msgstr "开启"
+
+msgid "Once installed you should head over to"
+msgstr "安装后就应该前往"
+
+msgid ""
+"Only URLs with schema http://, https://, ftp:// or nfs:// are allowed (e.g. "
+"nfs://server/vol/dir)"
+msgstr ""
+"只允许使用方案 http://, https://, ftp:// 或者 nfs:// 的 URL（例如：nfs://server/vol/dir）"
+
+msgid ""
+"Only known Smart Proxies with the Puppet feature can access fact/report "
+"importers and ENC output"
+msgstr "只有具备 Puppet 功能的已知智能代理服务器可以访问详情/报告导入程序和 ENC 输出。"
+
+msgid "Only one bootable interface is allowed"
+msgstr "只允许一个可引导界面"
+
+msgid "Only one declaration of a proxy is allowed"
+msgstr "只允许一个代理服务器声明"
+
+msgid "Only one volume can be bootable"
+msgstr "只能引导一个卷"
+
+msgid "Oops"
+msgstr "抱歉"
+
+msgid "Oops, we're sorry but something went wrong"
+msgstr "抱歉，什么地方出现问题"
+
+msgid "Open Spice in a new window"
+msgstr "在新窗口中打开"
+
+msgid "Operating Mode"
+msgstr "操作模式"
+
+# translation auto-copied from project oVirt, version rhevm-3.2, document frontend/webadmin/modules/webadmin/src/main/resources/org/ovirt/engine/ui/frontend/org.ovirt.engine.ui.webadmin.ApplicationConstants, author xhuang
+msgid "Operating System"
+msgstr "操作系统"
+
+msgid "Operating System Family"
+msgstr "操作系统家族"
+
+msgid "Operating System version is required"
+msgstr "操作系统版本必须指定"
+
+msgid "Operating Systems"
+msgstr "操作系统"
+
+msgid "Operating system"
+msgstr "操作系统"
+
+msgid "Operating system default"
+msgstr "默认操作系统"
+
+msgid "Operating systems"
+msgstr "操作系统"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Operatingsystem"
+msgstr "操作系统"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Operatingsystem|Description"
+msgstr "描述"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Operatingsystem|Hostgroups count"
+msgstr "主机组计数"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Operatingsystem|Hosts count"
+msgstr "主机计数"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Operatingsystem|Major"
+msgstr "主要"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Operatingsystem|Minor"
+msgstr "次要"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Operatingsystem|Name"
+msgstr "名称"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Operatingsystem|Nameindicator"
+msgstr "Nameindicator"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Operatingsystem|Release name"
+msgstr "发行名称"
+
+msgid "Operation"
+msgstr "操作"
+
+msgid "Operators"
+msgstr "操作程序"
+
+msgid ""
+"Optional parameter without value.<br/><i>Won't be given to Puppet.</i> "
+"<br><br><b>Description:</b> %s"
+msgstr "没有数值的可选参数。<br/><i>不会向 Puppet 提供。</i> <br><br><b>描述：</b> %s"
+
+msgid "Optional: Ending IP Address for IP auto suggestion"
+msgstr "自选：IP 自动提示的结尾 IP 地址"
+
+msgid "Optional: Gateway for this subnet"
+msgstr "自选：这个子网的网关"
+
+msgid "Optional: Primary DNS for this subnet"
+msgstr "自选：这个子网的主 DNS"
+
+msgid "Optional: Secondary DNS for this subnet"
+msgstr "自选：这个子网的辅 DNS"
+
+msgid "Optional: Starting IP Address for IP auto suggestion"
+msgstr "自选：IP 自动提示的起始 IP 地址"
+
+msgid "Optional: VLAN ID for this subnet"
+msgstr "自选：这个子网的 VLAN ID"
+
+msgid "Order"
+msgstr "订购"
+
+msgid "Organization"
+msgstr "机构"
+
+msgid "Organization configuration"
+msgstr "机构配置"
+
+msgid "Organization you had selected as your context has been deleted."
+msgstr "已删除选为上下文的机构。"
+
+msgid "Organizations"
+msgstr "机构"
+
+msgid "Organizations also work nicely in tandem with"
+msgstr "机构还可以与之良好合作"
+
+msgid ""
+"Organizations are particularly useful for Foreman installations where "
+"several customers or business units are managed with a single Foreman "
+"install."
+msgstr "特别用于 Foreman 安装的机构，可在其中使用单一 Foreman 安装管理多个客户或者业务单元。"
+
+msgid "Other reports for this host"
+msgstr "本机的其他报告"
+
+msgid "Out of sync"
+msgstr "不同步"
+
+msgid "Out of sync hosts"
+msgstr "超出同步主机"
+
+msgid "Override a Puppetclass Parameter"
+msgstr "覆盖 Puppetclass 参数"
+
+msgid "Override this value"
+msgstr "重设此值"
+
+msgid "Overview"
+msgstr "概况"
+
+msgid "Overwrite"
+msgstr "覆盖"
+
+msgid "Owned By"
+msgstr "所有者"
+
+msgid "Owner"
+msgstr "所有者"
+
+msgid "Owner changed to %s"
+msgstr "已将拥有者改为 %s"
+
+msgid "Owner type needs to be one of the following: %s"
+msgstr "拥有者类型应为一下类型之一：%s"
+
+msgid "PXE"
+msgstr "PXE"
+
+msgid "PXE Default file has been deployed to all Smart Proxies"
+msgstr "默认的PXE配置已经发布到所有智能代理"
+
+# translation auto-copied from project CFSE, version sam-1.2, document app, author leahliu
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Parameter"
+msgstr "参数"
+
+msgid "Parameter name"
+msgstr "参数名称"
+
+msgid "Parameter type"
+msgstr "参数类型"
+
+# translation auto-copied from project CFSE, version sam-1.2, document app, author leahliu
+msgid "Parameters"
+msgstr "参数"
+
+msgid "Parameters that would be associated with hosts in this %s"
+msgstr "将与 %s 中的主机关联的参数"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Parameter|Name"
+msgstr "名称"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Parameter|Priority"
+msgstr "优先"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Parameter|Value"
+msgstr "值"
+
+msgid "Parent"
+msgstr "上级"
+
+msgid "Parent is already selected"
+msgstr "已选择上级"
+
+msgid "Partition Tables"
+msgstr "分区表"
+
+msgid "Partition table"
+msgstr "分区表"
+
+msgid "Partition table configuration"
+msgstr "配置分区表"
+
+msgid "Partition tables"
+msgstr "分区表"
+
+# translation auto-copied from project CFSE, version sam-1.2, document app, author leahliu
+msgid "Password"
+msgstr "密码"
+
+msgid "Password should be 8 characters or more"
+msgstr "密码应不少于 8 个字符"
+
+msgid "Password to authenticate with - used for SSH finish step."
+msgstr "用于认证的密码 - 用于 SSH 完成步骤。"
+
+# translation auto-copied from project subscription-manager, version 1.11.X, document keys
+msgid "Path"
+msgstr "路径"
+
+msgid "Path to template, relative to datacenter (e.g. My templates/RHEL 6)"
+msgstr "模板路径，相对于数据中心（例如：我的模板/RHEL 6）"
+
+msgid "Pause"
+msgstr "暂停"
+
+# translation auto-copied from project oVirt, version ovirt-3.3, document frontend/webadmin/modules/webadmin/src/main/resources/org/ovirt/engine/ui/frontend/org.ovirt.engine.ui.webadmin.ApplicationConstants, author xhuang
+msgid "Paused"
+msgstr "已暂停"
+
+msgid "Pending"
+msgstr "等待处理中"
+
+msgid "Pending Hosts"
+msgstr "等待处理的主机"
+
+msgid "Pending Installation"
+msgstr "等待处理的安装"
+
+msgid "Pending changes"
+msgstr "等待处理的更改"
+
+#. initial character of Pending host's status: first character of "pending"
+msgid "Pending|P"
+msgstr "P"
+
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author leahliu
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Permission"
+msgstr "权限"
+
+msgid "Permission denied"
+msgstr "权限不足"
+
+msgid "Permissions must be of same resource type"
+msgstr "权限必须是同样的资源类型"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Permission|Name"
+msgstr "名称"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Permission|Resource type"
+msgstr "资源类型"
+
+msgid "Photo attribute"
+msgstr "照片属性"
+
+msgid "Physical (Bridge)"
+msgstr "物理（桥）"
+
+msgid "Please Confirm"
+msgstr "请确认"
+
+msgid "Please Select"
+msgstr "请选择"
+
+msgid "Please Select an Image"
+msgstr "请选择介质"
+
+msgid "Please check the proxy is configured and running on the host."
+msgstr "请检查是否已配置代理服务器并在此主机中运行。"
+
+msgid "Please correct the error(s) below and submit your changes again."
+msgstr "请修正以下错误并再次提交。"
+
+msgid "Please delete all nested groups before deleting it."
+msgstr "删除前请删除所有嵌套的组。"
+
+msgid "Please request the required privileges from a foreman administrator"
+msgstr "请向 foreman 管理员申请所需权限"
+
+msgid ""
+"Please review them carefully, if you are certain that they should be "
+"removed, please click on overwrite."
+msgstr "请仔细检查，如果确定应该删除，请点击覆盖。"
+
+msgid "Please save the Operating System first and try again."
+msgstr "请首先保存操作系统，然后再试一次。"
+
+msgid "Please select"
+msgstr "请选择"
+
+msgid "Please select an environment first"
+msgstr "请先选择环境"
+
+msgid "Please select an image"
+msgstr "请选择介质"
+
+msgid ""
+"Please specify volume size. You may optionally use suffix 'G' to specify "
+"volume size in gigabytes."
+msgstr "请指定卷大小。可选择使用前缀 'G' 以 GB 为单位指定卷大小。"
+
+msgid "Please try to update your request"
+msgstr "请尝试更新"
+
+msgid "Please wait..."
+msgstr "请稍等......"
+
+msgid "Plugins"
+msgstr "插件"
+
+msgid "Power"
+msgstr "开启"
+
+msgid "Power ON this machine"
+msgstr "开启本机"
+
+msgid "Power up compute instance %s"
+msgstr "启动%s"
+
+msgid "Power%s"
+msgstr "电源 %s"
+
+msgid "Prepare post installation script for %s"
+msgstr "准备 %s 的后安装脚本"
+
+# translation auto-copied from project Fedora Installation Guide, version f18, document Ksconfig
+msgid "Preview"
+msgstr "预览"
+
+msgid "Primary"
+msgstr "主要"
+
+msgid "Primary Interface"
+msgstr "主接口"
+
+msgid "Private"
+msgstr "私有"
+
+msgid "Private key that Foreman will use to encrypt websockets "
+msgstr "Foreman 将用来加密 websocket 的私钥"
+
+msgid "Proceed to Edit"
+msgstr "执行编辑"
+
+# translation auto-copied from project oVirt Engine jrs Branding, version JRS-5.1, document jasperserver_messages
+msgid "Properties"
+msgstr "属性"
+
+msgid "Provider"
+msgstr "提供者"
+
+msgid "Provision"
+msgstr "置备"
+
+msgid "Provision script had a non zero exit, removing instance"
+msgstr "供应脚本存在非零退出，正在删除实例。"
+
+msgid "Provisioning Method"
+msgstr "置备方法"
+
+msgid "Provisioning Setup"
+msgstr "供应设置"
+
+msgid "Provisioning Support is disabled or this host is not managed"
+msgstr "已禁用供应支持，或者没有管理这台主机。"
+
+msgid "Provisioning Template"
+msgstr "供应模板"
+
+msgid "Provisioning Template content changed %s"
+msgstr "供应模板修改内容 %s"
+
+msgid "Provisioning Templates"
+msgstr "供应模板"
+
+msgid "Provisioning templates"
+msgstr "供应模板"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Ptable"
+msgstr "分区列表"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Ptable|Layout"
+msgstr "设计"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Ptable|Name"
+msgstr "名称"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Ptable|Os family"
+msgstr "操作系统集"
+
+# translation auto-copied from project oVirt, version ovirt-3.3, document frontend/webadmin/modules/webadmin/src/main/resources/org/ovirt/engine/ui/frontend/org.ovirt.engine.ui.webadmin.ApplicationConstants, author xhuang
+msgid "Public"
+msgstr "公共"
+
+msgid "Puppet"
+msgstr "Puppet"
+
+msgid "Puppet CA"
+msgstr "Puppet CA"
+
+msgid "Puppet Class"
+msgstr "Puppet 类别"
+
+msgid "Puppet Classes"
+msgstr "Puppet 类别"
+
+msgid "Puppet Environment"
+msgstr "Puppet 环境"
+
+msgid "Puppet Environments"
+msgstr "Puppet 环境"
+
+msgid "Puppet External Nodes"
+msgstr "Puppet 外部节点"
+
+msgid "Puppet Master"
+msgstr "主Puppet服务器"
+
+msgid "Puppet Modules"
+msgstr "Puppet 模块"
+
+msgid "Puppet Reports"
+msgstr "Puppet 报告"
+
+msgid "Puppet Reports integration"
+msgstr "Puppet 整合报告"
+
+msgid "Puppet class"
+msgstr "Puppet 类别"
+
+msgid "Puppet classes"
+msgstr "Puppet 类别"
+
+msgid "Puppet classes Parameters"
+msgstr "Puppet 类别参数"
+
+msgid "Puppet classes and environment importer"
+msgstr "Puppet 类别及环境导入器"
+
+msgid "Puppet classes parameters"
+msgstr "Puppet 类别参数"
+
+msgid "Puppet environments"
+msgstr "Puppet 环境"
+
+msgid "Puppet environments configuration"
+msgstr "Puppet 环境配置"
+
+msgid "Puppet error on %s"
+msgstr "%s 中的 Puppet 错误"
+
+msgid "Puppet external nodes YAML dump"
+msgstr "Puppet 外部节点 YAML 转储"
+
+msgid "Puppet interval in minutes"
+msgstr "以分钟为单位的 Puppet 间隔"
+
+msgid "PuppetCA on %s"
+msgstr "%s 中的 Puppet CA"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Puppetclass"
+msgstr "Puppetclass"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Puppetclass|Global class params count"
+msgstr "全局类别参数计数"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Puppetclass|Hostgroups count"
+msgstr "主机组计数"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Puppetclass|Hosts count"
+msgstr "主机计数"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Puppetclass|Lookup keys count"
+msgstr "查找密钥计数"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Puppetclass|Name"
+msgstr "名称"
+
+msgid "Query instance details for %s"
+msgstr "查询实例%s的详情"
+
+msgid "Quota ID"
+msgstr "配额 ID"
+
+# translation auto-copied from project aeolus-conductor, version 1.1.0, document defaults
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Realm"
+msgstr "范围"
+
+msgid "Realm Configuration"
+msgstr "范围 配置"
+
+msgid "Realm name, e.g. EXAMPLE.COM"
+msgstr "范围名称，例如：EXAMPLE.COM"
+
+msgid "Realm proxy"
+msgstr "范围代理服务器"
+
+msgid "Realm proxy did not return a one-time password"
+msgstr "范围代理服务器没有返回一次性密码"
+
+msgid "Realm proxy to use within this realm"
+msgstr "这个范围 中使用的范围代理服务器"
+
+msgid "Realm type"
+msgstr "范围 类型"
+
+# translation auto-copied from project aeolus-conductor, version 1.1.0, document defaults
+msgid "Realms"
+msgstr "范围"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Realm|Hostgroups count"
+msgstr "主机组计数"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Realm|Hosts count"
+msgstr "主机计数"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Realm|Name"
+msgstr "名称"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Realm|Realm type"
+msgstr "范围类型"
+
+msgid ""
+"Rebuild %s on next reboot?\\nThis would also delete all of its current facts "
+"and reports"
+msgstr "下次重启时构建 %s？\\n这样还会删除其所有当前详情及报告。"
+
+msgid ""
+"Redirect your users to this url on logout (authorize_login_delegation should "
+"also be enabled)"
+msgstr "退出时将您的用户重新指向这个 url（还应启用 authorize_login_delegation）"
+
+msgid "Refresh features"
+msgstr "刷新功能"
+
+msgid "Region"
+msgstr "区域"
+
+msgid "Remove %s?"
+msgstr "删除 %s ？"
+
+msgid "Remove DHCP Settings for %s"
+msgstr "删除 %s 的DHCP设置"
+
+msgid "Remove DNS record for %s"
+msgstr "删除 %s 的DNS记录"
+
+msgid "Remove Parameter"
+msgstr "删除参数"
+
+msgid "Remove Reverse DNS record for %s"
+msgstr "删除 %s 的逆向 DNS 记录"
+
+msgid "Remove conflicting DNS record for %s"
+msgstr "删除 %s 的冲突 DNS 记录"
+
+msgid "Remove conflicting Reverse DNS record for %s"
+msgstr "删除 %s 的冲突逆向 DNS 记录"
+
+msgid "Remove old TFTP Settings for %s"
+msgstr "删除 %s 的 TFTP 设置"
+
+msgid "Remove:"
+msgstr "删除："
+
+msgid "Removing compute instance %s"
+msgstr "删除 %s 的实例"
+
+msgid "Rename"
+msgstr "重命名"
+
+msgid "Render user data template for %s"
+msgstr "修改 %s 的用户数据模板"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Report"
+msgstr "报告"
+
+msgid "Report Already Deleted"
+msgstr "报告已删除"
+
+msgid "Report Metrics"
+msgstr "报告指标"
+
+msgid "Report Status"
+msgstr "报告状态"
+
+msgid "Reported at"
+msgstr "报告于"
+
+msgid "Reported at %s "
+msgstr "%s 的报告"
+
+msgid "Reporting"
+msgstr "报告中"
+
+msgid "Reports"
+msgstr "报告"
+
+msgid "Reports from the last %{days} days - %{count} reports found"
+msgstr "最后  %{days} 天 - %{count} 报告找到的报告"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Report|Metrics"
+msgstr "指标"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Report|Reported at"
+msgstr "报告于"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Report|Status"
+msgstr "状态"
+
+msgid ""
+"Required parameter without value.<br/><b>Please override!</b> "
+"<br><br><b>Description:</b>: %s"
+msgstr "需要没有数值的参数。<br/><b>请覆盖！</b> <br><br><b>描述：</b>: %s"
+
+msgid "Reset zoom"
+msgstr "窗口复位"
+
+msgid "Resolve"
+msgstr "解决"
+
+# translation auto-copied from project oVirt Engine jrs Branding, version JRS-5.1, document jasperserver_messages
+msgid "Resource"
+msgstr "资源"
+
+# translation auto-copied from project oVirt Engine jrs Branding, version JRS-5.1, document jasperserver_messages
+msgid "Resources"
+msgstr "资源"
+
+msgid "Restart<br>Failures"
+msgstr "重启<br>失败"
+
+msgid "Restarted"
+msgstr "已重启"
+
+#. initial character of Restarted
+msgid "Restarted|R"
+msgstr "R"
+
+msgid "Resume"
+msgstr "恢复"
+
+msgid "Revert"
+msgstr "还原"
+
+msgid "Revert to revision from: %s"
+msgstr "从 %s 恢复至修订本"
+
+msgid "Review"
+msgstr "审核"
+
+# translation auto-copied from project CFSE, version sam-1.2, document app, author leahliu
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Role"
+msgstr "角色"
+
+msgid "Role cloned from role %{old_name}"
+msgstr "从角色 %{old_name} 克隆的角色"
+
+msgid "Role is in use"
+msgstr "使用的角色"
+
+# translation auto-copied from project CFSE, version sam-1.2, document app, author leahliu
+msgid "Roles"
+msgstr "角色"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Role|Builtin"
+msgstr "内置"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Role|Name"
+msgstr "名称"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Role|Permissions"
+msgstr "权限"
+
+msgid "Run Puppet"
+msgstr "运行 Puppet"
+
+msgid "Run Puppet on the following hosts"
+msgstr "在以下主机中运行 Puppet"
+
+msgid "Run distribution in the last %s minute"
+msgid_plural "Run distribution in the last %s minutes"
+msgstr[0] "在过去 %s 分钟内运行分布"
+
+msgid "Run puppet"
+msgstr "运行 puppet"
+
+msgid "Running on"
+msgstr "运行中"
+
+msgid "Runtime"
+msgstr "运行时"
+
+msgid "SCSI controller"
+msgstr "SCSI 控制器"
+
+msgid "SSL CA file that Foreman will use to communicate with its proxies"
+msgstr "Foreman 用来与其代理服务器沟通的 SSL CA 文件"
+
+msgid ""
+"SSL Certificate path that Foreman would use to communicate with its proxies"
+msgstr "Foreman 用来与其代理服务器沟通的 SSL 证书路径"
+
+msgid ""
+"SSL Private Key file that Foreman will use to communicate with its proxies"
+msgstr "Foreman 用来与其代理服务器沟通的 SSL 私钥文件"
+
+msgid "SafeRender#parse_string was passed a %s instead of a string"
+msgstr "SafeRender#parse_string 传递 %s 而不是字符串"
+
+# translation auto-copied from project Fedora Installation Guide, version f17-alt, document Trouble_During_x86_ppc-section-2-variablelist-1
+msgid "Save"
+msgstr "保存"
+
+msgid "Save something and try again"
+msgstr "保存一些内容然后再试一次"
+
+# translation auto-copied from project CFSE, version sam-1.2, document app, author leahliu
+msgid "Scope"
+msgstr "范围"
+
+msgid "Search"
+msgstr "搜索"
+
+msgid "Secret Key"
+msgstr "Secret 密钥"
+
+msgid "Security group"
+msgstr "安全组"
+
+msgid "Security groups"
+msgstr "安全组"
+
+msgid "Select Action"
+msgstr "选择执行"
+
+msgid "Select All"
+msgstr "选择所有"
+
+# translation auto-copied from project oVirt, version rhevm-3.2, document frontend/webadmin/modules/webadmin/src/main/resources/org/ovirt/engine/ui/frontend/org.ovirt.engine.ui.uicompat.Constants, author xhuang
+msgid "Select Hosts"
+msgstr "选择主机"
+
+msgid "Select Location"
+msgstr "选择位置"
+
+msgid "Select Organization"
+msgstr "选择机构"
+
+msgid "Select a period"
+msgstr "选择一个时期"
+
+msgid "Select all items in this page"
+msgstr "选择本页所有项目"
+
+msgid "Select capsules"
+msgstr "选择 capsule"
+
+msgid "Select compute resources"
+msgstr "选择计算资源"
+
+msgid "Select domains"
+msgstr "选择域"
+
+msgid "Select environment"
+msgstr "选择环境"
+
+msgid "Select environments"
+msgstr "选择环境"
+
+msgid "Select host group"
+msgstr "选择主机组"
+
+msgid "Select host groups"
+msgstr "选择主机组"
+
+msgid "Select hosts to assign to %s"
+msgstr "选择要分配给 %s 的主机"
+
+msgid "Select locations"
+msgstr "选择位置"
+
+msgid "Select media"
+msgstr "选择介质"
+
+msgid "Select organizations"
+msgstr "选择机构"
+
+msgid "Select realms"
+msgstr "选择范围"
+
+msgid "Select subnets"
+msgstr "选择子网"
+
+msgid "Select template"
+msgstr "选择模板"
+
+msgid "Select templates"
+msgstr "选择模板"
+
+msgid "Select the changes you want to realize in Foreman"
+msgstr "选择要让 Foreman 意识到的更改"
+
+msgid "Select this since it belongs to a host"
+msgstr "选择这个因为它属于主机"
+
+# translation auto-copied from project oVirt Engine jrs Branding, version JRS-5.5-branded, document jasperserver_messages, author xhuang
+msgid "Select users"
+msgstr "选择用户"
+
+msgid "Selected hosts are now assigned to %s"
+msgstr "已将所选主机分配给 %s"
+
+msgid "Selected image does not belong to %s"
+msgstr "所选映像不属于 %s"
+
+msgid "Selected items"
+msgstr "已选项目"
+
+msgid ""
+"Selected resource type does not support granular filtering, therefore you "
+"can't configure granularity"
+msgstr "所选资源类型不支持粗略过滤，因此无法配置精细度。"
+
+msgid "Selected role"
+msgstr "所选角色"
+
+msgid "Selecting a file will override the editor and load the file instead"
+msgstr "选择要覆盖编辑器的文件并载入文件"
+
+msgid "Set a randomly generated password on the display connection"
+msgstr "在显示连接中设定随机创建的密码"
+
+msgid "Set up compute instance %s"
+msgstr "设定计算实例 %s"
+
+# translation auto-copied from project ibus-chewing, version master, document ibus-chewing, author leahliu
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Setting"
+msgstr "设置"
+
+# translation auto-copied from project ibus-chewing, version master, document ibus-chewing, author leahliu
+msgid "Settings"
+msgstr "设置"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Setting|Category"
+msgstr "类别"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Setting|Default"
+msgstr "默认"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Setting|Description"
+msgstr "描述"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Setting|Name"
+msgstr "名称"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Setting|Settings type"
+msgstr "类型"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Setting|Value"
+msgstr "值"
+
+msgid ""
+"Should Foreman encrypt websockets (VNC console access). Choose on, off or "
+"auto."
+msgstr "Foreman 是否应该加密 websocket（VNC 控制台访问）。选择 on、off 或者 auto。"
+
+msgid "Show Diff"
+msgstr "显示区别"
+
+msgid "Show Host"
+msgstr "显示主机"
+
+msgid "Show Trends"
+msgstr "显示趋势"
+
+msgid "Show all %s children fact values"
+msgstr "显示所有 %s 子详情值"
+
+msgid "Show all %s fact values"
+msgstr "显示所有 %s 详情值"
+
+msgid "Show all %{name} facts where they are equal to %{value}"
+msgstr "显示所有等于 %{value} 的 %{name} 详情"
+
+msgid "Show distribution chart"
+msgstr "显示分布图"
+
+msgid "Show host facts"
+msgstr "显示主机细节"
+
+msgid "Show linked external user groups"
+msgstr "显示链接的外部用户组"
+
+msgid "Show log messages:"
+msgstr "显示登录信息："
+
+msgid "Sign"
+msgstr "登入"
+
+msgid "Sign out"
+msgstr "退出"
+
+msgid "Signo SSO url"
+msgstr "单点登录地址"
+
+# translation auto-copied from project oVirt, version master, document frontend/webadmin/modules/webadmin/src/main/resources/org/ovirt/engine/ui/frontend/org.ovirt.engine.ui.webadmin.ApplicationConstants, author xhuang
+msgid "Size"
+msgstr "大小"
+
+msgid "Size (GB)"
+msgstr "大小 (GB)"
+
+msgid "Skip assign hosts and proceed to edit %s settings"
+msgstr "跳过分配主机并执行编辑 %s 设置"
+
+msgid "Skipped"
+msgstr "忽略"
+
+#. initial character of Skipped
+msgid "Skipped|S"
+msgstr "忽略"
+
+msgid "Smart Class Parameter"
+msgstr "智能代理参数"
+
+msgid "Smart Variables"
+msgstr "智能变量"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Smart proxy"
+msgstr "智能代理"
+
+msgid "Smart variables"
+msgstr "智能变量"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "SmartProxy|Name"
+msgstr "名称"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "SmartProxy|Url"
+msgstr "地址"
+
+msgid "Snippet"
+msgstr "Snippet"
+
+msgid ""
+"Some or all hosts execution failed, Please check log files for more "
+"information"
+msgstr "部分或者所有主机运行失败，请检查日志文件查看更多信息。"
+
+msgid "Something went wrong while changing host type - %s"
+msgstr "更改主机类型时出错 - %s"
+
+msgid "Something went wrong while selecting hosts - %s"
+msgstr "选择主机时出错 - %s"
+
+msgid "Sorry but no templates were configured."
+msgstr "抱歉，但没有配置任何模板。"
+
+msgid ""
+"Sorry, these hosts do not have parameters assigned to them, you must add "
+"them first."
+msgstr "抱歉，没有为这些主机分配任何参数，必须首先为其添加参数。"
+
+# translation auto-copied from project oVirt Engine jrs Branding, version JRS-5.1, document querybuilder_messages
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Source"
+msgstr "源"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Source|Digest"
+msgstr "精华"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Source|Value"
+msgstr "值"
+
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello
+msgid "Start"
+msgstr "起始"
+
+# translation auto-copied from project oVirt Engine jrs Branding, version JRS-5.1, document jasperserver_messages
+msgid "State"
+msgstr "状态"
+
+# translation auto-copied from project oVirt, version rhevm-3.2, document frontend/webadmin/modules/webadmin/src/main/resources/org/ovirt/engine/ui/frontend/org.ovirt.engine.ui.webadmin.ApplicationConstants, author xhuang
+msgid "Statistics"
+msgstr "统计"
+
+# translation auto-copied from project Subscription Manager, version 1.8.X, document keys
+msgid "Status"
+msgstr "状态"
+
+msgid "Stop updating IP address and MAC values from Puppet facts"
+msgstr "停止使用 Puppet 详情更新 IP 地址和 MAC 值"
+
+# translation auto-copied from project oVirt, version rhevm-3.2, document frontend/webadmin/modules/uicompat/src/main/resources/org/ovirt/engine/ui/uicompat/LocalizedEnums, author xhuang
+msgid "Storage"
+msgstr "存储"
+
+msgid "Storage domain"
+msgstr "存储域"
+
+msgid "Storage pool"
+msgstr "存储池"
+
+# translation auto-copied from project oVirt Engine jrs Branding, version JRS-5.1, document adhoc_messages
+msgid "Submit"
+msgstr "提交"
+
+# translation auto-copied from project oVirt, version rhevm-3.2, document frontend/webadmin/modules/webadmin/src/main/resources/org/ovirt/engine/ui/frontend/org.ovirt.engine.ui.webadmin.ApplicationConstants, author xhuang
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Subnet"
+msgstr "子网"
+
+msgid "Subnets"
+msgstr "子网"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Subnet|Dns primary"
+msgstr "主DNS"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Subnet|Dns secondary"
+msgstr "从DNS"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Subnet|From"
+msgstr "开始"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Subnet|Gateway"
+msgstr "网关"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Subnet|Mask"
+msgstr "掩码"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Subnet|Name"
+msgstr "名称"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Subnet|Network"
+msgstr "网段"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Subnet|Priority"
+msgstr "优先"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Subnet|To"
+msgstr "止"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Subnet|Vlanid"
+msgstr "Vlan ID"
+
+# translation auto-copied from project CFSE-cli, version sam-1.2, document keys, author leahliu
+msgid "Success"
+msgstr "成功"
+
+msgid "Successfully created %s."
+msgstr "成功创建 %s "
+
+msgid "Successfully deleted %s."
+msgstr "成功删除 %s."
+
+msgid "Successfully destroyed report."
+msgstr "成功删除报告。"
+
+msgid "Successfully executed, check log files for more details"
+msgstr "成功执行，更多细节查询日志"
+
+msgid "Successfully executed, check reports and/or log files for more details"
+msgstr "成功执行，更多细节查询报告或者日志"
+
+msgid "Successfully refreshed features from %s."
+msgstr "成功刷新  %s 功能。"
+
+msgid "Successfully updated %s."
+msgstr "成功更新 %s."
+
+msgid ""
+"Successfully updated environments and Puppet classes from the on-disk Puppet "
+"installation"
+msgstr "成功使用磁盘 Puppet 安装更新环境及 Puppet 类别"
+
+msgid ""
+"Summary Puppet report from Foreman - F:%{failed} R:%{restarted} S:%{skipped} "
+"A:%{applied} FR:%{failed_restarts} T:%{total}"
+msgstr ""
+"Foreman 的概述 Puppet 报告 -F：%{failed} R:%{restarted} S:%{skipped} A:%{applied} "
+"FR:%{failed_restarts} T:%{total}"
+
+# translation auto-copied from project CFSE, version sam-1.2, document app, author leahliu
+msgid "Support"
+msgstr "支持"
+
+#. host's status: first character of "sync" (out of sync)
+msgid "Sync|S"
+msgstr "S"
+
+# translation auto-copied from project CFSE, version sam-1.2, document app, author leahliu
+msgid "System Information"
+msgstr "系统信息"
+
+# translation auto-copied from project CFSE, version sam-1.2, document app, author leahliu
+msgid "System Status"
+msgstr "系统状态"
+
+msgid "TFTP Capsule"
+msgstr "TFTP Capsule"
+
+msgid "TFTP Capsule to use within this subnet"
+msgstr "本子网使用的 TFTP Capsule"
+
+msgid "TFTP Settings for %s"
+msgstr "%s 的 TFTP 设置"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Taxable taxonomy"
+msgstr "Taxable taxonomy"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "TaxableTaxonomy|Taxable type"
+msgstr "TaxableTaxonomy|Taxable type"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Taxonomy"
+msgstr "Taxonomy"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Taxonomy|Ancestry"
+msgstr "Taxonomy|Ancestry"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Taxonomy|Ignore types"
+msgstr "忽略类型"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Taxonomy|Name"
+msgstr "名称"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Taxonomy|Title"
+msgstr "标题"
+
+# translation auto-copied from project oVirt, version ovirt-3.4, document frontend/webadmin/modules/webadmin/src/main/resources/org/ovirt/engine/ui/frontend/org.ovirt.engine.ui.webadmin.ApplicationConstants
+msgid "Template"
+msgstr "模板"
+
+msgid "Template / Compute Profile to use"
+msgstr "要使用计算资源"
+
+msgid "Template Diff"
+msgstr "模板比较"
+
+msgid "Template Type"
+msgstr "模板类型"
+
+msgid "Template diff"
+msgstr "模板差异"
+
+msgid "Template editor"
+msgstr "模板编辑器"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Template kind"
+msgstr "模板种类"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "TemplateKind|Name"
+msgstr "名称"
+
+# translation auto-copied from project CFSE, version sam-1.2, document app, author leahliu
+msgid "Templates"
+msgstr "模板"
+
+msgid "Tenant"
+msgstr "承租人"
+
+# translation auto-copied from project oVirt Engine jrs Branding, version JRS-5.1, document jasperserver_messages
+msgid "Test Connection"
+msgstr "测试连接"
+
+msgid ""
+"The <b>fullname</b> field is used for human readability in reports and other "
+"pages that refer to domains,\\n  and also available as an external node "
+"parameter"
+msgstr "使用 <b>fullname</b> 字段方便阅读报告和其他参考该域的页面，\\n  同时也可作为外部节点参数使用。"
+
+msgid ""
+"The Audit Comment field is saved with the template auditing to document the "
+"template changes"
+msgstr "在进行模板审核是，会将模板更改保存到审核注释字段"
+
+msgid ""
+"The IP address that should be used for the console listen address when "
+"provisioning new virtual machines via Libvirt"
+msgstr "使用 Libvirt 置备新虚拟机时那些控制台侦听地址要使用的 IP 地址"
+
+msgid "The NFS path to the image directory."
+msgstr "映像目录的 NFS 路径。"
+
+msgid "The NFS path to the jumpstart control files."
+msgstr "Jumpstart 控制文件的 NFS 路径。"
+
+msgid "The NFS path to the media."
+msgstr "介质的 NFS 路径。"
+
+msgid "The Operating System type"
+msgstr "操作系统类型"
+
+msgid ""
+"The authentication process currently requires an LDAP provider, such as "
+"<em>OpenLDAP</em> or <em>Microsoft's Active Directory</em>."
+msgstr ""
+"目前，认证过程需要 LDAP 供应商，比如 <em>OpenLDAP</em> 或者 <em>微软的 Active Directory</em>。"
+
+msgid ""
+"The class of CPU supplied in this machine. This is primarily used by Sparc "
+"Solaris builds and can be left blank for other architectures. The value can "
+"be determined on Solaris via uname -m"
+msgstr ""
+"这台机器中使用的 CPU 类别。主要由 Sparc Solaris 构建使用，并可为其他架构将其留为空白。在 Solaris 中使用 uname -m "
+"决定它的值。"
+
+msgid ""
+"The class of the machine reported by the Open Boot Prom. This is primarily "
+"used by Sparc Solaris builds and can be left blank for other architectures. "
+"The value can be determined on Solaris via uname -i|cut -f2 -d,"
+msgstr ""
+"Open Boot Prom 报告的这台机器的类别。主要由 Sparc Solaris 构建使用，并可为其他架构将其留为空白。在 Solaris 中使用 "
+"uname -i|cut -f2 -d 决定它的值。"
+
+msgid "The default administrator email address"
+msgstr "管理员默认邮箱"
+
+msgid "The default username and password are <b>admin</b> and <b>changeme</b>"
+msgstr "默认用户名和密码为 <b>admin</b> 和 <b>changeme</b>"
+
+msgid ""
+"The dynamic partitioning style is currently only available for the Red Hat "
+"family of operating systems, all others must provide an explicit list of "
+"partitions and sizes."
+msgstr "Red Hat 的操作系统产品线目前可采用动态分区模式，其他产品则必须明确给出分区和大小列表。"
+
+msgid "The file path where your p12 file is located"
+msgstr "p12 文件的文件路径"
+
+msgid ""
+"The final entry, Operating System default, can be set by editing the %s page."
+""
+msgstr "最后一个条目，默认为操作系统，可编辑 %s 页面设置它们。"
+
+msgid ""
+"The following entries were found conflicting with what foreman wanted to "
+"apply."
+msgstr "以下条目与 foreman 要应用的内容冲突。"
+
+msgid "The following fields would need reviewing"
+msgstr "需要检查一下字段"
+
+msgid "The following hosts failed the build operation: %s"
+msgstr "以下主机构建操作失败：%s"
+
+msgid "The following hosts were not %{action}: %{missed_hosts}"
+msgstr "以下主机没有 %{action}: %{missed_hosts}"
+
+msgid "The following hosts were not deleted: %s"
+msgstr "未删除以下主机：%s"
+
+msgid "The following hosts were updated"
+msgstr "以下主机已被更新"
+
+msgid ""
+"The following parameters were skipped as they did not exists on this host:"
+msgstr "跳过一下参数，因为它们不存在于这台主机中："
+
+msgid "The following subnets have been found"
+msgstr "已找到以下子网"
+
+msgid "The full DNS Domain name"
+msgstr "DNS域全名"
+
+msgid ""
+"The host group's classes and the host group's variables are included in the "
+"external node information when the puppetmaster compiles the host's "
+"configuration."
+msgstr "当 puppetmaster 编译主机配置时，会在外部节点信息中包含主机组类别和主机组变量。"
+
+msgid ""
+"The inclusion of the keyword string <b>#Dynamic</b> at the start of a line "
+"lets Foreman know that this is not an explicit disk layout and must treated "
+"as a shell script, executed prior\\n  to the install process and that the "
+"explicit partition table will be found at <b>/tmp/diskpart.cfg</b> during "
+"the build process."
+msgstr ""
+"在某行的开始添加关键字字符串  <b>#Dynamic</b>，以便让 Foreman 了解这不是明确指定的磁盘布局，且必须将其视为 shell "
+"脚本，要在安装\\n进程开始前执行，并可在构建过程中在 <b>/tmp/diskpart.cfg</b> 中找到明确的分区表。"
+
+msgid ""
+"The keywords <b>$version</b>, <b>$major</b> and <b>$minor</b> will be "
+"interpolated back into the path specification to calculate the true URL "
+"address."
+msgstr ""
+"会将关键字 <b>$version</b>, <b>$major</b> 和 <b>$minor</b> 改回路径说明以便计算 true URL 地址。"
+
+msgid "The marked fields will need reviewing"
+msgstr "需要检查标记的字段"
+
+msgid ""
+"The order in which matchers keys are processed, first match wins.<br> You "
+"may use multiple attributes as a matcher key, for example, an order of "
+"<code>host group, environment</code> would expect a matcher such as "
+"<code>hostgroup = \"web servers\", environment = production</code>"
+msgstr ""
+"处理映射器密钥的指令，会采用第一个匹配的映射。<br>您可以使用多个属性作为映射器密钥，例如：一组 <code>host group, "
+"environment</code> 的映射器为 <code>hostgroup = \"web servers\", environment = "
+"production</code>。"
+
+msgid "The order in which values are resolved"
+msgstr "解析数值的指令"
+
+msgid ""
+"The path to the medium, can be a URL or a valid NFS server (exclusive of the "
+"architecture).\\n          for example <em>http://mirror.centos.org/centos/"
+"$version/os/$arch</em> where <strong>$arch</strong> will be substituted for "
+"the host's actual OS architecture and <strong>$version</strong>, "
+"<strong>$major</strong> and <strong>$minor</strong> will be substituted for "
+"the version of the operating system. Solaris and Debian media may also use "
+"<strong>$release</strong>."
+msgstr ""
+"介质路径，可以是 URL 或者幼小 NFS 服务器（不包括架构）。\\n         例如： <em>http://mirror.centos."
+"org/centos/$version/os/$arch</em>，其中使用主机实际操作系统架构替换 <strong>$arch</"
+"strong>，使用操作系统版本替换 <strong>$version</strong>, <strong>$major</strong> 和 "
+"<strong>$minor</strong>。Solaris 和 Debian 介质也可以使用 <strong>$release</strong>。"
+
+msgid ""
+"The remote system presented a public key signed by an unidentified "
+"certificate authority. If you are sure the remote system is authentic, go to "
+"the compute resource edit page, press the 'Test Connection' or 'Load "
+"Datacenters' button and submit"
+msgstr ""
+"显示由无法识别证书授权签名的公钥的远程系统。如果您确定该远程系统可信，请进入计算资源编辑页面，按“测试连接”或者“载入数据中心”按纽并提交。"
+
+msgid ""
+"The remote system presented a public key with hash %s but we're expecting a "
+"different hash. If you are sure the remote system is authentic, go to the "
+"compute resource edit page, press the 'Test Connection' or 'Load "
+"Datacenters' button and submit"
+msgstr ""
+"远程系统显示带哈希 %s "
+"的公钥，但应该是不同的哈希。如果如果您确定该远程系统可信，请进入计算资源编辑页面，按“测试连接”或者“载入数据中心”按纽并提交。"
+
+msgid "The selected hosts will execute a build operation on next reboot"
+msgstr "所选主机将在下次重启时执行构建。"
+
+msgid ""
+"The user that is used to ssh into the instance, normally cloud-user, ec2-"
+"user, ubuntu, root etc"
+msgstr "使用 ssh 进入该实例的用户，通常为 cloud-user, ec2-user, ubuntu, root 等等。"
+
+msgid "The virtual machine is being deleted."
+msgstr "已删除虚拟机。"
+
+msgid "There are two strategies when using host groups."
+msgstr "使用主机组时有两种策略。"
+
+msgid "There is"
+msgid_plural "There are"
+msgstr[0] "它们是"
+
+msgid "There was an error creating the PXE Default file: %s"
+msgstr "创建 PXE 默认文件时出错：%s"
+
+msgid "There was an error listing VMs: %(status)s %(statusText)s"
+msgstr "列出 VM 时出错：%(status)s %(statusText)s"
+
+msgid "There was an error listing VMs: %s"
+msgstr "列出 VM 时出错：%s"
+
+msgid "There was an error rendering the %s template: "
+msgstr "修改 %s 模板是出错："
+
+msgid ""
+"These two options are personal decisions and are up to you (where the main "
+"difference would be the parameter/variables settings)."
+msgstr "这两个选项都是个人决定，由您说了算（主要区别是参数/变量设置）。"
+
+msgid "Thin provision"
+msgstr "精简置备"
+
+msgid "This Puppet class has no parameters in its signature."
+msgstr "这个 Puppet 类别中其签名中没有参数。"
+
+msgid "This group has nested groups!"
+msgstr "这个组拥有嵌套的组！"
+
+msgid ""
+"This information is commonly imported from a pre-existing puppet "
+"configuration by the use of the"
+msgstr "这个信息通常是通过事先存在的 puppet 配置导入，通过使用"
+
+msgid "This is inherited from parent"
+msgstr "这是从上级项目中继承的"
+
+msgid "This is used by a host"
+msgstr "这是由主机使用的"
+
+msgid ""
+"This might take a while, as all hosts, facts and reports will be destroyed "
+"as well"
+msgstr "这需要一些时间，因为同时还要销毁所有主机、详情及报告。"
+
+msgid ""
+"This page will self destruct once Foreman starts to receive data about your "
+"hosts.  You can view this information again by clicking on the \"First use "
+"instructions\" link on the %{about} page."
+msgstr "Foreman 开始接收主机数据后会自动销毁这一页。您可以点击  %{about} 页面中的“首次使用步骤”链接再次查看这个信息。"
+
+msgid "This page will self destruct once a report comes in."
+msgstr "收到报告后就会自动销毁这一页。"
+
+msgid "This page will self destruct once data comes in."
+msgstr "收到数据后就会自动销毁这一页。"
+
+msgid "This page will self destruct once inventory data comes in."
+msgstr "收到清单数据后就会自动销毁这一页。"
+
+msgid ""
+"This setting is defined in the configuration file 'settings.yaml' and is "
+"read-only."
+msgstr "这个设置是在配置文件 'settings.yaml' 中定义，它是一个只读文件。"
+
+msgid "Time in Seconds"
+msgstr "时间（秒）"
+
+msgid "Time in minutes installation tokens should be valid for, 0 to disable"
+msgstr "以分钟为单位的安装令牌有效时间，0 代表禁用。"
+
+msgid "Timeout has occurred while communicating with %s"
+msgstr "与 %s 沟通时出现超时"
+
+msgid "To define trend counters, use the Add Trend Counter button."
+msgstr "请使用添加趋势计数器按纽定义趋势计数器。"
+
+msgid ""
+"To enable a provider, either install the OS package (e.g. foreman-libvirt) "
+"or enable the bundler group for development setup (e.g. ovirt)."
+msgstr "要启用供应商，可以按照 OS 软件包（比如 foreman-libvirt），也可以启用打包程序组进行开发设置（比如 ovirt）。"
+
+msgid ""
+"To start collecting trend data, set a cron job to execute '%{command}' every "
+"Puppet Interval (%{minutes} minutes)"
+msgstr "请设置一个 cron 任务在每个 Puppet 间隔（%{minutes} 分钟）间执行 '%{command}' 开始收集趋势数据。"
+
+msgid ""
+"To start collecting trend data, set a cron job to execute '%{command}' every "
+"Puppet Interval (%{minutes} minutes)."
+msgstr "请设置一个 cron 任务在每个 Puppet 间隔（%{minutes} 分钟）间执行 '%{command}' 开始收集趋势数据。"
+
+msgid ""
+"To update the class signature, go to the Puppet Classes page and select "
+"\"Import\"."
+msgstr "请进入 Puppet 类别页面，选择“导入”就可以更新该类别签名。"
+
+msgid "Toggle"
+msgstr "切换"
+
+msgid "Toggle notifications section"
+msgstr "切换通知部分"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Token"
+msgstr "符号"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Token|Expires"
+msgstr "到期"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Token|Value"
+msgstr "值"
+
+msgid "Total"
+msgstr "总"
+
+msgid "Total Hosts: %s"
+msgstr "主机合计: %s"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Trend"
+msgstr "趋势"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Trend counter"
+msgstr "趋势统计"
+
+msgid "Trend of the last %s days."
+msgstr "最后 %s 天的趋势。"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "TrendCounter|Count"
+msgstr "合计"
+
+msgid "Trends"
+msgstr "趋势"
+
+msgid "Trends for %s"
+msgstr "%s 的趋势"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Trend|Fact name"
+msgstr "详情名"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Trend|Fact value"
+msgstr "详情值"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Trend|Name"
+msgstr "名称"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Trend|Trendable type"
+msgstr "趋势类型"
+
+msgid "Trigger a puppetrun on a node; requires that puppet run is enabled"
+msgstr "在节点中切换 puppetrun；需要启用那个 puppet。"
+
+msgid "Troubleshooting"
+msgstr "故障排除"
+
+# translation auto-copied from project Fedora Installation Guide, version f17-alt, document Disk_Partitioning_Graphical_common-variablelist-1
+msgid "Type"
+msgstr "类型"
+
+msgid "Type of realm, e.g. Red Hat Identity Management"
+msgstr "输入范围，比如：Red Hat Identity Management"
+
+msgid "URL"
+msgstr "链接"
+
+msgid ""
+"URL hosts will retrieve templates from during build (normally http as many "
+"installers don't support https)"
+msgstr "URL 主机将在构建过程中检索模本（一般是 http，因为很多安装程序不支持 https）"
+
+msgid ""
+"URL where your Foreman instance is reachable (see also Provisioning > "
+"unattended_url)"
+msgstr "可访问  Foreman 实例的 URL（还可以查看置备> unattended_url）"
+
+# translation auto-copied from project Subscription Manager, version 1.8.X, document keys, author leahliu
+msgid "UUID"
+msgstr "UUID"
+
+msgid "Unable to access key"
+msgstr "无法访问密钥"
+
+msgid ""
+"Unable to change VM display listen address, make sure the display is not "
+"attached to localhost only"
+msgstr "无法更改 VM 显示侦听地址，请确定该显示只附加到本地主机。"
+
+msgid "Unable to communicate with the proxy: %s"
+msgstr "无法与代理服务器沟通：%s"
+
+msgid "Unable to create default TFTP boot menu"
+msgstr "无法创建默认 TFTP 引导菜单"
+
+msgid "Unable to create realm entry"
+msgstr "无法创建 realm 条目"
+
+msgid "Unable to create the anonymous role."
+msgstr "无法创建匿名角色。"
+
+msgid "Unable to create the default user role."
+msgstr "无法创建默认用户角色。"
+
+msgid "Unable to delete DHCP entry for %s"
+msgstr "删除 %s 的 DHCP 条目"
+
+msgid "Unable to delete DNS entry"
+msgstr "无法删除 DNS 条目"
+
+msgid "Unable to delete PuppetCA autosign for %s"
+msgstr "无法删除 %s 的 PuppetCA 自动签名"
+
+msgid "Unable to delete PuppetCA certificate for %s"
+msgstr "无法删除 %s 的 PuppetCA 证书"
+
+msgid "Unable to delete TFTP boot entry for %s"
+msgstr "无法删除 %s 的 TFTP 引导条目"
+
+msgid "Unable to detect TFTP boot server"
+msgstr "无法探测 TFTP 引导服务器"
+
+msgid "Unable to detect features"
+msgstr "无法探测功能"
+
+msgid ""
+"Unable to determine the host's boot server. The DHCP Capsule failed to "
+"provide this information and this subnet is not provided with TFTP services."
+msgstr "无法确定该主机的引导服务器。DHCP Capsule 无法提供这个信息，同时 TFTP 服务未提供这个子网。"
+
+msgid "Unable to execute Puppet run"
+msgstr "无法执行 Puppet 运行"
+
+msgid "Unable to fetch TFTP boot file"
+msgstr "无法添加 TFTP 引导文件"
+
+msgid "Unable to find IP address for '%s'"
+msgstr "无法找到 '%s' 的 IP 地址"
+
+msgid "Unable to find a proxy with BMC feature"
+msgstr "无法找到有 BMC 功能的代理服务器"
+
+msgid "Unable to find proper authentication method"
+msgstr "无法找到正确的认证方法"
+
+msgid "Unable to find template %s"
+msgstr "无法找到模板 %s"
+
+msgid "Unable to find templates as this host has no operating system"
+msgstr "无法找到模板，因为这台主机没有操作系统。"
+
+msgid "Unable to generate output, Check log files\\n"
+msgstr "无法创建输出，请检查日志文件\\n"
+
+msgid "Unable to get BMC providers"
+msgstr "无法获取 BMC 供应商"
+
+msgid "Unable to get PuppetCA autosign"
+msgstr "无法获取 PuppetCA 自动签名"
+
+msgid "Unable to get PuppetCA certificates"
+msgstr "无法获取 PuppetCA 证书"
+
+msgid "Unable to get classes from Puppet for %s"
+msgstr "无法从 Puppet 获取 %s 类别"
+
+msgid "Unable to get environment from Puppet"
+msgstr "无法从 Puppet 获取环境"
+
+msgid "Unable to get environments from Puppet"
+msgstr "无法从 Puppet 获取环境"
+
+msgid "Unable to get installed BMC providers"
+msgstr "无法获取安装的 BMC 供应商"
+
+msgid "Unable to perform boot BMC operation"
+msgstr "无法执行引导 BMC 的操作"
+
+msgid "Unable to perform identify BMC operation"
+msgstr "无法执行识别 BMC 的操作"
+
+msgid "Unable to perform lan BMC operation"
+msgstr "无法执行 lan BMC操作"
+
+msgid "Unable to perform power BMC operation"
+msgstr "无法执行电源 BMC 操作"
+
+msgid "Unable to retrieve DHCP entry for %s"
+msgstr "无法检索 %s 的 DHCP 条目"
+
+msgid "Unable to retrieve DHCP subnet"
+msgstr "无法检索 DHCP 子网"
+
+msgid "Unable to retrieve DHCP subnets"
+msgstr "无法检索 DHCP 子网"
+
+msgid "Unable to retrieve unused IP"
+msgstr "无法检索未使用的 IP"
+
+msgid "Unable to save"
+msgstr "无法保存"
+
+msgid "Unable to set DHCP entry"
+msgstr "无法设置 DHCP 条目"
+
+msgid "Unable to set DNS entry"
+msgstr "无法设置 DNS 条目"
+
+msgid "Unable to set PuppetCA autosign for %s"
+msgstr "无法设置 %s 的 PuppetCA 自动签名"
+
+msgid "Unable to set TFTP boot entry for %s"
+msgstr "无法设置 %s 的 TFTP 引导条目"
+
+msgid "Unable to sign PuppetCA certificate for %s"
+msgstr "无法签署 %s 的 PuppetCA 证书"
+
+msgid "Undo remove"
+msgstr "撤销删除"
+
+msgid "Unknown"
+msgstr "未知"
+
+msgid "Unknown Power State"
+msgstr "电源状态未知"
+
+msgid "Unknown action name for success message: %s"
+msgstr "成功消息中的未知操作：%s"
+
+msgid "Unknown fact"
+msgstr "未知详情"
+
+msgid "Unknown power management support - can't continue"
+msgstr "未知电源管理支持 - 无法继续"
+
+msgid "Unknown user"
+msgstr "未知用户"
+
+msgid "Unmanage host"
+msgstr "取消管理主机"
+
+msgid "Unsupported report status format"
+msgstr "不支持的报告状态格式"
+
+# translation auto-copied from project Subscription Manager, version 1.8.X, document keys
+msgid "Update"
+msgstr "更新"
+
+msgid "Update realm entry for %s"
+msgstr "更新 %s realm 条目"
+
+msgid "Update:"
+msgstr "更新："
+
+msgid "Updated"
+msgstr "更新"
+
+msgid "Updated all hosts!"
+msgstr "更新所有主机！"
+
+msgid "Updated hosts: Disassociated from VM"
+msgstr "已更新主机：取消与 VM 的关联"
+
+msgid "Updated hosts: changed environment"
+msgstr "已更新主机：更改环境"
+
+msgid "Updated hosts: changed host group"
+msgstr "已更新主机：更改主机组"
+
+msgid "Use Signo SSO for login"
+msgstr "使用单点登录"
+
+msgid "Use this account to authenticate, <i>optional</i>"
+msgstr "使用此账号验证, <i>可选</i>"
+
+msgid "Use this puppet server as a CA server"
+msgstr "使用这个 puppet 服务器作为 CA 服务器"
+
+msgid ""
+"Use this puppet server as an initial Puppet Server or to execute puppet runs"
+msgstr "使用这个 puppet 服务器作为起始 Puppet 服务器或者执行 puppet 运行"
+
+msgid "Useful template functions and macros"
+msgstr "有用的模板功能和宏"
+
+# translation auto-copied from project CFSE, version sam-1.2, document app, author leahliu
+#. "Table name" or "Table name|Column name" for error messages
+msgid "User"
+msgstr "用户"
+
+msgid "User Authentication"
+msgstr "用户身份验证"
+
+# translation auto-copied from project aeolus-conductor, version 1.1.1, document defaults, author leahliu
+msgid "User Groups"
+msgstr "用户组"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "User fact"
+msgstr "用户详情"
+
+msgid "User groups"
+msgstr "用户组"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "User role"
+msgstr "用户角色"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "UserFact|Andor"
+msgstr "Andor"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "UserFact|Criteria"
+msgstr "标准"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "UserFact|Operator"
+msgstr "操作者"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "UserRole|Owner type"
+msgstr "拥有者类型"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Usergroup"
+msgstr "用户组"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Usergroup member"
+msgstr "用户组成员"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "UsergroupMember|Member type"
+msgstr "成员类型"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Usergroup|Admin"
+msgstr "管理员"
+
+msgid "Usergroup|Auth source"
+msgstr "认证源"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Usergroup|Name"
+msgstr "名称"
+
+# translation auto-copied from project CFSE, version sam-1.2, document app, author leahliu
+msgid "Username"
+msgstr "用户名"
+
+# translation auto-copied from project CFSE, version sam-1.2, document app, author leahliu
+msgid "Users"
+msgstr "用户"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "User|Admin"
+msgstr "管理员权限"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "User|Avatar hash"
+msgstr "Avatar hash"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "User|Compute resources andor"
+msgstr "计算资源和（/或者）"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "User|Domains andor"
+msgstr "域"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "User|Facts andor"
+msgstr "详情"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "User|Filter on owner"
+msgstr "属于自己的"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "User|Firstname"
+msgstr "姓"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "User|Hostgroups andor"
+msgstr "用户组"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "User|Last login on"
+msgstr "上次登录"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "User|Lastname"
+msgstr "名"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "User|Locale"
+msgstr "语言"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "User|Locations andor"
+msgstr "位置"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "User|Login"
+msgstr "用户名"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "User|Mail"
+msgstr "邮箱"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "User|Organizations andor"
+msgstr "机构和（/或者）"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "User|Password hash"
+msgstr "Password hash"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "User|Password salt"
+msgstr "Password salt"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "User|Subscribe to all hostgroups"
+msgstr "订阅所有主机组"
+
+msgid ""
+"Using the organization system provides a way to group resources together for "
+"easy management."
+msgstr "使用机构系统提供将资源分组的方法以便于管理。"
+
+msgid "VCPU(s)"
+msgstr "VCPU(s)"
+
+msgid "VCenter/Server"
+msgstr "VCenter/服务器"
+
+msgid "VM"
+msgstr "VM"
+
+msgid "VM Attributes"
+msgstr "VM 属性"
+
+msgid "VM Attributes (%s)"
+msgstr "VM 属性（%s）"
+
+msgid "VM already associated with a host"
+msgstr "VM 已经与主机关联"
+
+msgid "VM associated to host %s"
+msgstr "与主机 %s 关联的 VM"
+
+msgid "VM editing is not implemented for this provider"
+msgstr "未在这个供应商中应用 VM 编辑"
+
+msgid "VM is not running!"
+msgstr "VM 尚未运行！"
+
+msgid "Valid from"
+msgstr "有效期从"
+
+msgid "Valid host group and environment combinations"
+msgstr "有效的主机组和环境组合"
+
+msgid "Validation types"
+msgstr "验证类型"
+
+# translation auto-copied from project Fedora Installation Guide, version f17-alt, document Partitions-x86
+msgid "Value"
+msgstr "值"
+
+msgid "Value to use when there is no match"
+msgstr "无映射时使用的值"
+
+msgid "Variable"
+msgstr "变量"
+
+msgid "Variables"
+msgstr "变量"
+
+msgid "Vendor class"
+msgstr "供应商类别"
+
+msgid "Verify"
+msgstr "验证"
+
+# translation auto-copied from project Subscription Manager, version 1.8.X, document keys
+msgid "Version"
+msgstr "版本"
+
+msgid "Version %{version}"
+msgstr "版本 %{version}"
+
+msgid "Version %{version} © 2014 Red Hat Inc."
+msgstr "版本 %{version} © 2014 Red Hat Inc."
+
+msgid "View Diff"
+msgstr "查看变化"
+
+msgid "View last report details"
+msgstr "查看最新报告详情"
+
+msgid "Virtual (NAT)"
+msgstr "虚拟 （NAT）"
+
+# translation auto-copied from project oVirt, version rhevm-3.2, document frontend/webadmin/modules/webadmin/src/main/resources/org/ovirt/engine/ui/frontend/org.ovirt.engine.ui.webadmin.ApplicationConstants, author xhuang
+msgid "Virtual Machine"
+msgstr "虚拟机"
+
+# translation auto-copied from project oVirt, version rhevm-3.2, document frontend/webadmin/modules/uicompat/src/main/resources/org/ovirt/engine/ui/uicompat/LocalizedEnums, author xhuang
+msgid "Virtual Machines"
+msgstr "虚拟机"
+
+msgid "Virtual Machines on %s"
+msgstr "%s 的虚拟主机"
+
+# translation auto-copied from project oVirt, version rhevm-3.2, document frontend/webadmin/modules/webadmin/src/main/resources/org/ovirt/engine/ui/frontend/org.ovirt.engine.ui.webadmin.ApplicationConstants, author xhuang
+msgid "Volumes"
+msgstr "卷"
+
+msgid "Wait for %s to come online"
+msgstr "等待 %s 上线"
+
+# translation auto-copied from project Fedora Installation Guide, version f17, document Kickstart2
+msgid "Warning"
+msgstr "警告"
+
+msgid "Warnings and errors"
+msgstr "警告和错误"
+
+msgid ""
+"We use Redmine to report and track bugs and feature requests, which can be "
+"found here:"
+msgstr "我们使用 Redmine 报告和跟踪 bug 及功能请求，可在这里找到 Redmine："
+
+msgid "Welcome"
+msgstr "欢迎"
+
+msgid "Welcome to Foreman"
+msgstr "欢迎使用 Foreman"
+
+msgid "Welcome to Satellite"
+msgstr "欢迎使用 Satellite"
+
+msgid ""
+"What ever text(or ERB template) you use in here, would be used as your OS "
+"disk layout options If you want to use the partition table option, delete "
+"all of the text from this field"
+msgstr "无论您在这里使用何种文本（或者 ERB 模板），都将作为 OS 磁盘布局选项使用。如果您要使用分区表选项，请删除此字段中的所有文本。"
+
+msgid "What is a <a href=\"%s\" rel=\"external\">Smart variable</a>?"
+msgstr "<a href=\"%s\" rel=\"external\">智能变量</a>是什么？"
+
+msgid ""
+"When a Host requests a template (e.g. during provisioning), Foreman will "
+"select the best match from the available templates of that type, in the "
+"following order:"
+msgstr "当主机需要一个模板时（比如在置备过程中），Foreman 将从那种类型的可用模板中选择最匹配的一个，选择顺序如下："
+
+msgid ""
+"When editing a Template, you must assign a list of Operating Systems which "
+"this Template can be used with. Optionally, you can restrict a template to a "
+"list of Hostgroups and/or Environments"
+msgstr "编辑模板时，您必须分配一个可在其中使用这个模板的操作系统列表。另外，您也可以将模板限制为主机组和（/或者）环境列表。"
+
+msgid ""
+"When operating in unattended mode Foreman will require more information, so "
+"expect more questions, but it will be able to automate host installations "
+"for Red Hat, Debian, SUSE and Solaris operating systems (and their clones), "
+"see"
+msgstr ""
+"使用无人模式操作时，Foreman 将需要更多信息，就会提出更多问题，但仍可以自动托管 Red Hat、Debian、SUSE 和 Solaris "
+"操作系统（及其克隆系统）的安装，请查看"
+
+msgid ""
+"Whether the smart-variable should override the Puppet class default value."
+msgstr "智能变量和是否应该覆盖 Puppet 类别的默认值？"
+
+msgid "Which is an offset of <b>%s</b>"
+msgstr "是 <b>%s</b> 偏移。"
+
+msgid "Wiki"
+msgstr "Wiki"
+
+msgid "YAML"
+msgstr "YAML"
+
+msgid ""
+"You Are about to change the default PXE menu on all configured TFTP servers -"
+" continue ?"
+msgstr "您要在所有配置的 TFTP 服务器中更改默认 PXE 菜单，要继续吗？"
+
+msgid ""
+"You are about to override the editor content with a previous version, are "
+"you sure?"
+msgstr "您要使用之前的版本覆盖编辑器内容，您确定吗？"
+
+msgid "You are about to override the editor content, are you sure?"
+msgstr "您要覆盖编辑器内容，您确定吗？"
+
+msgid "You are not authorized to perform this action"
+msgstr "您没有执行这个操作的授权"
+
+msgid "You are using an unsupported browser."
+msgstr "您正在使用不支持的浏览器。"
+
+msgid ""
+"You can find The Foreman on the %{freenode} (irc.freenode.net) network.  For "
+"general support, please visit #theforeman and for development specific "
+"related chat, please visit #theforeman-dev."
+msgstr ""
+"您可以在 %{freenode} (irc.freenode.net) 网络中找到 Foreman。常规支持请进入 "
+"#theforema，具体与开发相关的探讨，请进入 visit #theforeman-dev。"
+
+msgid "You can find details of how to set up the capsule at"
+msgstr "您可以找到如何设置 capsule 的详情"
+
+msgid "You can't assign some of roles you selected"
+msgstr "您无法分配某些选择的角色"
+
+msgid "You can't change Administrator flag"
+msgstr "您无法更改管理员标签"
+
+msgid "You cannot delete this user while logged in as this user."
+msgstr "您无法在用户登录时删除这个用户。"
+
+msgid "You cannot remove %s that are used by hosts or inherited."
+msgstr "您无法删除由主机或者继承的主机使用的 %s。"
+
+msgid "You do not have permission to %s this location parameter"
+msgstr "您没有 %s 这个位置参数的权限"
+
+msgid "You do not have permission to %s this organization parameter"
+msgstr "您没有 %s 这个机构参数的权限"
+
+msgid "You don't seem to have any Hosts, for more information see"
+msgstr "您好像没有任何主机，详情请查看"
+
+msgid ""
+"You don't seem to have any facts yet. If you wish to configure fact pushing, "
+"please follow"
+msgstr "您好像还没有任何详情。如果要配置详情 pushing，请按照以下步骤操作"
+
+msgid ""
+"You don't seem to have any reports, if you wish to configure Puppet to "
+"forward it reports to Foreman, please follow"
+msgstr "您好像没有任何报告，如果要配置 Puppet 向 Foreman 转发报告，请参照"
+
+msgid ""
+"You may also associate one or more operating systems with this medium or "
+"alternatively set this up later on the %s page."
+msgstr "您可能还要为这个介质关联一个或者多个操作系统，也可以稍后再 %s 页面中设置。"
+
+msgid ""
+"You may also associate one or more operating systems with this partition "
+"table or alternatively set this up later on the %s page"
+msgstr "您可能还要为这个分区表关联一个或者多个操作系统，也可以稍后再 %s 页面中设置。"
+
+msgid "You may also find the"
+msgstr "您还会看到"
+
+msgid ""
+"You may create puppet classes that represent high-level host configurations, "
+"for example, a <b>host-type-ldap-server</b> class, which includes all the "
+"required functionality from other modules or you may decide to create a host "
+"group called <b>host-type-ldap-server</b> and add the required classes into "
+"the host group configuration."
+msgstr ""
+"您可以创建代表高端主机配置的 puppet 类别，例如：<b>host-type-ldap-server</b> "
+"类别，它包含所有其他模块所需功能，或者您也可以决定创建名为 <b>host-type-ldap-server</b> "
+"的主机组，并在该主机组配置中添加所需类别。 "
+
+msgid ""
+"You may operate Foreman in basic mode, in which it acts as a reporting and "
+"external node classifier or you may also turn on unattended mode operation "
+"in which Foreman creates and manages the configuration files necessary to "
+"completely configure a new host."
+msgstr ""
+"您可能会使用基本模式运行 Foreman，在这种模式中，它可作为报告和外部节点分类程序使用，或者您也可能打开无人操作模式，Foreman "
+"可使用这个模式创建并管理完成新主机配置所需配置文件。"
+
+msgid ""
+"You may optionally wish to generate the online documentation for your puppet "
+"classes"
+msgstr "还可以自选为您的 puppet 类别创建在线文档"
+
+msgid "You must create a location before continuing."
+msgstr "继续前必须创建位置。"
+
+msgid "You must create an organization before continuing."
+msgstr "继续前必须创建机构。"
+
+msgid "You must create at least one location before continuing."
+msgstr "继续前必须创建至少一个位置。"
+
+msgid "You must create at least one organization before continuing."
+msgstr "继续前必须创建至少一个机构。"
+
+msgid ""
+"You must decide how you wish to use the software, and update the primary "
+"settings file <b>config/settings.yaml</b> and the"
+msgstr "您必须确定要如何使用这个软件，并更新主设置文件 <b>config/settings.yaml</b> 以及"
+
+msgid "You must select at least one permission"
+msgstr "您必须至少选择一个权限。"
+
+msgid ""
+"You would need to enable login in your settings.yml file first and restart "
+"foreman"
+msgstr "您需要在 settings.yml 文件中启用登录并长期 foreman"
+
+msgid "You would probably need to attach the"
+msgstr "您需要附加"
+
+msgid "Your session has expired, please login again"
+msgstr "会话已过期，请重新登录。"
+
+msgid "Zone"
+msgstr "区"
+
+msgid "a script as well"
+msgstr "可用脚本"
+
+msgid "add a new matcher-value pair"
+msgstr "添加一个新的匹配值对"
+
+msgid "add new network interface"
+msgstr "添加新的网络接口"
+
+msgid "add new storage volume"
+msgstr "添加新的存储卷"
+
+msgid "add new volume"
+msgstr "添加新的值"
+
+msgid "already exists"
+msgstr "已经存在"
+
+msgid "already in use"
+msgstr "使用中"
+
+# translation auto-copied from project DocBook locales, version 1, document locale
+msgid "and"
+msgstr "和"
+
+msgid "and relevant log entries."
+msgstr "和相关的日志条目。"
+
+msgid "belongs to config group"
+msgstr "属于配置组"
+
+msgid "can't be bigger than to range"
+msgstr "功能超过反问"
+
+msgid "can't be blank or contain trailing white spaces."
+msgstr "半年为空白或者在结尾包含空白字段。"
+
+msgid "can't be blank or contain white spaces."
+msgstr "不能为空白或者包含空白字段。"
+
+msgid "can't contain white spaces"
+msgstr "不能包含空白字段。"
+
+msgid "cannot be changed on an internal protected account"
+msgstr "不能再内部保护账户中进行更改"
+
+msgid "cannot be removed from an internal protected account"
+msgstr "不能从内部包保护账户中删除"
+
+msgid "cannot be removed from the last admin account"
+msgstr "不能从最后一个管理员帐户中删除"
+
+msgid "cant be blank unless a custom partition has been defined"
+msgstr "不能为空白除非定义了定制分区"
+
+msgid "common"
+msgstr "通用"
+
+msgid "cycle"
+msgstr "循环"
+
+msgid "does not appear to be a valid nfs mount path"
+msgstr "没有显示为有效 nfs 挂载路径"
+
+msgid "does not belong to subnet"
+msgstr "不属于子网"
+
+msgid "domain"
+msgstr "域"
+
+msgid "domain %s already has a subnet with this name"
+msgstr "在域 %s 已存在使用这个名称的子网"
+
+msgid "e-mail reporting"
+msgstr "电子邮件报告"
+
+msgid "e.g. RHEL 6.5"
+msgstr "例如：RHEL 6.5"
+
+msgid "e.g. admin@internal"
+msgstr "例如：admin@cm.com"
+
+msgid "e.g. givenName"
+msgstr "例如："
+
+msgid "e.g. http://openstack:5000/v2.0/tokens"
+msgstr "例如：http://openstack:5000/v2.0/tokens"
+
+msgid "e.g. https://identity.api.rackspacecloud.com/v2.0"
+msgstr "例如：https://identity.api.rackspacecloud.com/v2.0"
+
+msgid "e.g. https://ovirt.example.com/api"
+msgstr "例如：https://ovirt.example.com/api"
+
+msgid "e.g. jpegPhoto"
+msgstr "例如：jpegPhoto"
+
+msgid "e.g. karmic, lucid, hw0910 etc"
+msgstr "例如：karmic, lucid, hw0910 etc"
+
+msgid "e.g. mail"
+msgstr "例如：邮件"
+
+msgid "e.g. qemu://host.example.com/system"
+msgstr "例如：qemu://host.example.com/system"
+
+msgid "e.g. sn"
+msgstr "例如：sn"
+
+msgid "e.g. uid"
+msgstr "例如：uid"
+
+msgid "failed to %{action} %{vm}"
+msgstr "%{action} %{vm} 失败"
+
+msgid "failed to detect boot server: %s"
+msgstr "探测引导服务器失败：%s"
+
+msgid "failed to execute puppetrun: %s"
+msgstr "执行 puppetrun 失败：%s"
+
+msgid "failed to process template: %s"
+msgstr "处理模板失败：%s"
+
+msgid "failed to save %s"
+msgstr "保存 %s失败"
+
+msgid "filter for %s role"
+msgstr "%s 角色的过滤器"
+
+msgid "for more details."
+msgstr "详情。"
+
+msgid "for proxy"
+msgstr "代理服务器"
+
+msgid "free memory"
+msgstr "剩余内存"
+
+msgid "free swap"
+msgstr "剩余 swap"
+
+msgid "has this hostgroup already"
+msgstr "已有这个主机组"
+
+msgid "has this role already"
+msgstr "已有这个角色"
+
+msgid "here"
+msgstr "这里"
+
+msgid "hostgroup"
+msgstr "主机组"
+
+msgid "in %s"
+msgstr "%s 中"
+
+msgid "in Progress"
+msgstr "进行中"
+
+msgid "included already from parent"
+msgstr "已在上级包含"
+
+# translation auto-copied from project aeolus-conductor, version 1.1.1, document defaults
+msgid "invalid"
+msgstr "无效"
+
+msgid "invalid IP address"
+msgstr "无效 IP 地址"
+
+msgid "invalid LDAP filter syntax"
+msgstr "无效 LDAP 过滤器语法"
+
+msgid "invalid architecture for %s"
+msgstr " %s 的无效结构"
+
+msgid "invalid host list"
+msgstr "无效主机列表"
+
+msgid "invalid medium for %s"
+msgstr "%s的介质无效"
+
+msgid "invalid method %s"
+msgstr "%s 的无效方法"
+
+msgid "invalid path"
+msgstr "无效路径"
+
+msgid "invalid time range"
+msgstr "时间区间错误"
+
+msgid "invalid type %s"
+msgstr "错误类型 %s"
+
+msgid "invalid type: %s requested"
+msgstr "错误类型： 正确 %s "
+
+msgid "is alphanumeric and cannot contain spaces"
+msgstr "是数字字母，不能包含空格。"
+
+msgid "is already used by a user account"
+msgstr "已经被用户使用"
+
+msgid "is an unsupported provisioning method"
+msgstr "是不支持的置备方法"
+
+msgid "is invalid"
+msgstr "无效的"
+
+msgid "is invalid %s"
+msgstr "%s 无效"
+
+msgid "is invalid - only  http://, https:// are allowed"
+msgstr "无效，只允许使用 http:// 和 https://。"
+
+msgid "is invalid: %s"
+msgstr "无效：%s"
+
+msgid "is not allowed to change"
+msgstr "不允许更改"
+
+msgid "is not permitted"
+msgstr "不允许"
+
+msgid "is unknown"
+msgstr "未知"
+
+msgid "issue tracker"
+msgstr "启动跟踪程序"
+
+msgid "items selected. Uncheck to Clear"
+msgstr "已选择项目。取消选择清空。"
+
+msgid "last %s day"
+msgid_plural "last %s days"
+msgstr[0] "最后 %s 天"
+
+msgid "link external user group with this user group"
+msgstr "将外部用户组与这个用户组关联"
+
+#. Provide locale name in native language (e.g. English, Deutsch or Português)
+msgid "locale_name"
+msgstr "locale_name"
+
+msgid "location"
+msgstr "位置"
+
+msgid "locations"
+msgstr "位置"
+
+msgid "message"
+msgstr "信息"
+
+msgid "must be a valid URI"
+msgstr "信息"
+
+msgid "must be an array"
+msgstr "必须是数组"
+
+msgid "must be at most 15 characters"
+msgstr "最多只能有 15 个字符"
+
+msgid "must be boolean"
+msgstr "必须是布尔值"
+
+msgid "must be integer"
+msgstr "必须是整数"
+
+msgid "must be one of [ %s ]"
+msgstr "必须是 [ %s ] 之一"
+
+msgid "must be specified if from is defined"
+msgstr "需从已有定义中选择"
+
+msgid "must be specified if to is defined"
+msgstr "如定义则必须指定"
+
+msgid "must not include periods"
+msgstr "不得有句号"
+
+msgid "must provide a provider"
+msgstr "必须提供供应商"
+
+msgid "must set host and port"
+msgstr "必须设置主机和端口"
+
+msgid "new"
+msgstr "新建"
+
+msgid "no puppet proxy defined - cant continue"
+msgstr "未定义 puppet proxy - 无法继续"
+
+msgid "no value"
+msgstr "未提供值"
+
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author leahliu
+msgid "none"
+msgstr "无"
+
+msgid "off"
+msgstr "关闭"
+
+msgid "on"
+msgstr "打开"
+
+msgid "organization"
+msgstr "机构"
+
+msgid "organizations"
+msgstr "机构"
+
+msgid "os"
+msgstr "os"
+
+msgid "override"
+msgstr "覆盖"
+
+msgid ""
+"parameters require an associated domain, operating system, host or host "
+"group"
+msgstr "需要有关联的域、操作系统、主机或者主机组的参数"
+
+msgid "parsing settings type '%s' from string is not defined"
+msgstr "未定义根据字符串解析设置类型 '%s'"
+
+msgid "pending"
+msgstr "等待处理中"
+
+msgid "poweroff"
+msgstr "关闭"
+
+msgid "puppet class browser"
+msgstr "浏览puppet 类"
+
+msgid "reboot"
+msgstr "重启"
+
+msgid "remove network interface"
+msgstr "删除网络接口"
+
+msgid "remove value"
+msgstr "删除值"
+
+msgid "remove volume"
+msgstr "删除值"
+
+msgid "reset"
+msgstr "重置"
+
+msgid "revoked"
+msgstr "撤销"
+
+msgid "select an owner"
+msgstr "选择所有者"
+
+msgid "setting up facts"
+msgstr "设置详情"
+
+msgid "setting up reporting"
+msgstr "设置报告"
+
+msgid "settings"
+msgstr "设置"
+
+msgid "should be 8 characters or more"
+msgstr "不少于8个字符"
+
+msgid "should follow this format: 0,9600n8"
+msgstr "格式参考： 0,9600n8"
+
+msgid "should not be blank - consider setting a global or host group default"
+msgstr "不应为空白 - 考虑设置全局或者主机组默认"
+
+msgid "soft"
+msgstr "软"
+
+msgid "start"
+msgstr "启动"
+
+msgid "state"
+msgstr "状态"
+
+msgid "status"
+msgstr "状态"
+
+msgid "stop"
+msgstr "停止"
+
+msgid "these hosts for a build operation on next boot"
+msgstr "这些主机下次重启时构建操作"
+
+msgid "this page"
+msgstr "该页"
+
+msgid "to indicate your selections."
+msgstr "代表您的选择。"
+
+msgid "to point Foreman at it."
+msgstr "将 Foreman 指向它。"
+
+msgid "unable to find any hosts for puppet environment=%s"
+msgstr "无法找到 puppet environment=%s 的任何主机"
+
+msgid "unable to find any hosts that match your request"
+msgstr "无法找打匹配您要求的主机"
+
+msgid "unable to find any hosts with the fact name=%{name} and value=%{value}"
+msgstr "无法找到 fact name=%{name} and value=%{value} 的主机"
+
+msgid "unable to find recipients"
+msgstr "无法找到收件人"
+
+msgid "unable to sign a non pending certificate"
+msgstr "无法签署未处于处理阶段的证书"
+
+msgid "unknown permission for %s"
+msgstr "%s 的未知权限"
+
+msgid "unknown provider"
+msgstr "未知提供商"
+
+msgid "unspecified"
+msgstr "未指定的"
+
+msgid "used memory"
+msgstr "已使用内存"
+
+msgid "used swap"
+msgstr "已使用 swap"
+
+msgid "useful."
+msgstr "可用。"
+
+msgid "using %s"
+msgstr "使用 %s"
+
+msgid ""
+"using %{allocation} GB out of %{capacity} GB, %{pool_name} storage pool"
+msgstr "使用 %{pool_name}  存储池 %{capacity} GB 中的 %{allocation} GB"
+
+msgid "valid"
+msgstr "合法"
+
+msgid "you may use %s"
+msgstr "可用使用 %s"
+
+msgid "you probably need to configure your %s first."
+msgstr "您可以需要首先配置 %s"
+
+msgid ""
+"your libvirt host does not support interface listing, please enter here the "
+"bridge name (e.g. br0)"
+msgstr "您的 libvirt 主机不支持接口列表，请在这里输入桥接名称（例如：br0）"

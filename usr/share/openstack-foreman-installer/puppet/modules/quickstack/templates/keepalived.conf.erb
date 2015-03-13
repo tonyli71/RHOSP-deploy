@@ -1,0 +1,50 @@
+vrrp_instance VI_1 {
+    interface eno2
+    state backup
+    smtp_alert
+    nopreempt
+    virtual_router_id 51
+    priority 100 # on the nodes considered slaves, change 101 -> 100
+    unicast_peer {
+      10.168.0.3
+      10.168.0.4
+      10.168.0.5
+    }
+ 
+    advert_int 1
+       authentication {
+          auth_type PASS
+          auth_pass 1111
+    }
+ 
+    virtual_ipaddress {
+       10.168.0.10/16
+    }
+ 
+}
+
+vrrp_instance VI_2 {
+    interface enp32s0f0.596
+    state backup
+    nopreempt
+    smtp_alert
+    virtual_router_id 52
+    priority 101 # on the nodes considered slaves, change 101 -> 100
+    unicast_peer {
+      192.168.52.3
+      192.168.52.4
+      192.168.52.5
+    }
+ 
+    advert_int 1
+       authentication {
+          auth_type PASS
+          auth_pass 1111
+    }
+ 
+    virtual_ipaddress {
+       192.168.52.10/24
+    }
+ 
+}
+

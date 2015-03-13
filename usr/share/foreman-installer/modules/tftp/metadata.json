@@ -1,0 +1,14 @@
+{
+  "name": "theforeman-tftp",
+  "version": "1.4.3",
+  "author": "theforeman",
+  "summary": "TFTP server configuration",
+  "license": "GPLv3+",
+  "source": "git://github.com/theforeman/puppet-tftp",
+  "project_page": "http://github.com/theforeman/foreman-installer",
+  "issues_url": "https://github.com/theforeman/puppet-tftp/issues",
+  "description": "Module for configuring a TFTP server",
+  "dependencies": [
+    {"name":"puppetlabs/xinetd","version_requirement":">= 1.1.0 < 2.0.0"}
+  ]
+}

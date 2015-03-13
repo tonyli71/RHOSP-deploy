@@ -1,0 +1,207 @@
+global
+log 127.0.0.1 local0 notice
+user haproxy
+group haproxy
+ 
+defaults
+log global
+retries 2
+timeout connect 1000
+timeout server 5000
+timeout client 5000
+
+listen webinterface
+	bind <%= @myIp_admin %>:8282
+	mode http
+	stats enable
+	stats uri /
+	stats realm Strictly\ Private
+	stats auth root:redhat
+
+listen keystone_auth
+        bind    0.0.0.0:35357
+        balance source
+        option  tcpka
+        option  httpchk
+        option  tcplog
+        server  controller-a.cmri.com 192.168.52.3:35357 check inter 2000 rise 2 fall 3
+        server  controller-b.cmri.com 192.168.52.4:35357 backup check inter 2000 rise 2 fall 3
+        server  controller-c.cmri.com 192.168.52.5:35357 backup check inter 2000 rise 2 fall 3
+ 
+listen keystone_api
+        bind    0.0.0.0:5000
+        balance source
+        option  tcpka
+        option  httpchk
+        option  tcplog
+        server  controller-a.cmri.com 192.168.52.3:5000 check inter 2000 rise 2 fall 3
+        server  controller-b.cmri.com 192.168.52.4:5000 backup check inter 2000 rise 2 fall 3
+        server  controller-c.cmri.com 192.168.52.5:5000 backup check inter 2000 rise 2 fall 3
+ 
+listen glance_api
+        bind    0.0.0.0:9292
+        balance source
+        option  tcpka
+        option  httpchk
+        option  tcplog
+        server  controller-a.cmri.com 192.168.52.3:9292 check inter 2000 rise 2 fall 3
+        server  controller-b.cmri.com 192.168.52.4:9292 backup check inter 2000 rise 2 fall 3
+        server  controller-c.cmri.com 192.168.52.5:9292 backup check inter 2000 rise 2 fall 3
+ 
+listen glance_registry
+        bind    0.0.0.0:9191
+        balance source
+        option  tcpka
+#        option  httpchk # glance-registry does not accept a HTTP-hello like connection
+        option  tcplog
+        server  controller-a.cmri.com 192.168.52.3:9191 check inter 2000 rise 2 fall 3
+        server  controller-b.cmri.com 192.168.52.4:9191 backup check inter 2000 rise 2 fall 3
+        server  controller-c.cmri.com 192.168.52.5:9191 backup check inter 2000 rise 2 fall 3
+
+listen swiftg_api
+        bind    0.0.0.0:8080
+        balance source
+        option  tcpka
+#        option  httpchk # swiftg_api does not accept a HTTP-hello like connection
+        option  tcplog
+        server  controller-a.cmri.com 10.168.0.3:8080 check inter 2000 rise 2 fall 3
+        server  controller-b.cmri.com 10.168.0.4:8080 backup check inter 2000 rise 2 fall 3
+        server  controller-c.cmri.com 10.168.0.5:8080 backup check inter 2000 rise 2 fall 3
+ 
+listen epmd 0.0.0.0:4369
+        mode tcp
+        balance roundrobin
+        server  controller-a.cmri.com 192.168.52.3:4369 check inter 2000 rise 2 fall 3
+        server  controller-b.cmri.com 192.168.52.4:4369 check inter 2000 rise 2 fall 3
+        server  controller-c.cmri.com 192.168.52.5:4369 check inter 2000 rise 2 fall 3
+ 
+listen rabbitmq  0.0.0.0:5672
+	mode tcp
+        balance roundrobin
+        server  controller-a.cmri.com 192.168.52.3:5672 check inter 2000 rise 2 fall 3
+        server  controller-b.cmri.com 192.168.52.4:5672 check inter 2000 rise 2 fall 3
+        server  controller-c.cmri.com 192.168.52.5:5672 check inter 2000 rise 2 fall 3
+
+listen galera
+  	bind 0.0.0.0:3306
+        balance source
+        mode tcp
+        option tcpka
+        option mysql-check user haproxy
+        server  controller-a.cmri.com 10.168.0.3:3306 check weight 1
+        server  controller-b.cmri.com 10.168.0.4:3306 check weight 1
+        server  controller-c.cmri.com 10.168.0.5:3306 check weight 1
+
+listen heat_api_cluster
+  	bind 0.0.0.0:8004
+  	balance  source
+  	option  tcpka
+  	option  httpchk
+  	option  tcplog
+  	server controller-a.cmri.com 192.168.52.3:8004  check inter 2000 rise 2 fall 5
+  	server controller-b.cmri.com 192.168.52.4:8004  check inter 2000 rise 2 fall 5
+  	server controller-c.cmri.com 192.168.52.5:8004  check inter 2000 rise 2 fall 5
+
+listen heat_cf_api_cluster
+  	bind 0.0.0.0:8000
+  	balance  source
+  	option  tcpka
+  	option  httpchk
+  	option  tcplog
+  	server controller-a.cmri.com 192.168.52.3:8000  check inter 2000 rise 2 fall 5
+  	server controller-b.cmri.com 192.168.52.4:8000  check inter 2000 rise 2 fall 5
+  	server controller-c.cmri.com 192.168.52.5:8000  check inter 2000 rise 2 fall 5
+
+listen nova_ec2 
+  	bind 0.0.0.0:8773
+        balance source
+        option tcpka
+#        option httpchk  # nova_ec2 does not accept a HTTP-hello like connection
+        maxconn 10000
+  	server controller-a.cmri.com 192.168.52.3:8773  check inter 2000 rise 2 fall 5
+  	server controller-b.cmri.com 192.168.52.4:8773  check inter 2000 rise 2 fall 5
+  	server controller-c.cmri.com 192.168.52.5:8773  check inter 2000 rise 2 fall 5
+
+listen nova_osapi
+  	bind 0.0.0.0:8774
+        balance source
+        option tcpka
+        option httpchk
+        maxconn 10000
+  	server controller-a.cmri.com 192.168.52.3:8774  check inter 2000 rise 2 fall 5
+  	server controller-b.cmri.com 192.168.52.4:8774  check inter 2000 rise 2 fall 5
+  	server controller-c.cmri.com 192.168.52.5:8774  check inter 2000 rise 2 fall 5
+
+listen nova_metadata 
+  	bind 0.0.0.0:8775
+        balance source
+        option tcpka
+        option httpchk
+        maxconn 10000
+  	server controller-a.cmri.com 192.168.52.3:8775  check inter 2000 rise 2 fall 5
+  	server controller-b.cmri.com 192.168.52.4:8775  check inter 2000 rise 2 fall 5
+  	server controller-c.cmri.com 192.168.52.5:8775  check inter 2000 rise 2 fall 5
+
+listen ceilometer 
+  	bind 0.0.0.0:8777
+        balance source
+        option tcpka
+#        option httpchk # ceilometer does not accept a HTTP-hello like connection
+        maxconn 10000
+  	server controller-a.cmri.com 10.168.0.3:8777  check inter 2000 rise 2 fall 5
+  	server controller-b.cmri.com 10.168.0.4:8777  check inter 2000 rise 2 fall 5
+  	server controller-c.cmri.com 10.168.0.5:8777  check inter 2000 rise 2 fall 5
+
+listen novnc 
+  	bind 0.0.0.0:6080
+        balance source
+        option tcpka
+        maxconn 10000
+  	server controller-a.cmri.com 192.168.52.3:6080  check inter 2000 rise 2 fall 5
+  	server controller-b.cmri.com 192.168.52.4:6080  check inter 2000 rise 2 fall 5
+  	server controller-c.cmri.com 192.168.52.5:6080  check inter 2000 rise 2 fall 5
+
+listen dashboard
+        bind    0.0.0.0:80
+        balance     roundrobin  
+        capture  cookie vgnvisitor= len 32
+        cookie  SERVERID insert indirect nocache
+        mode  http
+        option  forwardfor
+        option  httpchk
+        option  httpclose
+        rspidel  ^Set-cookie:\ IP=
+  	server controller-a.cmri.com 192.168.52.3:80  check cookie controller-a.cmri.com
+  	server controller-b.cmri.com 192.168.52.4:80  check cookie controller-b.cmri.com
+  	server controller-c.cmri.com 192.168.52.5:80  check cookie controller-c.cmri.com
+ 
+listen cinder-api_public
+        bind    0.0.0.0:8776
+        balance source
+        option  tcpka
+        option  tcplog
+	option  httpchk
+  	server controller-a.cmri.com 192.168.52.3:8776  check inter 2000 rise 2 fall 5
+  	server controller-b.cmri.com 192.168.52.4:8776  check inter 2000 rise 2 fall 5
+  	server controller-c.cmri.com 192.168.52.5:8776  check inter 2000 rise 2 fall 5
+ 
+listen neutron-server
+	bind 0.0.0.0:9696
+        balance source
+        option  tcpka
+        option  httpchk
+        option  tcplog
+  	server controller-a.cmri.com 192.168.52.3:9696  check inter 2000 rise 2 fall 5
+  	server controller-b.cmri.com 192.168.52.4:9696  check inter 2000 rise 2 fall 5
+  	server controller-c.cmri.com 192.168.52.5:9696  check inter 2000 rise 2 fall 5
+ 
+listen memcached_cluster
+        bind    0.0.0.0:11211
+        balance source
+        option  tcpka
+        option  tcplog
+  	server controller-a.cmri.com 192.168.52.3:11211  check inter 2000 rise 2 fall 5
+  	server controller-b.cmri.com 192.168.52.4:11211  check inter 2000 rise 2 fall 5
+  	server controller-c.cmri.com 192.168.52.5:11211  check inter 2000 rise 2 fall 5
+
+

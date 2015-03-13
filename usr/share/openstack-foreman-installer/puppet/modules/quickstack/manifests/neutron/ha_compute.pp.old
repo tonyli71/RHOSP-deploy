@@ -1,0 +1,229 @@
+# Quickstack compute node configuration for neutron (OpenStack Networking)
+class quickstack::neutron::ha_compute (
+  $admin_password              = $quickstack::params::admin_password,
+  $ceilometer_metering_secret  = $quickstack::params::ceilometer_metering_secret,
+  $ceilometer_user_password    = $quickstack::params::ceilometer_user_password,
+  $cinder_backend_gluster      = $quickstack::params::cinder_backend_gluster,
+  $controller_priv_host        = $quickstack::params::controller_priv_host,
+  $controller_pub_host         = $quickstack::params::controller_pub_host,
+  $enable_tunneling            = $quickstack::params::enable_tunneling,
+  $mysql_host                  = $quickstack::params::mysql_host,
+  $neutron_core_plugin         = $quickstack::params::neutron_core_plugin,
+  $neutron_db_password         = $quickstack::params::neutron_db_password,
+  $neutron_user_password       = $quickstack::params::neutron_user_password,
+  $nova_db_password            = $quickstack::params::nova_db_password,
+  $nova_user_password          = $quickstack::params::nova_user_password,
+  $ovs_bridge_mappings         = $quickstack::params::ovs_bridge_mappings,
+  $ovs_vlan_ranges             = $quickstack::params::ovs_vlan_ranges,
+  $ovs_tunnel_iface            = $quickstack::params::ovs_tunnel_iface,
+  $rabbit_host                   = $quickstack::params::rabbit_host,
+  $rabbit_port                   = $quickstack::params::rabbit_port,
+  $rabbit_userid                 = $quickstack::params::rabbit_userid,
+  $rabbit_password               = $quickstack::params::rabbit_password,
+#  $rabbit_hosts                  = $quickstack::params::rabbit_hosts,
+  $rabbit_hosts                  = ["10.0.168.2:5672","10.0.168.3:5672","10.0.168.4:5672"],
+  $rabbit_virtual_host           = $quickstack::params::rabbit_virtual_host,
+  $rabbit_ha_queues              = $quickstack::params::rabbit_ha_queues,
+  $tenant_network_type         = $quickstack::params::tenant_network_type,
+  $tunnel_id_ranges            = '1:1000',
+  $ovs_vxlan_udp_port          = $quickstack::params::ovs_vxlan_udp_port,
+  $ovs_tunnel_types            = $quickstack::params::ovs_tunnel_types,
+  $verbose                     = $quickstack::params::verbose,
+  $ssl                         = $quickstack::params::ssl,
+  $mysql_ca                    = $quickstack::params::mysql_ca,
+  $ml2_type_drivers              = ['gre'],
+  $ml2_tunnel_id_ranges          = ['1:1000'],
+  $ml2_enable_security_group     = True,
+
+  $ovs_tunnel_iface_mac          = '',
+  $ovs_tunnel_iface_ip           = '',
+  $ovs_tunnel_iface_netmask      = '255.255.255.0',
+
+  $ceph_iface                     = $quickstack::params::ceph_iface,
+  $ceph_iface_ip                  = $quickstack::params::ceph_iface_ip,
+  $ceph_iface_netmask             = $quickstack::params::ceph_iface_netmask,
+
+  $ceph_mon_hosts                = $quickstack::params::ceph_mon_hosts,
+  $ceph_public_network           = $quickstack::params::ceph_public_network,
+  $ceph_mon_initial_members      = $quickstack::params::ceph_mon_initial_members,
+  $ceph_fsid                     = $quickstack::params::ceph_fsid,
+  $ceph_client_admin_key         = $quickstack::params::ceph_client_admin_key,
+
+) inherits quickstack::params {
+
+  if str2bool_i("$ssl") {
+    $qpid_protocol = 'ssl'
+    $qpid_port = '5671'
+    $sql_connection = "mysql://neutron:${neutron_db_password}@${mysql_host}/neutron?ssl_ca=${mysql_ca}"
+  } else {
+    $qpid_protocol = 'tcp'
+    $qpid_port = '5672'
+    $sql_connection = "mysql://neutron:${neutron_db_password}@${mysql_host}/neutron"
+  }
+
+  if ($ovs_tunnel_iface_ip  != '' ) {
+      exec { "setovs_tunnel_iface":
+          #command     => "bash -c \"iface=`ifconfig -a | grep -B 2 -i '$ovs_tunnel_iface_mac' |  grep -i mtu |  head -1 | cut -f 1 -d ':'`;ifconfig \${iface} $ovs_tunnel_iface_ip netmask $ovs_tunnel_iface_netmask\"",
+          command     => "ifconfig $ovs_tunnel_iface $ovs_tunnel_iface_ip netmask $ovs_tunnel_iface_netmask",
+          path        => ['/usr/sbin', '/sbin','/usr/local/sbin','/usr/local/bin','/usr/bin','/root/bin'],
+          before      => [Class ['::neutron::plugins::ovs']],
+      }
+      $local_ip = $ovs_tunnel_iface_ip
+  }else{
+      $local_ip = find_ip("$ovs_tunnel_network","$ovs_tunnel_iface","")
+  }
+
+  if ($ceph_iface_ip  != '' ) {
+      exec { "set_ceph_iface":
+          command     => "ifconfig $ceph_iface $ceph_iface_ip netmask $ceph_iface_netmask",
+          path        => ['/usr/sbin', '/sbin','/usr/local/sbin','/usr/local/bin','/usr/bin','/root/bin'],
+          before      => [Class ['::neutron::plugins::ovs']],
+      }
+  }
+
+  package { 'ceph':
+    ensure   => 'installed',
+    name     => 'ceph',
+    provider => 'yum',
+    before  => File['/etc/ceph/ceph.conf'],
+  }
+
+  package { 'kmod-rbd':
+    ensure   => 'installed',
+    name     => 'kmod-rbd',
+    provider => 'yum',
+  }
+
+  file { '/etc/ceph/ceph.conf':
+    ensure  => present,
+    mode    => '0644',
+    owner   => 'root',
+    group   => 'root',
+    content => template('quickstack/ceph.config.erb'),
+    before  => File['/etc/ceph/ceph.client.admin.keyring'],
+  }
+
+  file { '/etc/ceph/ceph.client.admin.keyring':
+    ensure  => present,
+    mode    => '0644',
+    owner   => 'root',
+    group   => 'root',
+    content => template('quickstack/ceph.client.admin.keyring.erb'),
+  }
+
+  class { '::neutron':
+    allow_overlapping_ips => true,
+    rpc_backend           => 'neutron.openstack.common.rpc.impl_kombu',
+    rabbit_host           => $rabbit_host,
+    rabbit_port           => $rabbit_port,
+    rabbit_password       => $rabbit_password,
+    rabbit_hosts          => $rabbit_hosts,
+    core_plugin           => $neutron_core_plugin
+  }
+
+  neutron_config {
+    'database/connection': value => $sql_connection;
+    'keystone_authtoken/auth_host':         value => $controller_priv_host;
+    'keystone_authtoken/admin_tenant_name': value => 'services';
+    'keystone_authtoken/admin_user':        value => 'neutron';
+    'keystone_authtoken/admin_password':    value => $neutron_user_password;
+  }
+
+  class { '::neutron::plugins::ml2':
+      type_drivers          => $ml2_type_drivers,
+      tenant_network_types  => $tenant_network_type,
+      mechanism_drivers     => ['openvswitch'],
+      flat_networks         => ['*'],
+      #network_vlan_ranges   => $ovs_vlan_ranges,
+      #network_vlan_ranges   => [$ovs_vlan_ranges],
+      network_vlan_ranges => $ml2_network_vlan_ranges,
+      tunnel_id_ranges      => $ml2_tunnel_id_ranges,
+      vxlan_group           => '224.0.0.1',
+      vni_ranges            => ['10:100'],
+      enable_security_group => $ml2_enable_security_group,
+      firewall_driver       => true,
+  }
+
+  class { '::neutron::plugins::ovs':
+    sql_connection      => $sql_connection,
+    tenant_network_type => $tenant_network_type,
+    #network_vlan_ranges => $ovs_vlan_ranges,
+    network_vlan_ranges => $ml2_network_vlan_ranges,
+    tunnel_id_ranges    => $tunnel_id_ranges,
+    vxlan_udp_port      => $ovs_vxlan_udp_port,
+  }
+
+  class { '::neutron::agents::ovs':
+    bridge_mappings     => $ovs_bridge_mappings,
+#    local_ip            => getvar(regsubst("ipaddress_${ovs_tunnel_iface}", '[.-]', '_', 'G')),
+    local_ip         => $local_ip,
+    enable_tunneling    => str2bool_i("$enable_tunneling"),
+    tunnel_types     => $ovs_tunnel_types,
+    vxlan_udp_port   => $ovs_vxlan_udp_port,
+  }
+
+  class { '::nova::network::neutron':
+    neutron_admin_password    => $neutron_user_password,
+    neutron_url               => "http://${controller_priv_host}:9696",
+    neutron_admin_auth_url    => "http://${controller_priv_host}:35357/v2.0",
+  }
+
+
+  class { 'quickstack::compute_common':
+    admin_password              => $admin_password,
+    ceilometer_metering_secret  => $ceilometer_metering_secret,
+    ceilometer_user_password    => $ceilometer_user_password,
+    cinder_backend_gluster      => $cinder_backend_gluster,
+    controller_priv_host        => $controller_priv_host,
+    controller_pub_host         => $controller_pub_host,
+    mysql_host                  => $mysql_host,
+    nova_db_password            => $nova_db_password,
+    nova_user_password          => $nova_user_password,
+    rabbit_host                   => $rabbit_host,
+    rabbit_port                   => $rabbit_port,
+    rabbit_userid                 => $rabbit_userid,
+    rabbit_password               => $rabbit_password,
+    #rabbit_hosts                  => $rabbit_hosts,
+    rabbit_hosts                  => $rabbit_hosts,
+    rabbit_virtual_host           => $rabbit_virtual_host,
+    rabbit_ha_queues              => $rabbit_ha_queues,
+    verbose                     => $verbose,
+    ssl                         => $ssl,
+    mysql_ca                    => $mysql_ca,
+  }
+
+  class {'quickstack::neutron::firewall::vxlan':
+    port => $ovs_vxlan_udp_port,
+  }
+
+  
+  service { 'ntpd':
+    ensure => 'running',
+    name   => 'ntpd',
+    enable => true,
+  }
+
+  package { 'ntp':
+    ensure   => 'installed',
+    name     => 'ntp',
+    provider => 'yum',
+    before  => File['/etc/ntp.conf'],
+  }
+
+  file { '/etc/ntp.conf':
+    ensure => present,
+    mode   => '0644',
+    owner  => 'root',
+    group  => 'root',
+    content => template('quickstack/ntp-client.conf.erb'),
+  }
+
+  file { '/etc/ntp/step-tickers':
+    ensure => present,
+    mode   => '0644',
+    owner  => 'root',
+    group  => 'root',
+    content => template('quickstack/step-tickers.erb'),
+}
+
+}

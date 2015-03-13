@@ -10,18 +10,16 @@ class foreman_proxy::config {
   if $foreman_proxy::puppetca  { include foreman_proxy::puppetca }
   if $foreman_proxy::tftp      { include foreman_proxy::tftp }
 
-  # I going to use ipa manage those DHCP DNS TFTP etc. So comment this out.
-
   # Somehow, calling these DHCP and DNS seems to conflict. So, they get a prefix...
-  #if $foreman_proxy::dhcp and $foreman_proxy::dhcp_managed { include foreman_proxy::proxydhcp }
+  if $foreman_proxy::dhcp and $foreman_proxy::dhcp_managed { include foreman_proxy::proxydhcp }
 
-  #if $foreman_proxy::dns and $foreman_proxy::dns_managed {
-  #  include foreman_proxy::proxydns
-  #  include dns::params
-  #  $groups = [$dns::params::group,$foreman_proxy::puppet_group]
-  #} else {
-  #  $groups = [$foreman_proxy::puppet_group]
-  #}
+  if $foreman_proxy::dns and $foreman_proxy::dns_managed {
+    include foreman_proxy::proxydns
+    include dns::params
+    $groups = [$dns::params::group,$foreman_proxy::puppet_group]
+  } else {
+    $groups = [$foreman_proxy::puppet_group]
+  }
 
   user { $foreman_proxy::user:
     ensure  => 'present',

@@ -1,0 +1,20 @@
+# adapted from ::xinetd's template 
+
+service <%= @service_name %>
+{
+        port = <%= @port %>
+        disable = <%= @disable %>
+        socket_type = <%= @socket_type %>
+        protocol = <%= @protocol %>
+        wait = <%= @wait %>
+        user = <%= @user %>
+        group = <%= @group %>
+        server = <%= @server %>
+        bind = <%= @bind_addr %>
+<% if @server_args.length > 0 %>        server_args = <%= @server_args %><% end %>
+<% if @per_source.length > 0 %>        per_source = <%= @per_source %><% end %>
+<% if @log_on_failure.length > 0 %>        log_on_failure += <%= @log_on_failure %><% end %>
+<% if @cps.length > 0 %>        cps = <%= @cps %><% end %>
+<% if @flags.length > 0 %>        flags = <%= @flags %><% end %>
+<% if @service_type.length > 0 %>        type = <%= @service_type %><% end %>
+}

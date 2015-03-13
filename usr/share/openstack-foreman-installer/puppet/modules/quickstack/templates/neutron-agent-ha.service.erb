@@ -1,0 +1,13 @@
+[Unit]
+Description=OpenStack netron agent HA Service
+After=syslog.target network.target
+
+[Service]
+Type=simple
+User=root
+ExecStart=/usr/bin/neutron-agent-ha --config-file /usr/share/neutron/neutron-dist.conf --config-file /etc/neutron/neutron.conf --config-file /etc/neutron/dhcp_agent.ini --log-file /var/log/neutron/dhcp-agent.log
+PrivateTmp=false
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target

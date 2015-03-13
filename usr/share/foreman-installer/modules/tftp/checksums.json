@@ -1,0 +1,16 @@
+{
+  "CHANGELOG.md": "42e7ae65952e8ecd01dd79697ce4f5e3",
+  "Gemfile": "2211dc65eec75963edc0a4eb7dd8717e",
+  "LICENSE": "9eef91148a9b14ec7f9df333daebc746",
+  "Modulefile": "eabe043286539e019feaa9ac4cb686cd",
+  "README.md": "5f0b01638ba97ca3964305ad0c0e154e",
+  "Rakefile": "71e8380e3c412cb06b6c9abf6f1e68a2",
+  "manifests/config.pp": "00236ae9c9b0c5e8fe8386f6d3d69e28",
+  "manifests/init.pp": "09f7fca589701d85028e4b75e934cae3",
+  "manifests/install.pp": "f879b04f175b621052cf34c1bc4b0ca2",
+  "manifests/params.pp": "eaf1215825a256053c2168096db6a2c2",
+  "manifests/service.pp": "ee3eec1355a56b1065351ff3edbc852f",
+  "spec/classes/init_spec.rb": "9342a2b44f8f32626837cfcb40d19d76",
+  "spec/spec_helper.rb": "0db89c9a486df193c0e40095422e19dc",
+  "templates/tftpd.map": "e25509e3ae895f72cf1671b614890797"
+}

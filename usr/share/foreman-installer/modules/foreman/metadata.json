@@ -1,0 +1,18 @@
+{
+  "name": "theforeman-foreman",
+  "version": "2.2.1",
+  "author": "theforeman",
+  "summary": "Foreman server configuration",
+  "license": "GPLv3+",
+  "source": "git://github.com/theforeman/puppet-foreman",
+  "project_page": "http://github.com/theforeman/foreman-installer",
+  "issues_url": "https://github.com/theforeman/puppet-foreman/issues",
+  "description": "Module for configuring Foreman",
+  "dependencies": [
+    {"name":"theforeman/concat_native","version_requirement":">= 1.3.0"},
+    {"name":"theforeman/tftp","version_requirement":">= 1.4.0"},
+    {"name":"puppetlabs/apache","version_requirement":">= 1.0.0 < 2.0.0"},
+    {"name":"puppetlabs/postgresql","version_requirement":">= 3.0.0"},
+    {"name":"puppetlabs/stdlib","version_requirement":">= 4.2.0"}
+  ]
+}

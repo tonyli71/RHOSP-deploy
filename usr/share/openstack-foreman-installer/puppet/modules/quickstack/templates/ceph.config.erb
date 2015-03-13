@@ -1,0 +1,32 @@
+[global]
+auth_service_required = cephx
+filestore_xattr_use_omap = true
+auth_client_required = cephx
+auth_cluster_required = cephx
+auth_supported = cephx
+mon_host = <%= @ceph_mon_hosts.join ' ' %> 
+public_network = <%= @ceph_public_network %>
+mon_initial_members = <%= @ceph_mon_initial_members.join ' ' %>
+fsid = <%= @ceph_fsid %>
+osd_journal_size = 1024
+osd_pool_default_size = <%= @osd_pool_default_size %>
+osd_pool_default_min_size = 1
+osd_crush_chooseleaf_type = 1
+osd_mkfs_type = xfs
+max_mds = 5
+mds_max_file_size = 100000000000000
+mds_cache_size = 1000000
+mon_osd_down_out_interval = 900
+cluster_network = <%= @ceph_cluster_network %>
+
+[mon]
+mon_clock_drift_allowed = .50
+
+[client.images]
+keyring = /etc/ceph/ceph.client.images.keyring
+ 
+[client.volumes]
+keyring = /etc/ceph/ceph.client.volumes.keyring
+  
+[client.backups]
+keyring = /etc/ceph/ceph.client.backups.keyring

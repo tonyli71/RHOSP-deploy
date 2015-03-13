@@ -1,0 +1,29 @@
+<% title _("Installation Media") %>
+
+<% title_actions display_link_if_authorized(_("New Medium"), hash_for_new_medium_path), help_path %>
+
+<table class="table table-bordered table-striped table-two-pane">
+  <thead>
+    <tr>
+      <th><%= sort :name, :as => s_("Medium|Name") %></th>
+      <th><%= sort :path, :as => s_("Medium|Path") %></th>
+      <th><%= sort :family, :as => s_("Medium|Os family") %></th>
+      <th><%= _("Operating Systems") %></th>
+      <th></th>
+    </tr>
+  </thead>
+  <% for medium in @media %>
+    <tr>
+      <td><%= link_to_if_authorized medium, hash_for_edit_medium_path(:id => medium.id).merge(:auth_object => medium, :authorizer => authorizer) %></td>
+      <td><%= medium.path %></td>
+      <td><%= lookup_family(medium.os_family) %></td>
+      <td><%= medium.operatingsystems.map(&:to_label).to_sentence %></td>
+      <td>
+        <%= display_delete_if_authorized hash_for_medium_path(:id => medium).merge(:auth_object => medium, :authorizer => authorizer),
+                                         :confirm => _("Delete %s?") % medium.name %>
+      </td>
+    </tr>
+  <% end %>
+</table>
+<%= page_entries_info @media %>
+<%= will_paginate     @media %>

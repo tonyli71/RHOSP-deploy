@@ -1,0 +1,131 @@
+#!/bin/bash
+
+# just for info.  users of this script will provide their own vip
+keystone_private_vip=<%= scope.lookupvar("::quickstack::pacemaker::params::keystone_private_vip") %>
+
+# These functions adapted from similar logic in jayg's rysnc.pp variables
+get_resource_ip_output() {
+  # trailing space is on purpose below to avoid matching Failed actions
+  echo $(/usr/sbin/pcs status | /bin/grep -P "ip-$1\s")
+}
+which_cluster_ip() {
+  line=$(get_resource_ip_output $1)
+  echo $line | sed -n -e 's/^.*Started //p'
+}
+my_cluster_ip() {
+  /usr/sbin/crm_node -n
+}
+get_property() {
+  /usr/sbin/pcs property show $1
+}
+property_exists() {
+  echo $(get_property $1) | /bin/grep -q $1
+}
+get_property_value() {
+  echo $(get_property $1) | /bin/grep $1 | perl -p -e 's/^.*\: //'
+}
+
+property_includes() {
+  propval=$(get_property_value $1)
+  element=$2
+  #echo PROPVAL $propval
+  echo $propval | /bin/grep -q $element
+}
+
+all_members_include() {
+  element=$1
+  <%# the perl clause below allows handling of the case where multiple
+      lines are printed from crm_node -l like: "id node_name1\nid
+      node_name2\n..." (new pacemaker).  Otherwise, older pacemaker
+      crm_node output looks like "node_name1 node_name2 ...".  %>
+  <% if scope.lookupvar("::osfamily").downcase == "redhat" &&
+        scope.lookupvar("::operatingsystemrelease").match(/^6\.5.*/) %>
+  members=$(/usr/sbin/crm_node -l)
+  <% else %>
+  members=$(/usr/sbin/crm_node -l | perl -p -e 's/^.*\s+(\S+)$/$1/g')
+  <% end %>
+  if [ "x${members}" = "x" ]; then return 1; fi
+  for member in $members; do
+    property_includes $member $element || return 1
+  done
+}
+
+# update a resource property with same name as my node
+# to include the argument in a list if it is not there already
+update_my_node_property() {
+  element=$1
+  mynode=$(my_cluster_ip)
+  if ! $(property_exists $mynode); then
+    /usr/sbin/pcs property set $mynode=$element --force || return 1
+    return 0
+  fi
+  if $(property_includes $mynode $element); then
+    return 0
+  fi
+  /usr/sbin/pcs property set $mynode=$(get_property_value $mynode),$element --force || return 1
+  return 0
+}
+
+update_my_node_property_verified() {
+  element=$1
+  mynode=$(my_cluster_ip)
+  property_includes $mynode $element
+  while [ $? -ne 0 ]; do
+    update_my_node_property $element $mynode
+    sleep 1
+    property_includes $mynode $element
+  done
+}
+
+# obsolete, but here as an illustration of how i_am_vip works
+i_am_keystone_vip () {
+  clu_ip=$(which_cluster_ip $keystone_private_vip)
+  # if vip isn't Started, return false
+  if [ "x${clu_ip}" = "x" ]; then return 1; fi
+  my_clu_ip=$(my_cluster_ip)
+  test "$clu_ip" == "$my_clu_ip"
+}
+
+i_am_vip () {
+  the_vip=$1
+  clu_ip=$(which_cluster_ip $the_vip)
+  # if vip isn't Started, return false
+  if [ "x${clu_ip}" = "x" ]; then return 1; fi
+  my_clu_ip=$(my_cluster_ip)
+  test "$clu_ip" == "$my_clu_ip"
+}
+
+
+info() {
+  $(i_am_keystone_vip) ; echo i_am_keystone_vip is $?
+  $(i_am_vip $keystone_private_vip=) ; echo i_am_vip $keystone_private_vip is $?
+  echo get_property rsync_server is $(get_property rsync_server)
+  $(property_exists rsync_server); echo property_exists rsync_server is $?
+  $(property_exists keystone); echo property_exists keystone is $?
+  $(property_exists bogus_property); echo property_exists bogus_property is $?
+  $(all_members_include swift); echo all_members_include swift is $?
+}
+
+[[ "$#" -lt 1 ]] && echo "Need to pass in a test" && exit 1
+case "$1" in
+  "i_am_vip")
+     i_am_vip $2
+     ;;
+  "i_am_keystone_vip")
+     i_am_keystone_vip
+     ;;
+  "property_exists")
+     property_exists $2
+     ;;
+  "update_my_node_property")
+     update_my_node_property_verified $2
+     ;;
+  "all_members_include")
+     all_members_include $2
+     ;;
+  "info")
+     info
+     ;;
+  *) echo 'unrecognized test' && exit 1
+     ;;
+esac

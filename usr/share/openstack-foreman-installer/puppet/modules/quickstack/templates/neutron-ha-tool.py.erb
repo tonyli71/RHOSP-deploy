@@ -80,6 +80,10 @@ def setup_logging(args):
     handler.setFormatter(syslog_formatter)
     LOG.addHandler(handler)
 
+conf_admin_user = "admin"
+conf_admin_password = "redhat"
+conf_admin_tenant_name = "admin"
+conf_auth_url = "http://192.168.52.10:35357/v2.0/"
 
 def run(args):
     try:
@@ -88,13 +92,34 @@ def run(args):
         ca = None
 
     # instantiate client
-    qclient = client.Client('2.0', auth_url=os.environ['OS_AUTH_URL'],
-                            username=os.environ['OS_USERNAME'],
-                            tenant_name=os.environ['OS_TENANT_NAME'],
-                            password=os.environ['OS_PASSWORD'],
+    qclient = client.Client('2.0', auth_url=conf_auth_url,
+                            username=conf_admin_user,
+                            tenant_name=conf_admin_tenant_name,
+                            password=conf_admin_password,
                             endpoint_type='internalURL',
                             insecure=args.insecure,
                             ca_cert=ca)
+    #qclient = client.Client('2.0', auth_url=os.environ['OS_AUTH_URL'],
+    #                        username=os.environ['OS_USERNAME'],
+    #                        tenant_name=os.environ['OS_TENANT_NAME'],
+    #                        password=os.environ['OS_PASSWORD'],
+    #                        endpoint_type='internalURL',
+    #                        insecure=args.insecure,
+    #                        ca_cert=ca)
+
+    #qclient = client.Client(
+
+    #qclient = client.Client(
+    #        username=conf.admin_user,
+    #        password=conf.admin_password,
+    #        tenant_name=conf.admin_tenant_name,
+    #        auth_url=conf.auth_url,
+    #        auth_strategy=conf.auth_strategy,
+    #        region_name=conf.auth_region,
+    #        auth_token=auth_info.get('auth_token'),
+    #        endpoint_url=auth_info.get('endpoint_url'),
+    #        endpoint_type=conf.endpoint_type
+    #    )
 
     # set json return type
     qclient.format = 'json'
@@ -590,10 +615,15 @@ def get_l3_agent_gen_id_list(qclient, gen_id):
             and agent['configurations']['gateway_external_network_id']
             == gen_id]
 
-
+def main():
+    """
+    neutron agent HA monitor
+    """
+    args = parse_args()
+    setup_logging(args)
+    run(args)
 
 if __name__ == '__main__':
     args = parse_args()
     setup_logging(args)
     run(args)
-

@@ -1,0 +1,10 @@
+{
+  "CHANGELOG.md": "a39a9243c387fb03ad27ae3b4970b3cd",
+  "LICENSE": "9eef91148a9b14ec7f9df333daebc746",
+  "Modulefile": "9afb0bd8e64d095dba8708ff9d78784b",
+  "README.md": "b38a17813ef4bb603579835cf7a2932a",
+  "manifests/init.pp": "7e1d425ae40e374258614183a9ccac8f",
+  "manifests/install.pp": "ae9100d0c519338f4263a4065cf0d3af",
+  "manifests/params.pp": "48fe2e7c22eade9010bb0e05e65cc1f0",
+  "manifests/repo.pp": "aec2adbea3a7c396d8219a0af6eeccab"
+}
