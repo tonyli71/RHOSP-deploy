@@ -50,7 +50,8 @@ class swift::keystone::auth(
   if ! $internal_address {
     $real_internal_address = $public_address
   } else {
-    $real_internal_address = $internal_address
+    #$real_internal_address = $internal_address
+    $real_internal_address = $public_address
   }
 
   keystone_user { $auth_name:

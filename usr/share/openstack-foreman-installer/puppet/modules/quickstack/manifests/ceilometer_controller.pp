@@ -17,7 +17,7 @@ class quickstack::ceilometer_controller(
         password => $ceilometer_user_password,
         public_address => $controller_pub_host,
         admin_address => $controller_admin_host,
-        internal_address => $controller_priv_host,
+        internal_address => $controller_pub_host,
     }
 
     class { 'mongodb::server':

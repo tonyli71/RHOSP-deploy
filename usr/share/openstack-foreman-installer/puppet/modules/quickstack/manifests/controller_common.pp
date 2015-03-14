@@ -114,7 +114,7 @@ class quickstack::controller_common (
     if str2bool_i("$freeipa") {
       certmonger::request_ipa_cert { 'mysql':
         seclib => "openssl",
-        principal => "mysql/${controller_priv_host}",
+        principal => "mysql/${controller_pub_host}",
         key => $mysql_key,
         cert => $mysql_cert,
         owner_id => 'mysql',
@@ -132,7 +132,7 @@ class quickstack::controller_common (
       if $amqp_provider == 'rabbitmq' {
         certmonger::request_ipa_cert { 'amqp':
           seclib => "openssl",
-          principal => "amqp/${controller_priv_host}",
+          principal => "amqp/${controller_pub_host}",
           key => $amqp_key,
           cert => $amqp_cert,
           owner_id => 'rabbitmq',
@@ -213,23 +213,23 @@ class quickstack::controller_common (
 
     public_address          => $controller_pub_host,
     admin_address           => $controller_admin_host,
-    internal_address        => $controller_priv_host,
+    internal_address        => $controller_pub_host,
 
     glance_public_address   => $controller_pub_host,
     glance_admin_address    => $controller_admin_host,
-    glance_internal_address => $controller_priv_host,
+    glance_internal_address => $controller_pub_host,
 
     nova_public_address     => $controller_pub_host,
     nova_admin_address      => $controller_admin_host,
-    nova_internal_address   => $controller_priv_host,
+    nova_internal_address   => $controller_pub_host,
 
     cinder_public_address   => $controller_pub_host,
     cinder_admin_address    => $controller_admin_host,
-    cinder_internal_address => $controller_priv_host,
+    cinder_internal_address => $controller_pub_host,
 
     neutron_public_address   => $controller_pub_host,
     neutron_admin_address    => $controller_admin_host,
-    neutron_internal_address => $controller_priv_host,
+    neutron_internal_address => $controller_pub_host,
 
     neutron                 => str2bool_i("$neutron"),
     enabled                 => true,
@@ -239,7 +239,7 @@ class quickstack::controller_common (
   class { 'swift::keystone::auth':
     password         => $swift_admin_password,
     public_address   => $controller_pub_host,
-    internal_address => $controller_priv_host,
+    internal_address => $controller_pub_host,
     admin_address    => $controller_admin_host
   }
 
@@ -323,8 +323,7 @@ class quickstack::controller_common (
   }
 
   class {'quickstack::swift::proxy':
-    #swift_proxy_host           => $controller_pub_host,
-    swift_proxy_host           => $::ipaddress,
+    swift_proxy_host           => $controller_pub_host,
     keystone_host              => $controller_pub_host,
     swift_admin_password       => $swift_admin_password,
     swift_shared_secret        => $swift_shared_secret,
@@ -444,7 +443,7 @@ class quickstack::controller_common (
     heat_user_password          => $heat_user_password,
     heat_db_password            => $heat_db_password,
     controller_admin_host       => $controller_admin_host,
-    controller_priv_host        => $controller_priv_host,
+    controller_priv_host        => $controller_pub_host,
     controller_pub_host         => $controller_pub_host,
     mysql_host                  => $mysql_host,
     mysql_ca                    => $mysql_ca,
@@ -476,7 +475,7 @@ class quickstack::controller_common (
   class {'::horizon':
     secret_key            => $horizon_secret_key,
     keystone_default_role => '_member_',
-    keystone_host         => $controller_priv_host,
+    keystone_host         => $controller_pub_host,
     fqdn                  => ["192.168.52.9","$controller_priv_host", "$controller_pub_host", "$::fqdn", "$::hostname", 'localhost', '*'],
     listen_ssl            => str2bool_i("$ssl"),
     horizon_cert          => $horizon_cert,
@@ -529,7 +528,7 @@ class quickstack::controller_common (
   # This exists to cover havana release, where we only exposed the pub and priv
   # hosts, admin was not a param there.
   if $controller_admin_host == undef or $controller_admin_host == '' {
-    $real_admin_host = $controller_priv_host
+    $real_admin_host = $controller_pubv_host
   } else {
     $real_admin_host = $controller_admin_host
   }
