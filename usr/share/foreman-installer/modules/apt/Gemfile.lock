@@ -3,7 +3,7 @@ GEM
   specs:
     CFPropertyList (2.2.8)
     addressable (2.3.6)
-    archive-tar-minitar (0.5.2)
+    archive-tar-minitar (> 0.6)
     autoparse (0.3.3)
       addressable (>= 2.3.1)
       extlib (>= 0.9.15)
