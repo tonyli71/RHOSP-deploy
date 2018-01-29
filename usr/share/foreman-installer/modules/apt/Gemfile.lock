@@ -112,7 +112,7 @@ GEM
       method_source (~> 0.8.1)
       slop (~> 3.4)
     puppet (3.6.2)
-      facter (> 1.6, < 3)
+      facter (> 1.7.6, < 3)
       hiera (~> 1.0)
       json_pure
       rgen (~> 0.6.5)
